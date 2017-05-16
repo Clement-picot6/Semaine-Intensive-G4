@@ -1,0 +1,35 @@
+.pouet {
+	height: 13vh;
+}
+
+footer {
+	background-color: white;
+}
+
+footer div:nth-child(1) {
+	float: left;
+	list-style: none;
+	font-family: 'din_regular', sans-serif;
+	margin: 10%;
+}
+
+footer div:nth-child(2) {
+	float: right;
+	list-style: none;
+	font-family: 'din_regular', sans-serif;
+	margin: 10%;
+	text-align: right;
+}
+
+footer div h3 {
+	margin-bottom: 15%;
+	font-size: 22px;
+}
+
+footer div a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	display: block;
+	line-height: 30px;
+}
