@@ -237,142 +237,139 @@ a, a:visited {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 3, ../sass/_revues.scss */
-.container {
-  width: 80%;
-  margin: 10% auto 0;
+/* line 2, ../sass/_revues.scss */
+.breadcrumb {
+  width: 85%;
+  margin: 3em auto 0 auto;
+  font-family: "DIN Regular", sans-serif;
 }
 /* line 7, ../sass/_revues.scss */
-.container h2 {
-  font-size: 20px;
-  padding: 3% 0 0 7%;
+.breadcrumb .arrow {
+  padding: 0 1em;
+}
+/* line 11, ../sass/_revues.scss */
+.breadcrumb .active {
+  color: #3BC0D1;
+  font-family: "DIN Medium", sans-serif;
+}
+
+/* line 18, ../sass/_revues.scss */
+section.last-journals {
+  width: 85%;
+  margin: 3em auto 6em;
+}
+/* line 22, ../sass/_revues.scss */
+section.last-journals h2 {
+  font-size: 25px;
+  padding-left: 100px;
   position: relative;
   font-family: "DIN Regular", sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  margin-bottom: 2em;
 }
-/* line 14, ../sass/_revues.scss */
-.container h2::before {
+/* line 30, ../sass/_revues.scss */
+section.last-journals h2::before {
   position: absolute;
   content: "";
   width: 74px;
   left: 0;
-  height: 5px;
+  height: 3px;
   background: #191919;
-  top: 80%;
+  top: 50%;
 }
 
-/* line 27, ../sass/_revues.scss */
+/* line 42, ../sass/_revues.scss */
 .blue {
   color: #3BC0D1;
 }
 
-/* ------------------------ACCUEIL/REVUE-------------------- */
-/* line 31, ../sass/_revues.scss */
-.accueil {
-  margin-right: 2%;
-}
-
-/* line 34, ../sass/_revues.scss */
-.revues {
-  margin-left: 2%;
-  font-weight: 700;
-}
-
-/* line 38, ../sass/_revues.scss */
-.accueil, .revues {
-  font-family: "DIN Regular", sans-serif;
-}
-
-/* ------------------------ARTICLE-------------------- */
-/* line 43, ../sass/_revues.scss */
-.revue {
-  width: 100%;
-  height: 600px;
+/* line 47, ../sass/_revues.scss */
+.all-journals {
   float: left;
   padding-top: 2%;
-  margin-bottom: 15%;
   font-family: "DIN Regular", sans-serif;
-  font-weight: bold;
   font-size: 16px;
-  display: flex;
-  justify-content: space-between;
 }
-/* line 55, ../sass/_revues.scss */
-.revue .revue-big {
-  width: 23%;
+/* line 3, ../sass/partials/_clearfix.scss */
+.all-journals:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 54, ../sass/_revues.scss */
+.all-journals .revue {
+  width: 19%;
   float: left;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-direction: column;
+  margin-right: 4.33333%;
+}
+/* line 59, ../sass/_revues.scss */
+.all-journals .revue img {
+  width: 100%;
 }
 /* line 63, ../sass/_revues.scss */
-.revue .revue-big span {
+.all-journals .revue span {
+  padding: .5em 1.7em;
   background: #3BC0D1;
-  padding: 2% 6%;
-  margin: 6% 0 6% 0;
   color: #fff;
 }
-/* line 70, ../sass/_revues.scss */
-.revue .revue-big img {
-  width: 100%;
+/* line 68, ../sass/_revues.scss */
+.all-journals .revue p {
+  font-family: "DIN Medium", sans-serif;
+  font-size: 1.2em;
+  margin-top: 1.6em;
 }
-
-/* line 76, ../sass/_revues.scss */
-.revue-small {
-  width: 13%;
+/* line 75, ../sass/_revues.scss */
+.all-journals .revue:first-child {
+  width: 30%;
   float: left;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
 }
-/* line 83, ../sass/_revues.scss */
-.revue-small img {
+/* line 79, ../sass/_revues.scss */
+.all-journals .revue:first-child img {
   width: 100%;
 }
-/* line 87, ../sass/_revues.scss */
-.revue-small span {
-  margin: 10% 0 10% 0;
-  padding: 2% 6%;
-  background-color: #3BC0D1;
-  color: white;
-}
-/* line 94, ../sass/_revues.scss */
-.revue-small p {
-  line-height: 150%;
+/* line 84, ../sass/_revues.scss */
+.all-journals .revue:last-child {
+  margin-right: 0;
 }
 
-/* ------------------------METROPOLES-------------------- */
-/* line 101, ../sass/_revues.scss */
+/* line 90, ../sass/_revues.scss */
 section.region {
   float: left;
   width: 100%;
   background: #F7F7F7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 4em 0;
 }
-/* line 110, ../sass/_revues.scss */
-section.region h2 {
+/* line 97, ../sass/_revues.scss */
+section.region .inner-region {
+  box-sizing: border-box;
+  width: 95%;
+  margin: 0 auto;
+}
+/* line 102, ../sass/_revues.scss */
+section.region .inner-region .head-region {
+  width: 85%;
+  margin: 0 auto;
+}
+/* line 106, ../sass/_revues.scss */
+section.region .inner-region .head-region h2 {
   font-size: 30px;
   font-family: "DIN Regular", sans-serif;
-  margin-left: 10%;
+  margin-bottom: 2em;
 }
-/* line 116, ../sass/_revues.scss */
-section.region .head-region span {
+/* line 112, ../sass/_revues.scss */
+section.region .inner-region .head-region span {
   float: right;
   display: block;
   position: relative;
   letter-spacing: 2px;
   font-size: 20px;
   font-family: "DIN Regular", sans-serif;
-  margin-right: 10%;
+  cursor: pointer;
 }
-/* line 125, ../sass/_revues.scss */
-section.region .head-region span::before {
+/* line 121, ../sass/_revues.scss */
+section.region .inner-region .head-region span::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 30px;
   height: 3px;
   left: -40%;
@@ -380,71 +377,52 @@ section.region .head-region span::before {
   top: 50%;
 }
 
-/* line 137, ../sass/_revues.scss */
-.head-region {
-  width: 100%;
-  padding: 8% 0 6% 0;
-}
-
-/* line 142, ../sass/_revues.scss */
-.table {
-  background-color: #fff;
-  width: 80%;
-  padding: 5% 3%;
-  float: left;
+/* line 136, ../sass/_revues.scss */
+.all-regions {
+  background: #fff;
+  width: 85%;
+  padding: 6em 7em;
   margin: 0 auto;
+  line-height: 1.8;
 }
-/* line 149, ../sass/_revues.scss */
-.table .metropole {
-  margin: 10% 0 10% 10%;
-  float: left;
-  width: 70%;
-  font-family: 'Roboto', sans-serif;
+/* line 3, ../sass/partials/_clearfix.scss */
+.all-regions:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-/* line 156, ../sass/_revues.scss */
-.table h3 {
-  font-size: 26px;
-  font-weight: bold;
+/* line 144, ../sass/_revues.scss */
+.all-regions .metropole {
   display: block;
-  margin-bottom: 1em;
+  margin-bottom: 8em;
+  font-family: "Roboto", sans-serif;
 }
-/* line 163, ../sass/_revues.scss */
-.table .liste {
+/* line 3, ../sass/partials/_clearfix.scss */
+.all-regions .metropole:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 150, ../sass/_revues.scss */
+.all-regions .metropole .liste {
   width: 30%;
   float: left;
 }
-/* line 166, ../sass/_revues.scss */
-.table .liste li {
-  margin-bottom: 1%;
+/* line 156, ../sass/_revues.scss */
+.all-regions h3 {
+  font-size: 26px;
 }
-
-/* line 172, ../sass/_revues.scss */
-.metropole li, .region li {
-  line-height: 150%;
-}
-
-/* ------------------------OUTRE-MER-------------------- */
-/* line 178, ../sass/_revues.scss */
-.outre-mer {
+/* line 160, ../sass/_revues.scss */
+.all-regions .outre-mer {
   float: left;
   width: 50%;
-  font-family: 'Roboto', sans-serif;
 }
-
-/* line 184, ../sass/_revues.scss */
-.etranger {
-  float: right;
+/* line 165, ../sass/_revues.scss */
+.all-regions .etranger {
+  float: left;
   width: 50%;
 }
 
-/* ------------------------MEDIA QUERIES------------------------ */
-@media screen and (max-width: 640px) {
-  /* line 192, ../sass/_revues.scss */
-  .revue-big, .revue-small {
-    display: block;
-    width: 100%;
-  }
-}
 /* line 3, ../sass/_backoffice.scss */
 #bo header {
   width: 85%;
