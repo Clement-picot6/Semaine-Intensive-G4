@@ -221,8 +221,8 @@ main {
 /* line 26, ../sass/partials/_newsletter.scss */
 .newsletter .slogan {
   width: 39%;
-  float: left;
-  font-size: 1.5em;
+  display: inline-block;
+  font-size: 1.4em;
   color: #fff;
   font-family: "DIN Regular", sans-serif;
   letter-spacing: 1px;
@@ -236,9 +236,9 @@ main {
 
 /* line 41, ../sass/partials/_newsletter.scss */
 div.subscribe {
-  width: 56%;
-  float: left;
+  width: 60%;
   margin-top: .8em;
+  display: inline-block;
 }
 /* line 3, ../sass/partials/_clearfix.scss */
 div.subscribe form:after {
@@ -246,7 +246,7 @@ div.subscribe form:after {
   display: table;
   clear: both;
 }
-/* line 51, ../sass/partials/_newsletter.scss */
+/* line 50, ../sass/partials/_newsletter.scss */
 div.subscribe input[type="email"] {
   float: left;
   width: 70%;
@@ -258,13 +258,13 @@ div.subscribe input[type="email"] {
   background: #3C3C3C;
   font-family: "Roboto", sans-serif;
 }
-/* line 63, ../sass/partials/_newsletter.scss */
+/* line 62, ../sass/partials/_newsletter.scss */
 div.subscribe input::-webkit-input-placeholder {
   color: #BABABA;
 }
-/* line 67, ../sass/partials/_newsletter.scss */
+/* line 66, ../sass/partials/_newsletter.scss */
 div.subscribe input[type="submit"] {
-  width: 25%;
+  width: 30%;
   float: left;
   height: 7vh;
   font-size: 20px;
