@@ -70,63 +70,67 @@ a, a:visited {
 
 /* HEADER */
 /* line 3, ../sass/partials/_header.scss */
-#public header {
-  background-image: url(../img-content/header-img.jpg);
-  width: 100%;
-  height: 79vh;
+.public header {
+  position: relative;
+  height: 60vh;
 }
 
 /* line 9, ../sass/partials/_header.scss */
-#public header div.logo {
+.public header .logo {
   float: left;
   margin: 3.5% 0 0 8%;
 }
 
-/* line 15, ../sass/partials/_header.scss */
-#public header > div:nth-child(2) {
+/* line 14, ../sass/partials/_header.scss */
+.header-bg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+/* line 21, ../sass/partials/_header.scss */
+.public header nav {
   float: right;
   width: 50%;
   margin-top: 4.5%;
 }
 
-/* line 21, ../sass/partials/_header.scss */
-#public header > div:nth-child(2) > ul > a {
+/* line 27, ../sass/partials/_header.scss */
+.public header nav a {
   display: inline-block;
-  text-decoration: none;
-  list-style: none;
   margin-right: 8.5%;
   font-size: 18px;
-  font-weight: bold;
-  color: white;
-  font-family: 'din_light', sans-serif;
+  color: #fff;
+  font-family: "DIN Light", sans-serif;
   letter-spacing: 1px;
 }
 
-/* line 34, ../sass/partials/_header.scss */
-#public header > div:nth-child(2) > ul > a:nth-child(5) {
+/* line 37, ../sass/partials/_header.scss */
+.public header nav a:nth-child(5) {
   margin-right: 4.5%;
 }
 
-/* line 39, ../sass/partials/_header.scss */
+/* line 42, ../sass/partials/_header.scss */
 .block_header {
   width: 100%;
   position: absolute;
   top: 15%;
 }
 
-/* line 45, ../sass/partials/_header.scss */
+/* line 48, ../sass/partials/_header.scss */
 .block_header div:nth-child(1) {
   width: 80%;
   font-size: 30px;
   color: white;
-  font-family: 'din_regular', sans-serif;
+  font-family: "DIN Regular", sans-serif;
   letter-spacing: 1px;
   float: left;
   margin: 15.5% 0 0 9%;
   line-height: 6vh;
 }
 
-/* line 57, ../sass/partials/_header.scss */
+/* line 60, ../sass/partials/_header.scss */
 .block_header > button {
   padding: 13px 30px;
   text-transform: uppercase;
@@ -142,12 +146,12 @@ a, a:visited {
   letter-spacing: 1px;
 }
 
-/* line 73, ../sass/partials/_header.scss */
+/* line 76, ../sass/partials/_header.scss */
 .block_header .btn_feuille > img {
   margin-left: 10px;
 }
 
-/* line 77, ../sass/partials/_header.scss */
+/* line 80, ../sass/partials/_header.scss */
 .block_header .btn_command {
   padding: 10px 30px 10px 50px;
   text-transform: uppercase;
@@ -162,7 +166,7 @@ a, a:visited {
   cursor: pointer;
 }
 
-/* line 91, ../sass/partials/_header.scss */
+/* line 94, ../sass/partials/_header.scss */
 .block_header div.rectangle {
   position: absolute;
   width: 10.5%;
