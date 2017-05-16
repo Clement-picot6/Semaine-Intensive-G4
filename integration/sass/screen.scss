@@ -12,6 +12,10 @@ $dinB: 'DIN Bold', sans-serif;
 $roboto: 'Roboto', sans-serif;
 $width: 85%;
 
+.return {
+  display: block;
+}
+
 @import "partials/fonts";
 @import "partials/reset";
 @import "partials/clearfix";
