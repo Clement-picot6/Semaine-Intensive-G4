@@ -399,6 +399,118 @@ body .old_articles article a {
 
 
 
+/***** 	 BOUTIQUE 	*****/
+
+
+
+
+body .fil_arianne a,span{
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+body .fil_arianne span {
+	padding: 0 2%;
+}
+
+body .fil_arianne a:nth-child(3) {
+	color: #3BC0D1;
+}
+
+.container_table div {
+	margin-top: 8%;
+}
+
+.container_table div h1 {
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	letter-spacing: 1px;
+	padding-bottom: 1%;
+}
+
+.container_table div p {
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding-bottom: 3%;
+}
+
+.container_table div:nth-child(1) p::after {
+	content: " commande";
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding-bottom: 1%;
+}
+
+.container_table div:nth-child(2) p::after {
+	content: " abonnement";
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding-bottom: 1%;
+}
+
+
+.container_table div img {
+	width: 100%;
+}
+
+.container_button {
+	width: 100%;
+	margin-top: 13%;
+}
+
+.container_button button:nth-child(1) {
+	float: left;
+	padding: 5% 19.8%;
+	background-color: #3BC0D1;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.container_button button:nth-child(2) {
+	float: right;
+	padding: 5% 20.5%;
+	background-color: #F7F7F7;
+	color: #191919;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
