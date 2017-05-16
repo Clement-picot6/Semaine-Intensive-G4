@@ -42,6 +42,7 @@
 	src: url(../fonts/Din/din_bold.ttf);
 }
 
+
 main {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -256,6 +257,8 @@ footer div a {
 	line-height: 30px;
 }
 
+
+
 /***** 	 ACCUEIL 	*****/
 
 body .actu_block {
@@ -281,7 +284,6 @@ body .actu_block>h1 {
 
 body .actu_block .article_block {
 	margin-top: 4%;
-	width:
 }
 
 body .actu_block .article_block article {
@@ -611,3 +613,89 @@ body .fil_arianne a:nth-child(3) {
 	border: none;
 	cursor: pointer;
 }
+
+
+/* BLOC DE SCROLL */
+
+.scrolling_bloc {
+	width: 100%;
+	margin-top: 10%;
+}
+
+div.container_caption {
+	width: 100%;
+	height: 100vh;
+}
+
+
+div.container_caption>div:first-child {
+	width: 100%;
+	background-color: #F6F6F6;
+	height: 50vh;
+	text-align: center;
+}
+
+div.container_caption>div:first-child h1 {
+	color: #3BC0D1;
+	font-size: 240px;
+	opacity: .26;
+	font-family: 'din_regular', sans-serif;
+	font-weight: 400;
+}
+
+div.container_caption>div:first-child p {
+	color: #3BC0D1;
+	font-size: 35px;
+	font-family: 'din_regular', sans-serif;
+	font-weight: 400;
+	position: relative;
+	bottom: 35%;
+}
+
+div.container_scrolling {
+	background-color: white;
+	width: 50%;
+	height: 60vh;
+	margin: 0 auto;
+	position: relative;
+	bottom: 15%;
+-moz-box-shadow: 0px 0px 10px 1px #F7F7F7;
+-webkit-box-shadow: 0px 0px 10px 1px #F7F7F7;
+-o-box-shadow: 0px 0px 10px 1px #F7F7F7;
+box-shadow: 0px 0px 10px 1px #F7F7F7;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#F7F7F7, Direction=NaN, Strength=10);
+}
+
+div.container_scrolling .content_scrolling_left{
+	float: left;
+	width: 49%;
+	margin-top: 5%;
+}
+
+div.container_scrolling .content_scrolling_left p{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	margin: 8% 0 0 10%;
+}
+
+div.container_scrolling .content_scrolling_right {
+	float: right;
+	width: 48%;
+	margin-top: 10%;
+}
+
+div.container_scrolling .content_scrolling_right p{
+	text-align: right;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	margin: 20% 10% 0 0;
+}
+
