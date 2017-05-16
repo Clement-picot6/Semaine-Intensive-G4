@@ -174,3 +174,63 @@
 
   }
 }
+
+/*----------------------MEDIAQUERIES----------------*/
+
+
+@media screen and (max-width: 735px){
+#bo{
+  font-size:20px;
+}
+
+
+header {
+  width:100%;
+  padding:50px;
+
+}
+header .span{
+  margin-top:40px;
+}
+
+.head-view-journals{
+  margin-bottom:26px;
+}
+
+#bo > header > div > span{
+display:block;
+float:left
+
+
+}
+form{
+  display:block;
+}
+
+
+#bo > main > section.add-journal > div > h2{
+  width:100%;
+  padding:0;
+}
+h2::before{
+  display:none;
+}
+h2{
+  text-align:center;
+}
+#bo .add-journal form div.left-side,
+#bo .add-journal form div.right-side{
+  width:100%;
+}
+#bo .add-journal form div.right-side{
+  margin:0;
+}
+}
+@media screen and (max-width: 620px){
+
+#bo > header > div > span{
+  margin-top:30px;
+}
+}
+
+
