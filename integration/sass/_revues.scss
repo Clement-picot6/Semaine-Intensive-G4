@@ -1,0 +1,170 @@
+
+.breadcrumb {
+  width: $width;
+  margin: 3em auto 0 auto;
+  font-family: $dinR;
+
+  .arrow {
+    padding: 0 1em;
+  }
+
+  .active {
+    color: $blue;
+    font-family: $dinM;
+  }
+
+}
+
+section.last-journals{
+	width: $width;
+	margin: 3em auto 6em;
+
+  h2{
+  	font-size:25px;
+    padding-left: 100px;
+  	position:relative;
+  	font-family: $dinR;
+  	letter-spacing: 1px;
+    margin-bottom: 2em;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 74px;
+      left:0;
+      height: 3px;
+      background: $black;
+      top: 50%;
+    }
+  }
+}
+
+.blue{
+	color: $blue;
+}
+
+
+.all-journals {
+	float:left;
+	padding-top:2%;
+	font-family: $dinR;
+	font-size:16px;
+  @include clearfix;
+
+  .revue {
+    width:19%;
+    float:left;
+    margin-right: 4.33333%;
+
+    img {
+      width: 100%;
+    }
+
+    span {
+      padding: .5em 1.7em;
+      background: $blue;
+      color: #fff;
+    }
+    p {
+      font-family: $dinM;
+      font-size: 1.2em;
+      margin-top: 1.6em;
+    }
+  }
+
+  .revue:first-child {
+    width:30%;
+  	float:left;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .revue:last-child {
+    margin-right: 0;
+  }
+}
+
+
+section.region{
+	float: left;
+	width: 100%;
+	background: $lightgrey;
+  padding: 4em 0;
+
+
+  .inner-region {
+    box-sizing: border-box;
+    width: 95%;
+    margin: 0 auto;
+
+    .head-region{
+    	width: $width;
+    	margin: 0 auto;
+
+      h2{
+        font-size: 30px;
+        font-family: $dinR;
+        margin-bottom: 2em;
+      }
+
+      span {
+        float: right;
+        display: block;
+        position: relative;
+        letter-spacing: 2px;
+        font-size:20px;
+        font-family: $dinR;
+        cursor: pointer;
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: 30px;
+          height: 3px;
+          left: -40%;
+          background: $black;
+          top: 50%;
+        }
+      }
+
+    } // END OF HEAD REGION
+  }
+}
+
+.all-regions{
+	background: #fff;
+	width: $width;
+	padding: 6em 7em;
+	margin: 0 auto;
+  @include clearfix;
+  line-height: 1.8;
+
+  .metropole{
+    display: block;
+  	margin-bottom: 8em;
+  	font-family: $roboto;
+    @include clearfix;
+
+    .liste{
+    	width:30%;
+    	float:left;
+    }
+  }
+
+  h3 {
+  	font-size:26px;
+  }
+
+  .outre-mer{
+  	float:left;
+  	width:50%;
+  }
+
+  .etranger{
+    float: left;
+    width: 50%;
+  }
+
+} // END OF ALL REGIONS

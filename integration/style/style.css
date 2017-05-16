@@ -259,9 +259,6 @@ footer div a {
 
 
 
-
-
-
 /***** 	 ACCUEIL 	*****/
 
 body .actu_block {
@@ -287,7 +284,6 @@ body .actu_block>h1 {
 
 body .actu_block .article_block {
 	margin-top: 4%;
-	width: 
 }
 
 body .actu_block .article_block article {
@@ -584,7 +580,6 @@ body .fil_arianne a:nth-child(3) {
 }
 
 .container_btn_fields{
-	
 	float: right;
 }
 
@@ -618,9 +613,6 @@ body .fil_arianne a:nth-child(3) {
 	border: none;
 	cursor: pointer;
 }
-
-
-
 
 
 /* BLOC DE SCROLL */
@@ -706,32 +698,4 @@ div.container_scrolling .content_scrolling_right p{
 	line-height: 1.5;
 	margin: 20% 10% 0 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
