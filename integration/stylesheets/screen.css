@@ -1,0 +1,674 @@
+@font-face {
+  font-family: 'DIN Light';
+  src: url(../fonts/Din/din_light.ttf);
+}
+@font-face {
+  font-family: 'DIN Regular';
+  src: url(../fonts/Din/din_regular.ttf);
+}
+@font-face {
+  font-family: 'DIN Medium';
+  src: url(../fonts/Din/din_medium.otf);
+}
+@font-face {
+  font-family: 'DIN Bold';
+  src: url(../fonts/Din/din_bold.ttf);
+}
+/* line 3, ../sass/partials/_reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 8, ../sass/partials/_reset.scss */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: 'Roboto';
+  font-size: 16px;
+}
+
+/* line 16, ../sass/partials/_reset.scss */
+label {
+  display: block;
+}
+
+/* line 20, ../sass/partials/_reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 24, ../sass/partials/_reset.scss */
+input[type="text"], textarea {
+  border: none;
+  outline: none;
+}
+
+/* line 29, ../sass/partials/_reset.scss */
+input[type="submit"] {
+  border: none;
+}
+
+/* line 33, ../sass/partials/_reset.scss */
+a, a:visited {
+  text-decoration: none;
+  color: initial;
+}
+
+/* line 10, ../sass/partials/_clearfix.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 16, ../sass/partials/_clearfix.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* HEADER */
+/* line 3, ../sass/partials/_header.scss */
+#public header {
+  background-image: url(../img-content/header-img.jpg);
+  width: 100%;
+  height: 79vh;
+}
+
+/* line 9, ../sass/partials/_header.scss */
+#public header div.logo {
+  float: left;
+  margin: 3.5% 0 0 8%;
+}
+
+/* line 15, ../sass/partials/_header.scss */
+#public header > div:nth-child(2) {
+  float: right;
+  width: 50%;
+  margin-top: 4.5%;
+}
+
+/* line 21, ../sass/partials/_header.scss */
+#public header > div:nth-child(2) > ul > a {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  margin-right: 8.5%;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  font-family: 'din_light', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* line 34, ../sass/partials/_header.scss */
+#public header > div:nth-child(2) > ul > a:nth-child(5) {
+  margin-right: 4.5%;
+}
+
+/* line 39, ../sass/partials/_header.scss */
+.block_header {
+  width: 100%;
+  position: absolute;
+  top: 15%;
+}
+
+/* line 45, ../sass/partials/_header.scss */
+.block_header div:nth-child(1) {
+  width: 80%;
+  font-size: 30px;
+  color: white;
+  font-family: 'din_regular', sans-serif;
+  letter-spacing: 1px;
+  float: left;
+  margin: 15.5% 0 0 9%;
+  line-height: 6vh;
+}
+
+/* line 57, ../sass/partials/_header.scss */
+.block_header > button {
+  padding: 13px 30px;
+  text-transform: uppercase;
+  font-family: 'din_regular', sans-serif;
+  font-size: 18px;
+  color: white;
+  background-color: #3BC0D1;
+  border: none;
+  float: left;
+  margin: 3% 0 0 9%;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+/* line 73, ../sass/partials/_header.scss */
+.block_header .btn_feuille > img {
+  margin-left: 10px;
+}
+
+/* line 77, ../sass/partials/_header.scss */
+.block_header .btn_command {
+  padding: 10px 30px 10px 50px;
+  text-transform: uppercase;
+  font-family: 'din_regular', sans-serif;
+  font-size: 20px;
+  color: #3BC0D1;
+  background-color: transparent;
+  border: solid #3BC0D1 3px;
+  float: left;
+  margin: 3% 0 0 2%;
+  outline: none;
+  cursor: pointer;
+}
+
+/* line 91, ../sass/partials/_header.scss */
+.block_header div.rectangle {
+  position: absolute;
+  width: 10.5%;
+  height: 9%;
+  background-color: #3BC0D1;
+  bottom: -120px;
+  right: 0;
+}
+
+/* FOOTER */
+/* line 4, ../sass/partials/_newsletter.scss */
+.newsletter {
+  float: left;
+  width: 100%;
+  height: 30vh;
+  background-color: #191919;
+}
+
+/* line 12, ../sass/partials/_newsletter.scss */
+.newsletter div:nth-child(1) {
+  position: relative;
+  width: 10.5%;
+  height: 12%;
+  background-color: #3BC0D1;
+  left: 0;
+  top: -14px;
+}
+
+/* line 21, ../sass/partials/_newsletter.scss */
+.newsletter div:nth-child(2) {
+  font-size: 32px;
+  color: white;
+  font-family: 'din_regular', sans-serif;
+  letter-spacing: 1px;
+  float: left;
+  line-height: 6vh;
+  margin: 3% 0 0 10%;
+}
+
+/* line 32, ../sass/partials/_newsletter.scss */
+.newsletter input[type="email"] {
+  float: left;
+  width: 35%;
+  height: 8vh;
+  font-size: 20px;
+  padding-left: 30px;
+  margin: 5% 0 0 7%;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  background-color: #3C3C3C;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 46, ../sass/partials/_newsletter.scss */
+.newsletter input::-webkit-input-placeholder {
+  color: #BABABA;
+}
+
+/* line 50, ../sass/partials/_newsletter.scss */
+.newsletter input[type="submit"] {
+  float: left;
+  width: 13%;
+  height: 8vh;
+  margin-top: 5%;
+  font-size: 20px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #3BC0D1;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 3, ../sass/_revues.scss */
+.container {
+  width: 80%;
+  margin: 10% auto 0;
+}
+/* line 7, ../sass/_revues.scss */
+.container h2 {
+  font-size: 20px;
+  padding: 3% 0 0 7%;
+  position: relative;
+  font-family: "DIN Regular", sans-serif;
+  letter-spacing: 2px;
+}
+/* line 14, ../sass/_revues.scss */
+.container h2::before {
+  position: absolute;
+  content: "";
+  width: 74px;
+  left: 0;
+  height: 5px;
+  background: #191919;
+  top: 80%;
+}
+
+/* line 27, ../sass/_revues.scss */
+.blue {
+  color: #3BC0D1;
+}
+
+/* ------------------------ACCUEIL/REVUE-------------------- */
+/* line 31, ../sass/_revues.scss */
+.accueil {
+  margin-right: 2%;
+}
+
+/* line 34, ../sass/_revues.scss */
+.revues {
+  margin-left: 2%;
+  font-weight: 700;
+}
+
+/* line 38, ../sass/_revues.scss */
+.accueil, .revues {
+  font-family: "DIN Regular", sans-serif;
+}
+
+/* ------------------------ARTICLE-------------------- */
+/* line 43, ../sass/_revues.scss */
+.revue {
+  width: 100%;
+  height: 600px;
+  float: left;
+  padding-top: 2%;
+  margin-bottom: 15%;
+  font-family: "DIN Regular", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 55, ../sass/_revues.scss */
+.revue .revue-big {
+  width: 23%;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+/* line 63, ../sass/_revues.scss */
+.revue .revue-big span {
+  background: #3BC0D1;
+  padding: 2% 6%;
+  margin: 6% 0 6% 0;
+  color: #fff;
+}
+/* line 70, ../sass/_revues.scss */
+.revue .revue-big img {
+  width: 100%;
+}
+
+/* line 76, ../sass/_revues.scss */
+.revue-small {
+  width: 13%;
+  float: left;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+/* line 83, ../sass/_revues.scss */
+.revue-small img {
+  width: 100%;
+}
+/* line 87, ../sass/_revues.scss */
+.revue-small span {
+  margin: 10% 0 10% 0;
+  padding: 2% 6%;
+  background-color: #3BC0D1;
+  color: white;
+}
+/* line 94, ../sass/_revues.scss */
+.revue-small p {
+  line-height: 150%;
+}
+
+/* ------------------------METROPOLES-------------------- */
+/* line 101, ../sass/_revues.scss */
+section.region {
+  float: left;
+  width: 100%;
+  background: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 110, ../sass/_revues.scss */
+section.region h2 {
+  font-size: 30px;
+  font-family: "DIN Regular", sans-serif;
+  margin-left: 10%;
+}
+/* line 116, ../sass/_revues.scss */
+section.region .head-region span {
+  float: right;
+  display: block;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-family: "DIN Regular", sans-serif;
+  margin-right: 10%;
+}
+/* line 125, ../sass/_revues.scss */
+section.region .head-region span::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  left: -40%;
+  background: #191919;
+  top: 50%;
+}
+
+/* line 137, ../sass/_revues.scss */
+.head-region {
+  width: 100%;
+  padding: 8% 0 6% 0;
+}
+
+/* line 142, ../sass/_revues.scss */
+.table {
+  background-color: #fff;
+  width: 80%;
+  padding: 5% 3%;
+  float: left;
+  margin: 0 auto;
+}
+/* line 149, ../sass/_revues.scss */
+.table .metropole {
+  margin: 10% 0 10% 10%;
+  float: left;
+  width: 70%;
+  font-family: 'Roboto', sans-serif;
+}
+/* line 156, ../sass/_revues.scss */
+.table h3 {
+  font-size: 26px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1em;
+}
+/* line 163, ../sass/_revues.scss */
+.table .liste {
+  width: 30%;
+  float: left;
+}
+/* line 166, ../sass/_revues.scss */
+.table .liste li {
+  margin-bottom: 1%;
+}
+
+/* line 172, ../sass/_revues.scss */
+.metropole li, .region li {
+  line-height: 150%;
+}
+
+/* ------------------------OUTRE-MER-------------------- */
+/* line 178, ../sass/_revues.scss */
+.outre-mer {
+  float: left;
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 184, ../sass/_revues.scss */
+.etranger {
+  float: right;
+  width: 50%;
+}
+
+/* ------------------------MEDIA QUERIES------------------------ */
+@media screen and (max-width: 640px) {
+  /* line 192, ../sass/_revues.scss */
+  .revue-big, .revue-small {
+    display: block;
+    width: 100%;
+  }
+}
+/* line 3, ../sass/_backoffice.scss */
+#bo header {
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 3em;
+}
+/* line 3, ../sass/partials/_clearfix.scss */
+#bo header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 9, ../sass/_backoffice.scss */
+#bo header .links {
+  float: right;
+}
+/* line 13, ../sass/_backoffice.scss */
+#bo header span {
+  padding: .8em 1.4em;
+  border: 3px solid #191919;
+  font-family: "DIN Medium", sans-serif;
+}
+/* line 19, ../sass/_backoffice.scss */
+#bo header a {
+  padding-right: 2em;
+}
+/* line 25, ../sass/_backoffice.scss */
+#bo main h2 {
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 60px;
+  font-family: "DIN Medium", sans-serif;
+  margin-bottom: 2em;
+}
+/* line 32, ../sass/_backoffice.scss */
+#bo main h2::before {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: #191919;
+  left: 0;
+  top: 35%;
+}
+/* line 44, ../sass/_backoffice.scss */
+#bo main section {
+  margin-bottom: 2em;
+}
+
+/* line 50, ../sass/_backoffice.scss */
+#bo .view-journals {
+  width: 85%;
+  margin: 5em auto;
+}
+/* line 3, ../sass/partials/_clearfix.scss */
+#bo .view-journals .head-view-journals:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 58, ../sass/_backoffice.scss */
+#bo .view-journals h2 {
+  float: left;
+  padding-bottom: 1em;
+}
+/* line 63, ../sass/_backoffice.scss */
+#bo .view-journals .filters {
+  float: right;
+  text-transform: uppercase;
+  color: #757575;
+}
+/* line 69, ../sass/_backoffice.scss */
+#bo .view-journals span {
+  padding: .4em 1em;
+  background: #EDEDED;
+  margin-left: .8em;
+}
+/* line 74, ../sass/_backoffice.scss */
+#bo .view-journals span.active {
+  background: #3BC0D1;
+  color: #fff;
+}
+/* line 80, ../sass/_backoffice.scss */
+#bo .view-journals table {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+}
+/* line 85, ../sass/_backoffice.scss */
+#bo .view-journals table thead {
+  background: #3BC0D1;
+  color: #fff;
+}
+/* line 88, ../sass/_backoffice.scss */
+#bo .view-journals table thead td {
+  padding: .6em 0;
+}
+/* line 94, ../sass/_backoffice.scss */
+#bo .view-journals table tbody tr {
+  background: #EFEFEF;
+}
+/* line 96, ../sass/_backoffice.scss */
+#bo .view-journals table tbody tr:nth-child(2n+1) {
+  background: #F7F7F7;
+}
+/* line 99, ../sass/_backoffice.scss */
+#bo .view-journals table tbody tr td {
+  padding: .5em 0;
+}
+
+/* line 107, ../sass/_backoffice.scss */
+#bo .add-journal {
+  background: #F7F7F7;
+  padding: 3em 0;
+}
+/* line 111, ../sass/_backoffice.scss */
+#bo .add-journal .head-add-journal {
+  text-align: center;
+  margin: 1em 0;
+}
+/* line 114, ../sass/_backoffice.scss */
+#bo .add-journal .head-add-journal span {
+  font-family: "DIN Medium", sans-serif;
+}
+/* line 119, ../sass/_backoffice.scss */
+#bo .add-journal .inner-add-journal {
+  width: 85%;
+  margin: 0 auto;
+}
+/* line 124, ../sass/_backoffice.scss */
+#bo .add-journal h2 {
+  margin: 6em 0 3em 0;
+}
+/* line 128, ../sass/_backoffice.scss */
+#bo .add-journal form div {
+  margin-bottom: 2em;
+}
+/* line 131, ../sass/_backoffice.scss */
+#bo .add-journal form div.left-side, #bo .add-journal form div.right-side {
+  width: 45%;
+}
+/* line 133, ../sass/_backoffice.scss */
+#bo .add-journal form div.left-side input[type="text"], #bo .add-journal form div.left-side textarea, #bo .add-journal form div.right-side input[type="text"], #bo .add-journal form div.right-side textarea {
+  background: rgba(216, 216, 216, 0.4);
+  padding: .5em 1em;
+  width: 100%;
+}
+/* line 138, ../sass/_backoffice.scss */
+#bo .add-journal form div.left-side label, #bo .add-journal form div.right-side label {
+  font-weight: bolder;
+  margin-bottom: .4em;
+}
+/* line 144, ../sass/_backoffice.scss */
+#bo .add-journal form div[class*="-side"] {
+  display: inline-block;
+}
+/* line 148, ../sass/_backoffice.scss */
+#bo .add-journal form div.right-side {
+  margin-top: 2em;
+  margin-left: 9%;
+}
+/* line 153, ../sass/_backoffice.scss */
+#bo .add-journal form div.actions {
+  margin-top: 3em;
+  text-align: right;
+}
+/* line 156, ../sass/_backoffice.scss */
+#bo .add-journal form div.actions a {
+  text-transform: uppercase;
+  color: #3BC0D1;
+  padding: .5em 1.8em;
+  border: 2px solid #3BC0D1;
+  cursor: pointer;
+  margin-right: 1.5em;
+}
+/* line 165, ../sass/_backoffice.scss */
+#bo .add-journal form div.actions input[type="submit"] {
+  background: #3BC0D1;
+  color: #fff;
+  text-transform: uppercase;
+  padding: .5em 1.8em;
+  border: 2px solid #3BC0D1;
+  cursor: pointer;
+}
+
+/* line 1, ../sass/partials/_footer.scss */
+.pouet {
+  height: 13vh;
+}
+
+/* line 5, ../sass/partials/_footer.scss */
+footer {
+  background-color: white;
+}
+
+/* line 9, ../sass/partials/_footer.scss */
+footer div:nth-child(1) {
+  float: left;
+  list-style: none;
+  font-family: 'din_regular', sans-serif;
+  margin: 10%;
+}
+
+/* line 16, ../sass/partials/_footer.scss */
+footer div:nth-child(2) {
+  float: right;
+  list-style: none;
+  font-family: 'din_regular', sans-serif;
+  margin: 10%;
+  text-align: right;
+}
+
+/* line 24, ../sass/partials/_footer.scss */
+footer div h3 {
+  margin-bottom: 15%;
+  font-size: 22px;
+}
+
+/* line 29, ../sass/partials/_footer.scss */
+footer div a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  display: block;
+  line-height: 30px;
+}

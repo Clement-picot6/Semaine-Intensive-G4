@@ -1,0 +1,23 @@
+$black: #191919;
+$lightgrey: #F7F7F7;
+$grey: #757575;
+$midgrey: #EFEFEF;
+$blue: #3BC0D1;
+
+$dinL: 'DIN Light', sans-serif;
+$dinM: 'DIN Medium', sans-serif;
+$dinR: 'DIN Regular', sans-serif;
+$dinB: 'DIN Bold', sans-serif;
+
+@import "partials/fonts";
+@import "partials/reset";
+@import "partials/clearfix";
+
+@import "partials/header";
+@import "partials/newsletter";
+@import "revues";
+
+@import "partials/boheader";
+@import "backoffice";
+
+@import "partials/footer";
