@@ -20,7 +20,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 ### macOS template
-*.DS_Store
+.DS_Store
+.idea/
 .AppleDouble
 .LSOverride
 

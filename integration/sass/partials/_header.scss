@@ -1,37 +1,40 @@
 /* HEADER */
 
-#public header {
-	background-image: url(../img-content/header-img.jpg);
-	width: 100%;
-	height: 79vh;
+.public header {
+	// background-image: url(../img-content/header-img.jpg);
+	position: relative;
+	height: 60vh;
 }
 
-#public header div.logo {
+.public header .logo {
 	float: left;
 	margin: 3.5% 0 0 8%;
 }
 
+.header-bg {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+}
 
-#public header>div:nth-child(2) {
+.public header nav {
 	float: right;
 	width: 50%;
 	margin-top: 4.5%;
 }
 
-#public header>div:nth-child(2)>ul>a {
+.public header nav a {
 	display: inline-block;
-	text-decoration: none;
-	list-style: none;
 	margin-right: 8.5%;
 	font-size: 18px;
-	font-weight: bold;
-	color: white;
-	font-family: 'din_light', sans-serif;
+	color: #fff;
+	font-family: $dinL;
 	letter-spacing: 1px;
 }
 
 
-#public header>div:nth-child(2)>ul>a:nth-child(5) {
+.public header nav a:nth-child(5) {
 	margin-right: 4.5%;
 }
 
@@ -46,7 +49,7 @@
 	width: 80%;
 	font-size: 30px;
 	color: white;
-	font-family: 'din_regular', sans-serif;
+	font-family: $dinR;
 	letter-spacing: 1px;
 	float: left;
 	margin: 15.5% 0 0 9%;
@@ -79,9 +82,9 @@
 	text-transform: uppercase;
 	font-family: 'din_regular', sans-serif;
 	font-size: 20px;
-	color: #3BC0D1;
+	color: $blue;
 	background-color: transparent;
-	border: solid #3BC0D1 3px;
+	border: solid $blue 3px;
 	float: left;
 	margin: 3% 0 0 2%;
 	outline: none;
