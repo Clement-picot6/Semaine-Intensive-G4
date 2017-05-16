@@ -56,6 +56,12 @@ a, a:visited {
   color: initial;
 }
 
+/* line 37, ../sass/partials/_reset.scss */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* line 10, ../sass/partials/_clearfix.scss */
 .clearfix:before,
 .clearfix:after {
@@ -425,6 +431,235 @@ section.region .inner-region .head-region span::before {
 .all-regions .etranger {
   float: left;
   width: 50%;
+}
+
+/***** 	 BOUTIQUE 	*****/
+/* line 3, ../sass/_boutique.scss */
+body .fil_arianne a, span {
+  display: inline-block;
+  color: #191919;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+/* line 12, ../sass/_boutique.scss */
+body .fil_arianne span {
+  padding: 0 2%;
+}
+
+/* line 16, ../sass/_boutique.scss */
+body .fil_arianne a:nth-child(3) {
+  color: #3BC0D1;
+}
+
+/* line 20, ../sass/_boutique.scss */
+.container_table div {
+  margin-top: 8%;
+}
+
+/* line 24, ../sass/_boutique.scss */
+.container_table div h1 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding-bottom: 1%;
+}
+
+/* line 33, ../sass/_boutique.scss */
+.container_table div p {
+  color: #191919;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 3%;
+}
+
+/* line 42, ../sass/_boutique.scss */
+.container_table div:nth-child(1) p::after {
+  content: " commande";
+  color: #191919;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 1%;
+}
+
+/* line 52, ../sass/_boutique.scss */
+.container_table div:nth-child(2) p::after {
+  content: " abonnement";
+  color: #191919;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 1%;
+}
+
+/* line 63, ../sass/_boutique.scss */
+.container_table div img {
+  width: 100%;
+}
+
+/* line 67, ../sass/_boutique.scss */
+.container_button {
+  width: 100%;
+  margin-top: 13%;
+}
+
+/* line 72, ../sass/_boutique.scss */
+.container_button button:nth-child(1) {
+  float: left;
+  padding: 5% 19.8%;
+  background-color: #3BC0D1;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 85, ../sass/_boutique.scss */
+.container_button button:nth-child(2) {
+  float: right;
+  padding: 5% 20.5%;
+  background-color: #F7F7F7;
+  color: #191919;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/***** 	 BOUTIQUE STEP 1	*****/
+/* line 103, ../sass/_boutique.scss */
+.container_signin {
+  float: left;
+  width: 100%;
+  background-color: #F7F7F7;
+}
+
+/* line 109, ../sass/_boutique.scss */
+.container_signin .container_steps {
+  display: inline-block;
+  float: left;
+  width: 30%;
+  background-color: #3BC0D1;
+  padding-bottom: 10%;
+}
+
+/* line 117, ../sass/_boutique.scss */
+.container_signin .container_steps p {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 150px;
+  text-align: center;
+}
+
+/* line 126, ../sass/_boutique.scss */
+.container_signin .container_steps div {
+  border-bottom: solid white 10px;
+  margin-left: 35%;
+  width: 30%;
+}
+
+/* line 132, ../sass/_boutique.scss */
+.container_signin .container_steps p:nth-child(1) {
+  padding-top: 22%;
+}
+
+/* line 137, ../sass/_boutique.scss */
+.container_signin .container_fields {
+  width: 60%;
+  float: left;
+}
+
+/* line 143, ../sass/_boutique.scss */
+.container_signin .container_fields p {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* line 151, ../sass/_boutique.scss */
+.left_fields {
+  float: left;
+  margin: 16% 5% 0 22%;
+}
+
+/* line 156, ../sass/_boutique.scss */
+.left_fields p {
+  padding-top: 15%;
+}
+
+/* line 160, ../sass/_boutique.scss */
+.right_fields {
+  float: left;
+  margin-top: 16%;
+}
+
+/* line 165, ../sass/_boutique.scss */
+.right_fields p {
+  padding-top: 15%;
+}
+
+/* line 169, ../sass/_boutique.scss */
+.container_fields input[type="text"], input[type="tel"], input[type="mail"] {
+  background-color: #EEEEEE;
+  padding: 10px 50px 10px 20px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+/* line 177, ../sass/_boutique.scss */
+.container_btn_fields {
+  float: right;
+}
+
+/* line 181, ../sass/_boutique.scss */
+.container_btn_fields button {
+  float: right;
+  color: white;
+  background-color: #3BC0D1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 3% 10%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 194, ../sass/_boutique.scss */
+.container_btn_previous {
+  float: left;
+  margin-top: 10%;
+}
+
+/* line 199, ../sass/_boutique.scss */
+.container_btn_previous button {
+  float: left;
+  color: white;
+  background-color: #191919;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 3% 10%;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
 
 /* line 3, ../sass/_backoffice.scss */
