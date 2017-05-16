@@ -42,7 +42,6 @@
 	src: url(../fonts/Din/din_bold.ttf);
 }
 
-
 main {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -257,11 +256,6 @@ footer div a {
 	line-height: 30px;
 }
 
-
-
-
-
-
 /***** 	 ACCUEIL 	*****/
 
 body .actu_block {
@@ -287,7 +281,7 @@ body .actu_block>h1 {
 
 body .actu_block .article_block {
 	margin-top: 4%;
-	width: 
+	width:
 }
 
 body .actu_block .article_block article {
@@ -584,7 +578,6 @@ body .fil_arianne a:nth-child(3) {
 }
 
 .container_btn_fields{
-	
 	float: right;
 }
 
@@ -618,4 +611,3 @@ body .fil_arianne a:nth-child(3) {
 	border: none;
 	cursor: pointer;
 }
-
