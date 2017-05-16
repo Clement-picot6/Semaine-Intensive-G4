@@ -1,35 +1,34 @@
-.pouet {
-	height: 13vh;
-}
 
 footer {
-	background-color: white;
+	padding: 4em 0;
+
+	.inner-footer {
+		width: $width;
+		margin: 0 auto;
+		@include clearfix;
+		padding: 4em 0;
+	}
+
+	h3 {
+		margin-bottom: 15%;
+		font-size: 20px;
+	}
+
+	a {
+		display: block;
+		color: $black;
+		font-size: 18px;
+		line-height: 30px;
+	}
 }
 
-footer div:nth-child(1) {
+footer .navigate {
 	float: left;
-	list-style: none;
-	font-family: 'din_regular', sans-serif;
-	margin: 10%;
+	font-family: $dinR;
 }
 
-footer div:nth-child(2) {
+footer .boutique {
 	float: right;
-	list-style: none;
-	font-family: 'din_regular', sans-serif;
-	margin: 10%;
+	font-family: $dinR;
 	text-align: right;
-}
-
-footer div h3 {
-	margin-bottom: 15%;
-	font-size: 22px;
-}
-
-footer div a {
-	text-decoration: none;
-	color: black;
-	font-size: 20px;
-	display: block;
-	line-height: 30px;
 }
