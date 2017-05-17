@@ -3,6 +3,26 @@
   display: block;
 }
 
+/* line 19, ../sass/screen.scss */
+h2.page-title {
+  font-size: 25px;
+  padding-left: 100px;
+  position: relative;
+  font-family: "DIN Regular", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+/* line 27, ../sass/screen.scss */
+h2.page-title::before {
+  position: absolute;
+  content: "";
+  width: 74px;
+  left: 0;
+  height: 3px;
+  background: #191919;
+  top: 50%;
+}
+
 @font-face {
   font-family: 'DIN Light';
   src: url(../fonts/Din/din_light.ttf);
@@ -45,7 +65,7 @@ ul {
 }
 
 /* line 24, ../sass/partials/_reset.scss */
-input[type="text"], textarea, button {
+input, textarea, button {
   border: none;
   outline: none;
 }
@@ -197,6 +217,30 @@ button {
   background-color: #3BC0D1;
   bottom: -120px;
   right: 0;
+}
+
+/* line 1, ../sass/partials/_breadcrumb.scss */
+body .breadcrumb {
+  width: 100%;
+  margin-bottom: 3em;
+}
+/* line 5, ../sass/partials/_breadcrumb.scss */
+body .breadcrumb a {
+  display: inline-block;
+  color: #191919;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-top: 5em;
+}
+/* line 14, ../sass/partials/_breadcrumb.scss */
+body .breadcrumb a.active {
+  color: #3BC0D1;
+}
+/* line 19, ../sass/partials/_breadcrumb.scss */
+body .breadcrumb span {
+  padding: 0 2%;
 }
 
 /* line 1, ../sass/_index.scss */
@@ -545,32 +589,13 @@ section.last-journals {
   width: 85%;
   margin: 3em auto 6em;
 }
-/* line 22, ../sass/_revues.scss */
-section.last-journals h2 {
-  font-size: 25px;
-  padding-left: 100px;
-  position: relative;
-  font-family: "DIN Regular", sans-serif;
-  letter-spacing: 1px;
-  margin-bottom: 2em;
-}
-/* line 30, ../sass/_revues.scss */
-section.last-journals h2::before {
-  position: absolute;
-  content: "";
-  width: 74px;
-  left: 0;
-  height: 3px;
-  background: #191919;
-  top: 50%;
-}
 
-/* line 42, ../sass/_revues.scss */
+/* line 23, ../sass/_revues.scss */
 .blue {
   color: #3BC0D1;
 }
 
-/* line 47, ../sass/_revues.scss */
+/* line 28, ../sass/_revues.scss */
 .all-journals {
   float: left;
   padding-top: 2%;
@@ -583,56 +608,56 @@ section.last-journals h2::before {
   display: table;
   clear: both;
 }
-/* line 54, ../sass/_revues.scss */
+/* line 35, ../sass/_revues.scss */
 .all-journals .revue {
   width: 19%;
   float: left;
   margin-right: 4.33333%;
 }
-/* line 59, ../sass/_revues.scss */
+/* line 40, ../sass/_revues.scss */
 .all-journals .revue img {
   width: 100%;
 }
-/* line 63, ../sass/_revues.scss */
+/* line 44, ../sass/_revues.scss */
 .all-journals .revue span {
   padding: .5em 1.7em;
   background: #3BC0D1;
   color: #fff;
 }
-/* line 68, ../sass/_revues.scss */
+/* line 49, ../sass/_revues.scss */
 .all-journals .revue p {
   font-family: "DIN Medium", sans-serif;
   font-size: 1.2em;
   margin-top: 1.6em;
 }
-/* line 75, ../sass/_revues.scss */
+/* line 56, ../sass/_revues.scss */
 .all-journals .revue:first-child {
   width: 30%;
   float: left;
 }
-/* line 79, ../sass/_revues.scss */
+/* line 60, ../sass/_revues.scss */
 .all-journals .revue:first-child img {
   width: 100%;
 }
-/* line 84, ../sass/_revues.scss */
+/* line 65, ../sass/_revues.scss */
 .all-journals .revue:last-child {
   margin-right: 0;
 }
 
-/* line 90, ../sass/_revues.scss */
+/* line 71, ../sass/_revues.scss */
 section.region {
   float: left;
   width: 100%;
   background: #F7F7F7;
   padding: 4em 0;
 }
-/* line 96, ../sass/_revues.scss */
+/* line 77, ../sass/_revues.scss */
 section.region .inner-region {
   box-sizing: border-box;
   width: 95%;
   margin: 0 auto;
 }
-/* line 101, ../sass/_revues.scss */
+/* line 82, ../sass/_revues.scss */
 section.region .inner-region .head-region {
   width: 85%;
   margin: 0 auto;
@@ -643,20 +668,20 @@ section.region .inner-region .head-region:after {
   display: table;
   clear: both;
 }
-/* line 106, ../sass/_revues.scss */
+/* line 87, ../sass/_revues.scss */
 section.region .inner-region .head-region h2 {
   float: left;
   font-size: 30px;
   font-family: "DIN Regular", sans-serif;
 }
 @media screen and (max-width: 780px) {
-  /* line 106, ../sass/_revues.scss */
+  /* line 87, ../sass/_revues.scss */
   section.region .inner-region .head-region h2 {
     float: none;
     width: 100%;
   }
 }
-/* line 116, ../sass/_revues.scss */
+/* line 97, ../sass/_revues.scss */
 section.region .inner-region .head-region span {
   float: right;
   display: block;
@@ -666,7 +691,7 @@ section.region .inner-region .head-region span {
   cursor: pointer;
   margin-bottom: 2em;
 }
-/* line 125, ../sass/_revues.scss */
+/* line 106, ../sass/_revues.scss */
 section.region .inner-region .head-region span::before {
   position: absolute;
   content: '';
@@ -677,14 +702,14 @@ section.region .inner-region .head-region span::before {
   top: 50%;
 }
 @media screen and (max-width: 780px) {
-  /* line 116, ../sass/_revues.scss */
+  /* line 97, ../sass/_revues.scss */
   section.region .inner-region .head-region span {
     float: none;
     width: 100%;
   }
 }
 
-/* line 145, ../sass/_revues.scss */
+/* line 126, ../sass/_revues.scss */
 .all-regions {
   background: #fff;
   width: 85%;
@@ -698,7 +723,7 @@ section.region .inner-region .head-region span::before {
   display: table;
   clear: both;
 }
-/* line 153, ../sass/_revues.scss */
+/* line 134, ../sass/_revues.scss */
 .all-regions .metropole {
   display: block;
   margin-bottom: 8em;
@@ -710,48 +735,48 @@ section.region .inner-region .head-region span::before {
   display: table;
   clear: both;
 }
-/* line 159, ../sass/_revues.scss */
+/* line 140, ../sass/_revues.scss */
 .all-regions .metropole .liste {
   width: 30%;
   float: left;
 }
 @media screen and (max-width: 780px) {
-  /* line 159, ../sass/_revues.scss */
+  /* line 140, ../sass/_revues.scss */
   .all-regions .metropole .liste {
     float: none;
     width: 100%;
   }
 }
 @media screen and (max-width: 780px) {
-  /* line 153, ../sass/_revues.scss */
+  /* line 134, ../sass/_revues.scss */
   .all-regions .metropole {
     margin-bottom: 3em;
   }
 }
-/* line 173, ../sass/_revues.scss */
+/* line 154, ../sass/_revues.scss */
 .all-regions h3 {
   font-size: 26px;
 }
-/* line 177, ../sass/_revues.scss */
+/* line 158, ../sass/_revues.scss */
 .all-regions .outre-mer {
   float: left;
   width: 50%;
 }
 @media screen and (max-width: 780px) {
-  /* line 177, ../sass/_revues.scss */
+  /* line 158, ../sass/_revues.scss */
   .all-regions .outre-mer {
     float: none;
     width: 100%;
     margin-bottom: 2em;
   }
 }
-/* line 187, ../sass/_revues.scss */
+/* line 168, ../sass/_revues.scss */
 .all-regions .etranger {
   float: left;
   width: 50%;
 }
 @media screen and (max-width: 780px) {
-  /* line 187, ../sass/_revues.scss */
+  /* line 168, ../sass/_revues.scss */
   .all-regions .etranger {
     float: none;
     width: 100%;
@@ -765,35 +790,12 @@ section.region .inner-region .head-region span::before {
 }
 
 /* line 7, ../sass/_boutique.scss */
-body .breadcrumb {
-  width: 100%;
-}
-/* line 10, ../sass/_boutique.scss */
-body .breadcrumb a {
-  display: inline-block;
-  color: #191919;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 1px;
-  padding-top: 5em;
-}
-/* line 19, ../sass/_boutique.scss */
-body .breadcrumb a.active {
-  color: #3BC0D1;
-}
-/* line 24, ../sass/_boutique.scss */
-body .breadcrumb span {
-  padding: 0 2%;
-}
-
-/* line 30, ../sass/_boutique.scss */
 .container_table div {
   margin-top: 8%;
 }
 
-/* line 34, ../sass/_boutique.scss */
-.container_table div h1 {
+/* line 11, ../sass/_boutique.scss */
+.container_table div h2 {
   color: #191919;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -802,8 +804,8 @@ body .breadcrumb span {
   padding-bottom: 1%;
 }
 
-/* line 43, ../sass/_boutique.scss */
-.container_table div p {
+/* line 20, ../sass/_boutique.scss */
+.container_table div span {
   color: #191919;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -812,7 +814,7 @@ body .breadcrumb span {
   padding-bottom: 3%;
 }
 
-/* line 52, ../sass/_boutique.scss */
+/* line 29, ../sass/_boutique.scss */
 .container_table div:nth-child(1) p::after {
   content: " commande";
   color: #191919;
@@ -823,7 +825,7 @@ body .breadcrumb span {
   padding-bottom: 1%;
 }
 
-/* line 62, ../sass/_boutique.scss */
+/* line 39, ../sass/_boutique.scss */
 .container_table div:nth-child(2) p::after {
   content: " abonnement";
   color: #191919;
@@ -834,18 +836,18 @@ body .breadcrumb span {
   padding-bottom: 1%;
 }
 
-/* line 73, ../sass/_boutique.scss */
+/* line 49, ../sass/_boutique.scss */
 .container_table div img {
   width: 100%;
 }
 
-/* line 77, ../sass/_boutique.scss */
+/* line 53, ../sass/_boutique.scss */
 .container_button {
   width: 100%;
   margin-top: 13%;
 }
 
-/* line 82, ../sass/_boutique.scss */
+/* line 58, ../sass/_boutique.scss */
 .container_button button:nth-child(1) {
   float: left;
   padding: 5% 19.8%;
@@ -856,7 +858,7 @@ body .breadcrumb span {
   font-size: 20px;
 }
 
-/* line 92, ../sass/_boutique.scss */
+/* line 68, ../sass/_boutique.scss */
 .container_button button:nth-child(2) {
   float: right;
   padding: 5% 20.5%;
@@ -870,23 +872,30 @@ body .breadcrumb span {
   cursor: pointer;
 }
 
-/* line 105, ../sass/_boutique.scss */
+/* line 1, ../sass/_order.scss */
+#order {
+  padding-bottom: 5em;
+}
+/* line 2, ../sass/_order.scss */
+#order main {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 4em;
+}
+
+/* line 10, ../sass/_order.scss */
 .container_signin {
-  float: left;
-  width: 100%;
+  clear: both;
   background: #F7F7F7;
 }
-
-/* line 111, ../sass/_boutique.scss */
+/* line 14, ../sass/_order.scss */
 .container_signin .container_steps {
-  display: inline-block;
   float: left;
   width: 30%;
-  background-color: #3BC0D1;
+  background: #3BC0D1;
   padding-bottom: 10%;
 }
-
-/* line 119, ../sass/_boutique.scss */
+/* line 20, ../sass/_order.scss */
 .container_signin .container_steps p {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -894,95 +903,129 @@ body .breadcrumb span {
   font-size: 150px;
   text-align: center;
 }
-
-/* line 128, ../sass/_boutique.scss */
+/* line 31, ../sass/_order.scss */
 .container_signin .container_steps div {
   border-bottom: solid #fff 10px;
   margin-left: 35%;
   width: 30%;
 }
-
-/* line 134, ../sass/_boutique.scss */
+/* line 37, ../sass/_order.scss */
 .container_signin .container_steps p:nth-child(1) {
   padding-top: 22%;
 }
 
-/* line 139, ../sass/_boutique.scss */
-.container_signin .container_fields {
-  width: 60%;
+/* line 45, ../sass/_order.scss */
+.container_fields {
+  width: 70%;
   float: left;
 }
-
-/* line 145, ../sass/_boutique.scss */
-.container_signin .container_fields p {
+/* line 49, ../sass/_order.scss */
+.container_fields .inner-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 16%;
+}
+/* line 3, ../sass/partials/_clearfix.scss */
+.container_fields .inner-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 56, ../sass/_order.scss */
+.container_fields input[type="text"], .container_fields input[type="tel"], .container_fields input[type="mail"] {
+  background: #EEE;
+  padding: 10px 50px 10px 20px;
+  font-size: 15px;
+}
+/* line 62, ../sass/_order.scss */
+.container_fields label {
   color: #191919;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  padding-top: 1.6em;
+  padding-bottom: .7em;
 }
-
-/* line 153, ../sass/_boutique.scss */
-.left_fields {
-  float: left;
-  margin: 16% 5% 0 22%;
-}
-
-/* line 158, ../sass/_boutique.scss */
-.left_fields p {
-  padding-top: 15%;
-}
-
-/* line 162, ../sass/_boutique.scss */
-.right_fields {
-  float: left;
+/* line 71, ../sass/_order.scss */
+.container_fields form {
+  width: 80%;
+  margin: 0 auto;
   margin-top: 16%;
 }
-
-/* line 167, ../sass/_boutique.scss */
-.right_fields p {
-  padding-top: 15%;
+/* line 3, ../sass/partials/_clearfix.scss */
+.container_fields form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 78, ../sass/_order.scss */
+.container_fields .left_fields {
+  float: left;
+  width: 50%;
+}
+/* line 82, ../sass/_order.scss */
+.container_fields .left_fields input {
+  width: 90%;
+}
+/* line 87, ../sass/_order.scss */
+.container_fields .right_fields {
+  float: right;
+  width: 50%;
+}
+/* line 91, ../sass/_order.scss */
+.container_fields .right_fields input {
+  width: 90%;
+}
+/* line 96, ../sass/_order.scss */
+.container_fields .list-final {
+  margin-top: 3em;
+}
+/* line 101, ../sass/_order.scss */
+.container_fields .head-final h2 {
+  font-size: 1.7em;
+  font-family: "DIN Medium", sans-serif;
+  padding-bottom: .8em;
+}
+/* line 106, ../sass/_order.scss */
+.container_fields .head-final h2 span {
+  font-family: "DIN Medium", sans-serif;
 }
 
-/* line 171, ../sass/_boutique.scss */
-.container_fields input[type="text"], input[type="tel"], input[type="mail"] {
-  background-color: #EEE;
-  padding: 10px 50px 10px 20px;
-  border: none;
-  outline: none;
-  font-size: 15px;
-}
-
-/* line 179, ../sass/_boutique.scss */
-.container_btn_fields {
+/* line 113, ../sass/_order.scss */
+.container_btn_fields.step-after {
   float: right;
 }
-
-/* line 183, ../sass/_boutique.scss */
-.container_btn_fields button {
+/* line 116, ../sass/_order.scss */
+.container_btn_fields.step-after button {
   float: right;
-  color: #fff;
-  background-color: #3BC0D1;
+  background: #3BC0D1;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   padding: 3% 10%;
 }
+/* line 124, ../sass/_order.scss */
+.container_btn_fields.step-after button a {
+  color: #fff;
+}
 
-/* line 193, ../sass/_boutique.scss */
-.container_btn_previous {
+/* line 152, ../sass/_order.scss */
+.container_btn_fields.step-before {
   float: left;
   margin-top: 10%;
 }
-
-/* line 198, ../sass/_boutique.scss */
-.container_btn_previous button {
+/* line 156, ../sass/_order.scss */
+.container_btn_fields.step-before button {
   float: left;
-  color: #fff;
-  background-color: #191919;
+  background: #191919;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   padding: 3% 10%;
+}
+/* line 164, ../sass/_order.scss */
+.container_btn_fields.step-before button a {
+  color: #fff;
 }
 
 /* line 3, ../sass/_backoffice.scss */

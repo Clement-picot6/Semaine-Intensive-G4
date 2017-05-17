@@ -2,35 +2,65 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<title>L'Architecture</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
-<body>
-	<main>
-		<div class="fil_arianne">
-			<a href="#">Accueil</a> <span>></span> <a href="#">Boutique</a>
+<body class="public" id="order">
+
+	<header class="clearfix">
+		<img src="img-content/header-boutique.jpg" alt="" class="header-bg">
+		<h1 class="logo">
+			<a href="#">
+				<img src="img-layout/logo.png" alt="logo">
+			</a></h1>
+		<nav>
+			<ul>
+				<a href="#"><li>revues</li></a>
+				<a href="#"><li>boutique</li></a>
+				<a href="#"><li>contact</li></a>
+				<a href="#"><li>connexion</li></a>
+				<a href="#"><li><img src="img-layout/login.svg" alt="login"></li></a>
+				<a href="#"><li><img src="img-layout/search.svg" alt="search"></li></a>
+			</ul>
+		</nav>
+	</header>
+	<main class="clearfix">
+		<div class="breadcrumb">
+			<a href="#">Accueil</a> <span>></span> <a href="#" class="active">Boutique</a>
 		</div>
-		
-		<div class="container_btn_previous">
-		<button> <img src="img-content/arrow_right.png" alt="fleche"> étape précédente</button>
+
+		<div class="container_btn_fields step-before">
+			<button class="step-before"><a href="step3.html"><img src="img-content/arrow_right.png" alt="fleche"> étape précédente</a></button>
 		</div>
+
+
 		<div class="container_signin clearfix">
 			<div class="container_steps clearfix">
 				<p>4</p>
 				<div></div>
 				<p>4</p>
 			</div>
-		<div>
-			<h1>Et enfin...</h1>
-			<p>Choisissez vos revues !</p>
+
+		<section class="container_fields clearfix">
+			<div class="inner-container">
+				<div class="head-final">
+					<h2>Et enfin... <span class="return">Choisissez vos revues !</span></h2>
+
+				</div>
+			<div class="list-final">
+				Pas de revues encore sélectionnées !
+			</div>
 		</div>
-		<div>
-			Pas de revues encore sélectionnées !
+		</section>
 		</div>
-		<div class="container_btn_fields">
-		<button>étape suivante <img src="img-content/arrow.png" alt="fleche"></button>
+
+		<div class="container_btn_fields step-after">
+			<button class="step-after"><a href="step4.html">étape suivante <img src="img-content/arrow.png" alt="fleche"></a></button>
 		</div>
+
 	</main>
+
+</main>
 </body>
 </html>

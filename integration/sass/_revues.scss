@@ -18,25 +18,6 @@
 section.last-journals{
 	width: $width;
 	margin: 3em auto 6em;
-
-  h2{
-  	font-size:25px;
-    padding-left: 100px;
-  	position:relative;
-  	font-family: $dinR;
-  	letter-spacing: 1px;
-    margin-bottom: 2em;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 74px;
-      left:0;
-      height: 3px;
-      background: $black;
-      top: 50%;
-    }
-  }
 }
 
 .blue{
