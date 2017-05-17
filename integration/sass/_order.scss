@@ -125,16 +125,22 @@ main.ending {
 
   .container_fields {
     width: 100%;
-  }
 
-  h2.ending-msg {
-    text-align: center;
-    font-family: $dinM;
-    font-size: 3.4em;
-    padding: 3em 0;
+    a {
+      display: block;
+      text-align: center;
+      padding-bottom: 3em;
+    }
 
-    span {
-      font-family: $dinR;
+    h2.ending-msg {
+      text-align: center;
+      font-family: $dinM;
+      font-size: 3.4em;
+      padding: 3em 0 2em 0;
+
+      span {
+        font-family: $dinR;
+      }
     }
   }
 
