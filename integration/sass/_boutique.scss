@@ -1,19 +1,30 @@
 
-body .fil_arianne a,span{
+#boutique main {
+	width: $width;
+	margin: 0 auto;
+}
+
+body .breadcrumb {
+	width: 100%;
+
+	a {
 	display: inline-block;
 	color: $black;
 	font-family: $roboto;
 	font-weight: 400;
 	font-size: 15px;
 	letter-spacing: 1px;
-}
+	padding-top: 5em;
 
-body .fil_arianne span {
-	padding: 0 2%;
-}
+	&.active {
+		color: $blue;
+	}
+	}
 
-body .fil_arianne a:nth-child(3) {
-	color: $blue;
+	span {
+		padding: 0 2%;
+	}
+
 }
 
 .container_table div {
@@ -21,7 +32,7 @@ body .fil_arianne a:nth-child(3) {
 }
 
 .container_table div h1 {
-	color: black;
+	color: $black;
 	font-family: $roboto;
 	font-weight: 400;
 	font-size: 30px;
@@ -76,9 +87,6 @@ body .fil_arianne a:nth-child(3) {
 	font-family: $roboto;
 	font-weight: 400;
 	font-size: 20px;
-	outline: none;
-	border: none;
-	cursor: pointer;
 }
 
 .container_button button:nth-child(2) {
@@ -97,7 +105,7 @@ body .fil_arianne a:nth-child(3) {
 .container_signin {
 	float: left;
 	width: 100%;
-	background-color: $lightgrey;
+	background: $lightgrey;
 }
 
 .container_signin .container_steps {
@@ -161,7 +169,7 @@ body .fil_arianne a:nth-child(3) {
 }
 
 .container_fields input[type="text"],input[type="tel"],input[type="mail"] {
-	background-color: #EEEEEE;
+	background-color: #EEE;
 	padding: 10px 50px 10px 20px;
 	border: none;
 	outline: none;
@@ -174,15 +182,12 @@ body .fil_arianne a:nth-child(3) {
 
 .container_btn_fields button {
 	float: right;
-	color: white;
+	color: #fff;
 	background-color: $blue;
 	font-family: $roboto;
 	font-weight: 400;
 	font-size: 16px;
 	padding: 3% 10%;
-	outline: none;
-	border: none;
-	cursor: pointer;
 }
 
 .container_btn_previous{
@@ -192,13 +197,10 @@ body .fil_arianne a:nth-child(3) {
 
 .container_btn_previous button {
 	float: left;
-	color: white;
+	color: #fff;
 	background-color: $black;
 	font-family: $roboto;
 	font-weight: 400;
 	font-size: 16px;
 	padding: 3% 10%;
-	outline: none;
-	border: none;
-	cursor: pointer;
 }
