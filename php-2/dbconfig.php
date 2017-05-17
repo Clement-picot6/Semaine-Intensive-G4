@@ -21,10 +21,10 @@ catch (Exception $e)
     die('Erreur : ' . $e->getMessage());
 }
 
-
     include_once 'CRUD/class.crud.php';
-
+    include_once 'order/order.class.php';
 
     $crud = new crud($bdd);
+    $myOrder = new Order($bdd);
 
 ?>

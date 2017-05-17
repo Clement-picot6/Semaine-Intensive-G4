@@ -1,9 +1,14 @@
 <?php
 
 include 'header.php';
+
 ?>
 
-<main class="clearfix">
+<main class="clearfix <?php if (isset($_GET['successed'])) {
+        if ($_GET['successed'] == 1) {
+            echo 'ending';
+        }
+    }?>" >
     <div class="breadcrumb">
         <a href="#">Accueil</a> <span>></span> <a href="#">Boutique</a> <span>></span> <a href="#" class="active">Commander</a>
     </div>
@@ -21,7 +26,7 @@ include 'header.php';
         <!-- end of container steps -->
 
         <section class="container_fields clearfix">
-            <form action="php-2/order/index.php" method="post">
+            <form action="php-2/order/do-order.php" method="post">
                 <div class="form-step-1 active">
                     <div class="left_fields">
                         <label>Nom <span class="req-field">*</span></label>
