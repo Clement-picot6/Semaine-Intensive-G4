@@ -9,20 +9,18 @@
 $db_host = 'localhost';
 $db_user = 'root';
 $db_pass = 'root';
-$db_name = 'architecte';
+$db_name = 'si6';
 
 
 try
 {
-    $bdd = new PDO('mysql:host=localhost;dbname=orders', 'root', 'root');
+    $bdd = new PDO('mysql:host=localhost;dbname=si6', 'root', 'root');
 }
 catch (Exception $e)
 {
     die('Erreur : ' . $e->getMessage());
 }
 
+include_once 'test.php';
 
-include_once 'class.crud.php';
-
-
-$crud = new crud($bdd);
+$myOrder = new Order($bdd);
