@@ -6,7 +6,7 @@
  * Time: 14:02
  */
 
-include_once('connect.php');
+include_once('../connect.php');
 
 //
 //$query = "SELECT * FROM orders";
