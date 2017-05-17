@@ -42,7 +42,7 @@
 
 }
 
-.container_fields {
+main:not(.ending) .container_fields {
   width: 70%;
 	float: left;
 
@@ -73,6 +73,14 @@
     margin: 0 auto;
     margin-top: 16%;
     @include clearfix;
+
+    div[class*="form-step-"] {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
   }
 
   .left_fields {
@@ -107,7 +115,39 @@
       }
     }
   }
+
 }
+
+main.ending {
+  .container_steps {
+    display: none;
+  }
+
+  .container_fields {
+    width: 100%;
+  }
+
+  h2.ending-msg {
+    text-align: center;
+    font-family: $dinM;
+    font-size: 3.4em;
+    padding: 3em 0;
+
+    span {
+      font-family: $dinR;
+    }
+  }
+
+  div[class*="form-step-1"],
+  div[class*="form-step-2"],
+  div[class*="form-step-3"],
+  div[class*="form-step-4"],
+   {
+    display: none;
+  }
+}
+
+
 
 .container_btn_fields.step-after{
 	float: right;
@@ -119,10 +159,7 @@
   	font-weight: 400;
   	font-size: 16px;
   	padding: 3% 10%;
-
-    a {
-      color: #fff;
-    }
+    color: #fff;
   }
 }
 
@@ -158,9 +195,7 @@
   	font-weight: 400;
   	font-size: 16px;
   	padding: 3% 10%;
+    color: #fff;
 
-    a {
-      color: #fff;
-    }
   }
 }
