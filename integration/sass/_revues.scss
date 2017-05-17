@@ -194,3 +194,57 @@ section.region{
   }
 
 } // END OF ALL REGIONS
+
+
+.cartes{
+  width:85%;
+  margin:0 auto;
+  background:white;
+  @include clearfix;
+
+  .container_h3 {
+    width: 100%;
+    padding-top: 5%;
+  }
+    h3{
+      margin: 0 auto;
+      font-size: 30px;
+      font-family: $dinR;
+      text-align:center;
+    }
+    span{
+      margin:0 44%;
+      font-family:$dinR;
+      font-size:26px;
+    }
+    .region-img{
+    margin-top:6%;
+
+
+
+    .region-left{
+      width:50%;
+      float:left;
+      text-align:center;
+
+      img{
+        width:60%;
+      }
+
+    }
+    .region-right{
+      width:40%;
+      float:right;
+
+      figure{
+        width:100%;
+        margin-top:4%;
+
+        img{
+          width:14%;
+          margin-left:12%;
+        }
+      }
+    }
+  }
+}
