@@ -7,7 +7,7 @@
  */
 
 session_start();
-require_once "Connexion.class.php";
+require_once "connect_admin/Connexion.class.php";
 
 if(isset($_POST) && count($_POST) > 0)
 {

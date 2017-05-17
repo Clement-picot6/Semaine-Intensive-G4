@@ -8,8 +8,15 @@
 
 include_once('dbconfig.php');
 
+session_start();
+//if user is not connected
+if (!isset($_SESSION['is_connected']) or $_SESSION['is_connected'] == false){
+    //redirects to index.php
+    header('Location: connexion.php');
+}
 
 ?>
+
 
     <div class="clearfix">
         <h1>Bienvenue</h1>
@@ -62,4 +69,4 @@ include_once('dbconfig.php');
         </table>
 
     </div>
-<div><a href="connect_admin/connexion.php">Deconnexion</a></div>
+<div><a href="connexion.php">Deconnexion</a></div>

@@ -18,6 +18,12 @@ if ($_POST["password"] == $request["password"]) {
     $_SESSION['id'] = $request['id'];
     $_SESSION['username'] = $request["username"];
     header("Location: ../index.php");
+    // Start session
+    session_start();
+    $_SESSION['username'] = $row['username'];
+    $_SESSION['password'] = $row['password'];
+    $_SESSION['is_connected'] = true; // User is now connected
 } else {
+
     die("Mauvais mot de passe");
 }
