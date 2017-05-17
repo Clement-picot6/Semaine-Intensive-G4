@@ -74,12 +74,21 @@ main:not(.ending) .container_fields {
     margin-top: 16%;
     @include clearfix;
 
-    div[class*="form-step-"] {
-      display: none;
+    .submit {
+      background: $blue;
+      color: #fff;
+      text-transform: uppercase;
+      border: 2px solid $blue;
+      padding: .4em 1.8em;
+    }
 
-      &.active {
-        display: block;
-      }
+  }
+
+  div[class*="form-step-"] {
+    display: none;
+
+    &.active {
+      display: block;
     }
   }
 

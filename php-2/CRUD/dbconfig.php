@@ -24,7 +24,6 @@ catch (Exception $e)
 
     include_once 'class.crud.php';
 
-
     $crud = new crud($bdd);
 
 ?>

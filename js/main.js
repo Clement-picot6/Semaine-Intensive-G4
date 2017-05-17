@@ -4,6 +4,7 @@ var main = document.querySelector('main');
 var index = 0;
 var nb_step = document.querySelector('#order p.my-step');
 var form_steps = document.querySelectorAll('#order div[class*="form-step-"]');
+
 var btn_step_after = document.querySelector('#order div.step-after');
 
 var btn_step_before = document.querySelector('#order div.step-before');
@@ -26,6 +27,10 @@ function stepAfter() {
 
   if (my_step > 1) {
     btn_step_before.style.display = '';
+
+    if (my_step == 4) {
+      btn_step_after.style.display = 'none';
+    }
 
     if (my_step >= 5) {
       main.classList.add('ending');

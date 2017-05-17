@@ -35,6 +35,11 @@ h2.page-title{
   }
 }
 
+.req-field {
+  color: red;
+  font-weight: bolder;
+}
+
 @import "partials/fonts";
 @import "partials/reset";
 @import "partials/clearfix";

@@ -23,6 +23,12 @@ h2.page-title::before {
   top: 50%;
 }
 
+/* line 38, ../sass/screen.scss */
+.req-field {
+  color: red;
+  font-weight: bolder;
+}
+
 @font-face {
   font-family: 'DIN Light';
   src: url(../fonts/Din/din_light.ttf);
@@ -959,71 +965,79 @@ main:not(.ending) .container_fields form:after {
   clear: both;
 }
 /* line 77, ../sass/_order.scss */
-main:not(.ending) .container_fields form div[class*="form-step-"] {
+main:not(.ending) .container_fields form .submit {
+  background: #3BC0D1;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #3BC0D1;
+  padding: .4em 1.8em;
+}
+/* line 87, ../sass/_order.scss */
+main:not(.ending) .container_fields div[class*="form-step-"] {
   display: none;
 }
-/* line 80, ../sass/_order.scss */
-main:not(.ending) .container_fields form div[class*="form-step-"].active {
+/* line 90, ../sass/_order.scss */
+main:not(.ending) .container_fields div[class*="form-step-"].active {
   display: block;
 }
-/* line 86, ../sass/_order.scss */
+/* line 95, ../sass/_order.scss */
 main:not(.ending) .container_fields .left_fields {
   float: left;
   width: 50%;
 }
-/* line 90, ../sass/_order.scss */
+/* line 99, ../sass/_order.scss */
 main:not(.ending) .container_fields .left_fields input {
   width: 90%;
 }
-/* line 95, ../sass/_order.scss */
+/* line 104, ../sass/_order.scss */
 main:not(.ending) .container_fields .right_fields {
   float: right;
   width: 50%;
 }
-/* line 99, ../sass/_order.scss */
+/* line 108, ../sass/_order.scss */
 main:not(.ending) .container_fields .right_fields input {
   width: 90%;
 }
-/* line 104, ../sass/_order.scss */
+/* line 113, ../sass/_order.scss */
 main:not(.ending) .container_fields .list-final {
   margin-top: 3em;
 }
-/* line 109, ../sass/_order.scss */
+/* line 118, ../sass/_order.scss */
 main:not(.ending) .container_fields .head-final h2 {
   font-size: 1.7em;
   font-family: "DIN Medium", sans-serif;
 }
-/* line 113, ../sass/_order.scss */
+/* line 122, ../sass/_order.scss */
 main:not(.ending) .container_fields .head-final h2 span {
   font-family: "DIN Medium", sans-serif;
 }
 
-/* line 122, ../sass/_order.scss */
+/* line 131, ../sass/_order.scss */
 main.ending .container_steps {
   display: none;
 }
-/* line 126, ../sass/_order.scss */
+/* line 135, ../sass/_order.scss */
 main.ending .container_fields {
   width: 100%;
 }
-/* line 129, ../sass/_order.scss */
+/* line 138, ../sass/_order.scss */
 main.ending .container_fields a {
   display: block;
   text-align: center;
   padding-bottom: 3em;
 }
-/* line 135, ../sass/_order.scss */
+/* line 144, ../sass/_order.scss */
 main.ending .container_fields h2.ending-msg {
   text-align: center;
   font-family: "DIN Medium", sans-serif;
   font-size: 3.4em;
   padding: 3em 0 2em 0;
 }
-/* line 141, ../sass/_order.scss */
+/* line 150, ../sass/_order.scss */
 main.ending .container_fields h2.ending-msg span {
   font-family: "DIN Regular", sans-serif;
 }
-/* line 147, ../sass/_order.scss */
+/* line 156, ../sass/_order.scss */
 main.ending div[class*="form-step-1"],
 main.ending div[class*="form-step-2"],
 main.ending div[class*="form-step-3"],
@@ -1031,11 +1045,11 @@ main.ending div[class*="form-step-4"] {
   display: none;
 }
 
-/* line 158, ../sass/_order.scss */
+/* line 167, ../sass/_order.scss */
 .container_btn_fields.step-after {
   float: right;
 }
-/* line 161, ../sass/_order.scss */
+/* line 170, ../sass/_order.scss */
 .container_btn_fields.step-after button {
   float: right;
   background: #3BC0D1;
@@ -1046,11 +1060,11 @@ main.ending div[class*="form-step-4"] {
   color: #fff;
 }
 
-/* line 194, ../sass/_order.scss */
+/* line 203, ../sass/_order.scss */
 .container_btn_fields.step-before {
   float: left;
 }
-/* line 197, ../sass/_order.scss */
+/* line 206, ../sass/_order.scss */
 .container_btn_fields.step-before button {
   float: left;
   background: #191919;

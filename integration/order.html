@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
+
 <body class="public" id="order">
 
 	<header class="clearfix">
@@ -43,13 +44,13 @@
 			<!-- end of container steps -->
 
 		<section class="container_fields clearfix">
-			<form action="" method="post">
+			<form action="../php-2/order/index.php" method="post">
 				<div class="form-step-1 active">
 					<div class="left_fields">
-						<label>Nom</label>
-						<input type="text" name="nom" placeholder="Nom...">
-						<label>Prénom</label>
-						<input type="text" name="prenom" placeholder="Prénom...">
+						<label>Nom <span class="req-field">*</span></label>
+						<input type="text" name="lastname" placeholder="Nom..." required>
+						<label>Prénom <span class="req-field">*</span></label>
+						<input type="text" name="firstname" placeholder="Prénom..." required>
 						<label>Fonction</label>
 						<input type="text" name="fonction" placeholder="Fonction...">
 					</div>
@@ -64,12 +65,12 @@
 
 					<div class="form-step-2">
 						<div class="left_fields">
-							<label>Adresse</label>
-							<input type="text" name="adresse" placeholder="Adresse...">
-							<label>Ville</label>
-							<input type="text" name="ville" placeholder="Ville...">
-							<label>Pays</label>
-							<input type="text" name="pays" placeholder="Pays...">
+							<label>Adresse <span class="req-field">*</span></label>
+							<input type="text" name="address" placeholder="Adresse..." required>
+							<label>Ville <span class="req-field">*</span></label>
+							<input type="text" name="city" placeholder="Ville..." required>
+							<label>Pays <span class="req-field">*</span></label>
+							<input type="text" name="country" placeholder="Pays..." required>
 						</div>
 						<div class="right_fields">
 							<label>Activité</label>
@@ -82,28 +83,33 @@
 						<div class="left_fields">
 							<label>Téléphone</label>
 							<input type="tel" name="telephone" placeholder="Numéro de téléphone...">
-							<label>Email</label>
-							<input type="mail" name="mail" placeholder="Email...">
+							<label>Email <span class="req-field">*</span></label>
+							<input type="mail" name="mail" placeholder="Email..." required>
 							<label>Pays</label>
 							<input type="mail" name="confirm_mail" placeholder="Confirmez votre Email...">
 						</div>
 						<div class="right_fields">
 							<label>Fax</label>
 							<input type="tel" name="fax" placeholder="Fax...">
+
+
 						</div>
 					</div>
 					<!-- end of step 3 -->
 
 					<div class="form-step-4">
-						<div class="inner-container">
-							<div class="head-final">
-								<h2>Et enfin... <span class="return">Choisissez vos revues !</span></h2>
+							<div class="inner-container">
+								<div class="head-final">
+									<h2>Et enfin... <span class="return">Choisissez vos revues !</span></h2>
 
+								</div>
+								<div class="list-final">
+									Pas de revues encore sélectionnées !
+								</div>
 							</div>
-							<div class="list-final">
-								Pas de revues encore sélectionnées !
-							</div>
-						</div>
+
+							<input type="submit" value="valider" class="submit">
+						</form>
 					</div>
 					<!-- end of step 4 -->
 
@@ -116,8 +122,6 @@
 					</div>
 					<!-- end of step 5 -->
 				</div>
-
-			</form>
 		</section>
 
 		</div>
