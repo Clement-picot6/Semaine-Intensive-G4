@@ -638,6 +638,87 @@ div.container_scrolling .content_scrolling_right p {
   line-height: 1.5;
   margin: 20% 10% 0 0; }
 
+@media only screen and (max-width: 1300px) {
+  .actu_block article:nth-child(1) figure img {
+    width: 100%; }
+
+  .actu_block article:nth-child(2) figure img {
+    width: 100%; }
+
+  .old_articles figure:nth-child(1) img {
+    width: 95%; }
+  .old_articles h2 {
+    width: 95%; } }
+@media only screen and (max-width: 1024px) {
+  .actu_block article:nth-child(1) figure img {
+    width: 90%; }
+
+  .actu_block article:nth-child(2) figure img {
+    width: 90%; }
+
+  .old_articles figure:nth-child(1) img {
+    width: 95%; }
+  .old_articles h2 {
+    width: 95%; }
+
+  .scrolling_bloc {
+    width: 100%; }
+    .scrolling_bloc .container_scrolling {
+      width: 80%;
+      height: 65vh; } }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  body .actu_block div:nth-child(1) {
+    border-bottom: solid black 3px;
+    width: 5%;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 20px; }
+  body .actu_block h1 {
+    font-size: 25px;
+    margin-bottom: 5%; }
+  body .actu_block .article_block article:nth-child(1) {
+    width: 100%;
+    float: left;
+    margin-bottom: 20%; }
+  body .actu_block .article_block article:nth-child(2) {
+    width: 100%;
+    float: left;
+    margin-bottom: 15%; }
+
+  .actu_block article:nth-child(1) figure img {
+    width: 100%; }
+
+  .actu_block article:nth-child(2) figure img {
+    width: 100%; }
+
+  div.clearfix .old_articles article {
+    width: 100%;
+    margin-bottom: 15%; }
+  div.clearfix .old_articles figure:nth-child(1) img {
+    width: 95%; }
+  div.clearfix .old_articles h2 {
+    width: 95%; }
+
+  .scrolling_bloc {
+    width: 100%; }
+    .scrolling_bloc .container_scrolling {
+      width: 80%;
+      height: 100vh; }
+      .scrolling_bloc .container_scrolling .content_scrolling_left {
+        width: 100%;
+        padding: 5%; }
+        .scrolling_bloc .container_scrolling .content_scrolling_left p {
+          margin: 0;
+          font-size: 16px;
+          text-align: center; }
+      .scrolling_bloc .container_scrolling .content_scrolling_right {
+        width: 100%;
+        padding: 5%;
+        float: left; }
+        .scrolling_bloc .container_scrolling .content_scrolling_right p {
+          margin: 0;
+          font-size: 16px;
+          text-align: center; } }
 .newsletter {
   position: relative;
   width: 100%;
