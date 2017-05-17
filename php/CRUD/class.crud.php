@@ -10,20 +10,21 @@ class crud
 {
     private $db;
 
-    function __construct($db_con)
+    function __construct(\PDO $db_con)
     {
         $this->db = $db_con;
     }
 
-    public function create ($number, $date, $img, $region)
+    public function create ($number, $date, $img, $region, $synopsis)
     {
         try
         {
-         $stmt = $this->db->prepare("INSERT INTO journals(`number`, `date`, `img`, `region`) VALUES (:number, :date, :img, :region)");
-         $stmt ->bindparam(":number", $number);
-         $stmt ->bindparam(":date", $date);
-         $stmt ->bindparam(":img", $img);
-         $stmt ->bindparam(":region", $region);
+         $stmt = $this->db->prepare("INSERT INTO journals(`number`, `date`, `img`, `region`, `synopsis`) VALUES (:number, :date, :img, :region, :synopsis)");
+         $stmt ->bindvalue(":number", $number);
+         $stmt ->bindvalue(":date", $date);
+         $stmt ->bindvalue(":img", $img);
+         $stmt ->bindvalue(":region", $region);
+         $stmt ->bindvalue(":synopsis", $synopsis);
          $stmt ->execute();
 
          return true;
@@ -45,33 +46,24 @@ class crud
         return $editRow;
     }
 
-    public function update ($id, $number, $date, $img, $region)
+    public function update ($id, $number, $date, $img, $region, $synopsis)
     {
         try
         {
-            $query= "UPDATE journals SET `number`=:number, `date`=:date, img=:img, region=:region WHERE id=:id";
+            $query= "UPDATE journals SET `number`=:number, `date`=:date, `img`=:img, `region`=:region, `synopsis`=:synopsis WHERE id=:id";
 
             $data = ['id' => $id,
                     'number' => $number,
                     'date' => $date,
                     'img' => $img,
-                    'region' => $region];
+                    'region' => $region,
+                    'synopsis' => $synopsis];
 
             if ($this->bind($query, $data)->rowCount()) {
-                var_dump('youhoooouuu');
-
                 return true;
             }
 
             die('GROS BATAAAARD');
-
-//            $stmt->bindvalue(":number",$number);
-//            $stmt->bindvalue(":date",$date);
-//            $stmt->bindvalue(":img",$img);
-//            $stmt->bindvalue(":region",$region);
-//            $stmt->bindvalue(":id",$id);
-//            $stmt->execute();
-
 
         }
         catch(PDOException $e)
