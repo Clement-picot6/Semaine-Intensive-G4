@@ -15,17 +15,29 @@
 
 }
 
+.visible{
+  display:block;
+}
+.hidden{
+  display:none !important;
+}
 section.last-journals{
-	width: $width;
-	margin: 10em auto 6em;
+  width: $width;
+  margin: 3em auto 6em;
 
   h2{
-  	font-size:25px;
+    font-size:25px;
     padding-left: 100px;
-  	position:relative;
-  	font-family: $dinR;
-  	letter-spacing: 1px;
+    position:relative;
+    font-family: $dinR;
+    letter-spacing: 1px;
     margin-bottom: 2em;
+    @media screen and (max-width: 780px) {
+      padding:0;
+      margin:0 auto;
+      margin-bottom:10%;
+      font-size:30px;
+    }
 
     &::before {
       position: absolute;
@@ -40,21 +52,27 @@ section.last-journals{
 }
 
 .blue{
-	color: $blue;
+  color: $blue;
 }
 
 
 .all-journals {
-	float:left;
-	padding-top:2%;
-	font-family: $dinR;
-	font-size:16px;
+  float:left;
+  padding-top:2%;
+  font-family: $dinR;
+  font-size:16px;
   @include clearfix;
 
   .revue {
     width:19%;
     float:left;
     margin-right: 4.33333%;
+      @media screen and (max-width: 780px) {
+        width: 100%;
+        margin-bottom:20%;
+        font-size:30px;
+        }
+
 
     img {
       width: 100%;
@@ -64,6 +82,9 @@ section.last-journals{
       padding: .5em 1.7em;
       background: $blue;
       color: #fff;
+        @media screen and (max-width: 780px) {
+        font-size:30px;
+        }
     }
     p {
       font-family: $dinM;
@@ -74,7 +95,11 @@ section.last-journals{
 
   .revue:first-child {
     width:30%;
-  	float:left;
+    float:left;
+      @media screen and (max-width: 780px) {
+        width: 100%;
+        }
+
 
     img {
       width: 100%;
@@ -88,9 +113,9 @@ section.last-journals{
 
 
 section.region{
-	float: left;
-	width: 100%;
-	background: $lightgrey;
+  float: left;
+  width: 100%;
+  background: $lightgrey;
   padding: 4em 0;
 
   .inner-region {
@@ -99,8 +124,8 @@ section.region{
     margin: 0 auto;
 
     .head-region{
-    	width: $width;
-    	margin: 0 auto;
+      width: $width;
+      margin: 0 auto;
       @include clearfix;
 
       h2{
@@ -108,9 +133,9 @@ section.region{
         font-size: 30px;
         font-family: $dinR;
         @media screen and (max-width: 780px) {
-      		float: none;
+          text-align:center;
           width: 100%;
-      	}
+        }
       }
 
       span {
@@ -133,9 +158,10 @@ section.region{
         }
 
         @media screen and (max-width: 780px) {
-      		float: none;
+          float: none;
           width: 100%;
-      	}
+          margin-bottom:10%;
+        }
       }
 
     } // END OF HEAD REGION
@@ -143,22 +169,27 @@ section.region{
 }
 
 .all-regions{
-	background: #fff;
-	width: $width;
-	padding: 6em 7em;
-	margin: 0 auto;
+  background: #fff;
+  width: $width;
+  padding: 6em 7em;
+  margin: 0 auto;
   @include clearfix;
   line-height: 1.8;
 
+  @media screen and (max-width: 780px) {
+    padding:6em 0;
+    text-align:center;
+  }
+
   .metropole{
     display: block;
-  	margin-bottom: 8em;
-  	font-family: $roboto;
+    margin-bottom: 8em;
+    font-family: $roboto;
     @include clearfix;
 
     .liste{
-    	width:30%;
-    	float:left;
+      width:30%;
+      float:left;
 
       @media screen and (max-width: 780px) {
         float: none;
@@ -171,12 +202,12 @@ section.region{
   }
 
   h3 {
-  	font-size:26px;
+    font-size:26px;
   }
 
   .outre-mer{
-  	float:left;
-  	width:50%;
+    float:left;
+    width:50%;
     @media screen and (max-width: 780px) {
       float: none;
       width: 100%;
@@ -205,17 +236,20 @@ section.region{
   .container_h3 {
     width: 100%;
     padding-top: 5%;
-  }
+    display:flex;
+    justify-content:center;
+    align-item:center;
+    flex-direction:column;
     h3{
-      margin: 0 auto;
       font-size: 30px;
       font-family: $dinR;
       text-align:center;
     }
     span{
-      margin:0 44%;
+      text-align:center;
       font-family:$dinR;
       font-size:26px;
+     }
     }
     .region-img{
     margin-top:6%;
@@ -226,6 +260,9 @@ section.region{
       width:50%;
       float:left;
       text-align:center;
+      @media screen and (max-width: 780px) {
+          width: 100%;
+        }
 
       img{
         width:60%;
@@ -235,12 +272,19 @@ section.region{
     .region-right{
       width:40%;
       float:right;
+      @media screen and (max-width: 780px) {
+          width: 100%;
+        }
+
 
       figure{
         width:100%;
-        margin-top:4%;
+        margin-top:12%;
+   
+
 
         img{
+
           width:14%;
           margin-left:12%;
         }

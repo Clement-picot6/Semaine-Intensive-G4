@@ -32,3 +32,130 @@ footer .boutique {
 	font-family: $dinR;
 	text-align: right;
 }
+
+
+
+
+// MEDIA QUERIES
+
+// @media only screen and (max-width : 1200px) {
+// 	header .nav_barre {
+// 		margin-right: 5%;
+// 	}
+// }
+
+
+// TABLETTE
+
+@media only screen and (max-width : 1024px)  {
+
+	div.newsletter {
+		padding: 2%;
+	}
+
+	div.inner-newsletter .slogan {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+	} 
+
+	div.subscribe {
+		margin: 5% auto;
+		display: block;
+		width: 90%;
+
+		input[type="email"] {
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			font-size: 16px;
+		}
+	}
+
+}
+
+
+
+// MOBILE
+
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+	div.newsletter {
+		padding: 5%;
+		height: 23vh;
+	}
+
+	div.inner-newsletter .slogan {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		font-size: 16px;
+	} 
+
+	div.subscribe {
+		margin: 5% auto;
+		display: block;
+		width: 100%;
+
+		input[type="email"] {
+			font-size: 16px;
+			height: 5vh;
+		}
+
+		input[type="submit"] {
+			font-size: 16px;
+			height: 5vh;
+		}
+	}
+
+	footer {
+		.navigate {
+			width: 100%;
+			text-align: center;
+
+			h3 {
+				margin-bottom: 5%;
+			}
+		}
+
+		.boutique {
+			margin-top: 15%;
+			width: 100%;
+			text-align: center;
+
+			h3 {
+				margin-bottom: 5%;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

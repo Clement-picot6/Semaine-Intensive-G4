@@ -8,25 +8,6 @@
 </head>
 
 <body class="public" id="revues">
-
-	<header class="clearfix">
-		<img src="img-layout/header-revues.jpg" alt="" class="header-bg">
-		<h1 class="logo">
-			<a href="#">
-				<img src="img-layout/logo.png" alt="logo">
-			</a></h1>
-			<nav>
-			<ul>
-				<li><a href="#">revues</a></li>
-				<li><a href="#">boutique</a></li>
-				<li><a href="#">contact</a></li>
-				<li><a href="#">connexion</a></li>
-				<li><a href="#"><img src="img-layout/login.svg" alt="login"></a></li>
-				<li><a href="#"><img src="img-layout/search.svg" alt="search"></a></li>
-			</ul>
-		</nav>
-		</header>
-
 		<section class="last-journals clearfix">
 			<h2>Nos dernières parutions</h2>
 
@@ -61,9 +42,10 @@
 			<div class="inner-region">
 			<div class="head-region">
 				<h2 class="blue">TOUTES NOS PARUTIONS</h2>
-				<span>voir les cartes</span>
+				<span class="visible" id="cartes">voir les cartes</span>
+				<span class="hidden" id='regions'>voir les régions</span>
 			</div>
-			<!-- <div class="all-regions">
+			<div class="all-regions visible">
 				<div class="metropole">
 					<h3>Région France Métropole</h3>
 					<br>
@@ -125,8 +107,8 @@
 						</ul>
 					</div>
 				</div>
-			</div> -->
-			<div class ="cartes">
+			</div>
+			<div class ="cartes hidden">
 				<div class="container_h3">
 				<h3>Collectivités d'Outre-mer</h3>
 				<span>Martinique</span>
@@ -159,5 +141,47 @@
 		</div>
 	</section>
 
+	<script type="text/javascript">
+		var afficherCacherCartes = document.getElementById('cartes');
+		var afficherCacherRegions = document.getElementById('regions');
+		var regions = document.querySelector('.all-regions');
+		var cartes = document.querySelector('.cartes');
+
+
+			afficherCacherCartes.addEventListener('click', function(){
+
+				afficherCacherCartes.classList.add('hidden');
+				afficherCacherCartes.classList.remove('active');
+
+				regions.classList.add('hidden');
+				regions.classList.remove('active');
+
+				afficherCacherRegions.classList.remove('hidden');
+				afficherCacherRegions.classList.add('active');
+
+				cartes.classList.add('active');
+				cartes.classList.remove('hidden');
+				console.log('yiyiiyyi');
+			});
+
+			afficherCacherRegions.addEventListener('click', function(){
+
+				afficherCacherRegions.classList.remove('active');
+				afficherCacherRegions.classList.add('hidden');
+
+				cartes.classList.remove('active');
+				cartes.classList.add('hidden');
+
+				afficherCacherCartes.classList.add('active');
+				afficherCacherCartes.classList.remove('hidden');
+
+				regions.classList.add('active');
+				regions.classList.remove('hidden');
+
+				console.log('yiyiiyyi');
+
+			});	
+
+	</script>
 </body>
 </html>
