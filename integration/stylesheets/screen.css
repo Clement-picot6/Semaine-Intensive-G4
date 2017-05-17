@@ -185,7 +185,7 @@ input[type="checkbox"] {
 
   .navPhone .mainNav .choice {
     display: inline-block;
-    margin-top: 0px; }
+    margin: 2.5% 2% 0 0; }
 
   .navPhone .mainNav .choice:nth-child(1) {
     margin-left: 20px; }
@@ -203,17 +203,16 @@ input[type="checkbox"] {
 
   .navPhone .mainNav .choice span {
     width: 80%;
-    background-color: black;
-    border-radius: 5px;
-    height: 4px;
+    background-color: white;
+    height: 3px;
     position: absolute;
     z-index: 99; }
 
   .navPhone .mainNav:nth-child(1) .choice span:nth-child(2) {
-    top: 14px; }
+    top: 0px; }
 
   .navPhone .mainNav .choice span:nth-child(3) {
-    top: 24px; }
+    top: 0 px; }
 
   .contentMenuPhone {
     z-index: 98;
@@ -223,7 +222,7 @@ input[type="checkbox"] {
     position: fixed;
     top: -50px;
     right: -400px;
-    transition: 1s; }
+    transition: 0.6s; }
 
   .navPhone ul {
     list-style: none; }
@@ -259,7 +258,59 @@ input[type="checkbox"] {
 
   input[type="checkbox"]:checked + .navPhone .contentMenuPhone {
     position: fixed;
-    right: 0; } }
+    right: 0; }
+
+  input[type="checkbox"]:checked + .navPhone .contentMenuPhone {
+    position: fixed;
+    right: 0; }
+
+  input[type="checkbox"]:checked + .navPhone .mainNav .choice span:nth-child(2) {
+    display: none;
+    z-index: 3; }
+
+  input[type="checkbox"]:checked + .navPhone .mainNav .choice span:nth-child(1) {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    transition: 0.6s;
+    z-index: 20;
+    background-color: black; }
+
+  input[type="checkbox"]:checked + .navPhone .mainNav .choice span:nth-child(3) {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    z-index: 20;
+    transition: 0.6s;
+    background-color: black; }
+
+  input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(2) {
+    z-index: 5;
+    top: 20px; }
+
+  input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(1) {
+    background-color: white;
+    transition: 0.6s;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: absolute;
+    top: 0px;
+    z-index: 20; }
+
+  input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(3) {
+    background-color: white;
+    transition: 0.6s;
+    top: 10px;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: absolute;
+    z-index: 20; } }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   header .nav_barre {
     display: none; }
@@ -278,7 +329,7 @@ input[type="checkbox"] {
 
   .navPhone .mainNav .choice {
     display: inline-block;
-    margin-top: 0px; }
+    margin: 2% 2% 0 0; }
 
   .navPhone .mainNav .choice:nth-child(1) {
     margin-left: 20px; }
@@ -295,18 +346,18 @@ input[type="checkbox"] {
     padding: 4px; }
 
   .navPhone .mainNav .choice span {
-    width: 80%;
-    background-color: black;
-    border-radius: 5px;
-    height: 4px;
+    width: 50%;
+    background-color: white;
+    height: 2px;
     position: absolute;
-    z-index: 99; }
+    z-index: 99;
+    display: block; }
 
   .navPhone .mainNav:nth-child(1) .choice span:nth-child(2) {
-    top: 14px; }
+    top: 10px; }
 
   .navPhone .mainNav .choice span:nth-child(3) {
-    top: 24px; }
+    top: 16px; }
 
   .contentMenuPhone {
     z-index: 98;
@@ -316,7 +367,7 @@ input[type="checkbox"] {
     position: fixed;
     top: -50px;
     right: -400px;
-    transition: 1s; }
+    transition: 0.6s; }
 
   .navPhone ul {
     list-style: none; }
@@ -352,7 +403,55 @@ input[type="checkbox"] {
 
   input[type="checkbox"]:checked + .navPhone .contentMenuPhone {
     position: fixed;
-    right: 0; } }
+    right: 0; }
+
+  input[type="checkbox"]:checked + .navPhone .mainNav .choice span:nth-child(2) {
+    display: none;
+    z-index: 3; }
+
+  input[type="checkbox"]:checked + .navPhone .mainNav .choice span:nth-child(1) {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    transition: 0.6s;
+    z-index: 20;
+    background-color: black; }
+
+  input[type="checkbox"]:checked + .navPhone .mainNav .choice span:nth-child(3) {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    z-index: 20;
+    transition: 0.6s;
+    background-color: black; }
+
+  input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(2) {
+    z-index: 5;
+    top: 10px; }
+
+  input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(1) {
+    background-color: white;
+    transition: 0.6s;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: absolute;
+    top: 0px;
+    z-index: 20; }
+
+  input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(3) {
+    background-color: white;
+    transition: 0.6s;
+    top: 5px;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: absolute;
+    z-index: 20; } }
 #index main {
   max-width: 85%;
   margin: 0 auto; }
