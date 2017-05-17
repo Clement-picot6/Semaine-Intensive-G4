@@ -1,0 +1,207 @@
+#order {
+  main {
+    width: $width;
+    margin: 0 auto;
+    padding-bottom: 4em;
+  }
+  padding-bottom: 5em;
+}
+
+.container_signin {
+  clear: both;
+	background: $lightgrey;
+
+  .container_steps {
+  	float: left;
+  	width: 30%;
+  	background: $blue;
+  	padding-bottom: 10%;
+
+    p {
+    	color: #fff;
+    	font-family: $roboto;
+    	font-weight: 400;
+    	font-size: 150px;
+    	text-align: center;
+    }
+  }
+
+  .container_steps {
+
+    div {
+    	border-bottom: solid #fff 10px;
+    	margin-left: 35%;
+    	width: 30%;
+    }
+
+    p:nth-child(1) {
+    	padding-top: 22%;
+    }
+  }
+
+
+}
+
+main:not(.ending) .container_fields {
+  width: 70%;
+	float: left;
+
+  .inner-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 16%;
+    @include clearfix;
+  }
+
+  input[type="text"],input[type="tel"],input[type="mail"] {
+  	background: #EEE;
+  	padding: 10px 50px 10px 20px;
+  	font-size: 15px;
+  }
+
+  label {
+    color: $black;
+  	font-family: $roboto;
+  	font-weight: 400;
+  	font-size: 16px;
+    padding-top: 1.6em;
+    padding-bottom: .7em;
+  }
+
+  form {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 16%;
+    @include clearfix;
+
+    div[class*="form-step-"] {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  .left_fields {
+  	float: left;
+    width: 50%;
+
+    input {
+      width: 90%;
+    }
+  }
+
+  .right_fields {
+  	float: right;
+    width: 50%;
+
+    input {
+      width: 90%;
+    }
+  }
+
+  .list-final {
+    margin-top: 3em;
+  }
+
+  .head-final {
+    h2 {
+      font-size: 1.7em;
+      font-family: $dinM;
+
+      span {
+        font-family: $dinM;
+      }
+    }
+  }
+
+}
+
+main.ending {
+  .container_steps {
+    display: none;
+  }
+
+  .container_fields {
+    width: 100%;
+
+    a {
+      display: block;
+      text-align: center;
+      padding-bottom: 3em;
+    }
+
+    h2.ending-msg {
+      text-align: center;
+      font-family: $dinM;
+      font-size: 3.4em;
+      padding: 3em 0 2em 0;
+
+      span {
+        font-family: $dinR;
+      }
+    }
+  }
+
+  div[class*="form-step-1"],
+  div[class*="form-step-2"],
+  div[class*="form-step-3"],
+  div[class*="form-step-4"],
+   {
+    display: none;
+  }
+}
+
+
+
+.container_btn_fields.step-after{
+	float: right;
+
+  button {
+  	float: right;
+  	background: $blue;
+    font-family: $roboto;
+  	font-weight: 400;
+  	font-size: 16px;
+  	padding: 3% 10%;
+    color: #fff;
+  }
+}
+
+// button[class*="step-"] {
+//   display: inline-block;
+//   font-family: $roboto;
+//   font-weight: 400;
+//   font-size: 16px;
+//   padding: 4% 16%;
+//
+//   &.step-before {
+//     background: $black;
+//     float: left;
+//   }
+//
+//   &.step-after {
+//     background: $blue;
+//     float: right;
+//   }
+//
+//   a {
+//     color: #fff;
+//   }
+// }
+
+.container_btn_fields.step-before{
+	float: left;
+
+  button {
+    float: left;
+  	background: $black;
+  	font-family: $roboto;
+  	font-weight: 400;
+  	font-size: 16px;
+  	padding: 3% 10%;
+    color: #fff;
+
+  }
+}

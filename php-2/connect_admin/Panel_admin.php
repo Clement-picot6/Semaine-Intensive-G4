@@ -9,7 +9,7 @@
 session_start();
 
 
-require_once "../CRUD/dbconfig.php";
+require_once "../dbconfig.php";
 require_once "../CRUD/class.crud.php";
 if(!isset($_SESSION['username']))
 {

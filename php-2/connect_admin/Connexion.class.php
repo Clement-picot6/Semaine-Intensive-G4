@@ -28,10 +28,10 @@ class Connexion
 
     public function session()
     {
-        $request = $this->bdd->prepare("SELECT id FROM users WHERE username = :username");
+        $request = $this->bdd->prepare("SELECT id, username, password FROM users WHERE username = :username");
         $request->execute(array(
-            'username'=>$this->username
-        ));
+        'username'=>$this->username
+    ));
         $request = $request->fetch();
         $_SESSION['id'] = $request['id'];
         $_SESSION['username'] = $this->username;
