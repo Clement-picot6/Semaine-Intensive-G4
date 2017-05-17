@@ -61,6 +61,5 @@ include_once('dbconfig.php');
 
         </table>
 
-
     </div>
-
+<div><a href="connect_admin/connexion.php">Deconnexion</a></div>

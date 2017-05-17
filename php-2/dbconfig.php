@@ -22,7 +22,7 @@ catch (Exception $e)
 }
 
 
-    include_once 'class.crud.php';
+    include_once 'CRUD/class.crud.php';
 
 
     $crud = new crud($bdd);
