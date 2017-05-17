@@ -11,16 +11,22 @@ include_once('dbconfig.php');
 
 ?>
 
-    <div class="clearfix"></div>
+    <div class="clearfix">
+        <h1>Bienvenue</h1>
+        <h2>Magazines</h2>
+
+    </div>
 
         <div class="container">
             <a href="add-data.php" class="btn btn-large btn-info">Add Data</a>
         </div>
 
 
-    <div class="clearfix"></div><br />
+    <div class="clearfix"></div><br/>
+
 
     <div class="container">
+
         <table class='table table-bordered table-responsive'>
             <tr>
                 <th>Number</th>
