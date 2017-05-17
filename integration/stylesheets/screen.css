@@ -984,18 +984,17 @@ section.region .inner-region .head-region span::before {
 .container_fields .head-final h2 {
   font-size: 1.7em;
   font-family: "DIN Medium", sans-serif;
-  padding-bottom: .8em;
 }
-/* line 106, ../sass/_order.scss */
+/* line 105, ../sass/_order.scss */
 .container_fields .head-final h2 span {
   font-family: "DIN Medium", sans-serif;
 }
 
-/* line 113, ../sass/_order.scss */
+/* line 112, ../sass/_order.scss */
 .container_btn_fields.step-after {
   float: right;
 }
-/* line 116, ../sass/_order.scss */
+/* line 115, ../sass/_order.scss */
 .container_btn_fields.step-after button {
   float: right;
   background: #3BC0D1;
@@ -1004,17 +1003,16 @@ section.region .inner-region .head-region span::before {
   font-size: 16px;
   padding: 3% 10%;
 }
-/* line 124, ../sass/_order.scss */
+/* line 123, ../sass/_order.scss */
 .container_btn_fields.step-after button a {
   color: #fff;
 }
 
-/* line 152, ../sass/_order.scss */
+/* line 151, ../sass/_order.scss */
 .container_btn_fields.step-before {
   float: left;
-  margin-top: 10%;
 }
-/* line 156, ../sass/_order.scss */
+/* line 154, ../sass/_order.scss */
 .container_btn_fields.step-before button {
   float: left;
   background: #191919;
@@ -1023,7 +1021,7 @@ section.region .inner-region .head-region span::before {
   font-size: 16px;
   padding: 3% 10%;
 }
-/* line 164, ../sass/_order.scss */
+/* line 162, ../sass/_order.scss */
 .container_btn_fields.step-before button a {
   color: #fff;
 }
