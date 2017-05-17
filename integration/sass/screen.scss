@@ -16,15 +16,36 @@ $width: 85%;
   display: block;
 }
 
+h2.page-title{
+  font-size:25px;
+  padding-left: 100px;
+  position:relative;
+  font-family: $dinR;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 74px;
+    left:0;
+    height: 3px;
+    background: $black;
+    top: 50%;
+  }
+}
+
 @import "partials/fonts";
 @import "partials/reset";
 @import "partials/clearfix";
 
 @import "partials/header";
+@import "partials/breadcrumb";
 @import "index";
 @import "partials/newsletter";
 @import "revues";
 @import "boutique";
+@import "order";
 
 @import "partials/boheader";
 @import "backoffice";
