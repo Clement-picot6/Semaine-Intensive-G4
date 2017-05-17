@@ -85,7 +85,7 @@ else if(isset($_GET['failure']))
                     <button type="submit" class="btn btn-primary" name="btn-save">
                         <span class="glyphicon glyphicon-plus"></span> Create New Record
                     </button>
-                    <a href="index.php" class="btn btn-large btn-success"> &nbsp; Back to index</a>
+                    <a href="index.php" class="btn btn-large btn-success">Back to index</a>
                 </td>
             </tr>
 
