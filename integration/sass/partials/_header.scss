@@ -1,9 +1,15 @@
-/* HEADER */
 
 .public header {
-	// background-image: url(../img-content/header-img.jpg);
 	position: relative;
-	height: 60vh;
+	height: 55vh;
+
+	@media screen and (max-width: 1124px) {
+		height: 40vh;
+	}
+
+	@media screen and (max-width: 715px) {
+		height: 30vh;
+	}
 }
 
 .public header .logo {

@@ -21,7 +21,7 @@ ul {
 	list-style: none;
 }
 
-input[type="text"], textarea {
+input[type="text"], textarea, button {
 	border: none;
 	outline: none;
 }
@@ -34,7 +34,14 @@ a, a:visited {
 	text-decoration: none;
 	color: initial;
 }
-main {
-	max-width: 1200px;
-	margin: 0 auto;
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
 }
+
+// main {
+// 	max-width: 1200px;
+// 	margin: 0 auto;
+// }

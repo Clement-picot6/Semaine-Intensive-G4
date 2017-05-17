@@ -93,7 +93,6 @@ section.region{
 	background: $lightgrey;
   padding: 4em 0;
 
-
   .inner-region {
     box-sizing: border-box;
     width: 95%;
@@ -102,21 +101,26 @@ section.region{
     .head-region{
     	width: $width;
     	margin: 0 auto;
+      @include clearfix;
 
       h2{
+        float: left;
         font-size: 30px;
         font-family: $dinR;
-        margin-bottom: 2em;
+        @media screen and (max-width: 780px) {
+      		float: none;
+          width: 100%;
+      	}
       }
 
       span {
         float: right;
         display: block;
         position: relative;
-        letter-spacing: 2px;
         font-size:20px;
         font-family: $dinR;
         cursor: pointer;
+        margin-bottom: 2em;
 
         &::before {
           position: absolute;
@@ -127,6 +131,11 @@ section.region{
           background: $black;
           top: 50%;
         }
+
+        @media screen and (max-width: 780px) {
+      		float: none;
+          width: 100%;
+      	}
       }
 
     } // END OF HEAD REGION
@@ -150,6 +159,14 @@ section.region{
     .liste{
     	width:30%;
     	float:left;
+
+      @media screen and (max-width: 780px) {
+        float: none;
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 780px) {
+      margin-bottom: 3em;
     }
   }
 
@@ -160,11 +177,20 @@ section.region{
   .outre-mer{
   	float:left;
   	width:50%;
+    @media screen and (max-width: 780px) {
+      float: none;
+      width: 100%;
+      margin-bottom: 2em;
+    }
   }
 
   .etranger{
     float: left;
     width: 50%;
+    @media screen and (max-width: 780px) {
+      float: none;
+      width: 100%;
+    }
   }
 
 } // END OF ALL REGIONS

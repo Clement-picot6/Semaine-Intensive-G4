@@ -45,7 +45,7 @@ ul {
 }
 
 /* line 24, ../sass/partials/_reset.scss */
-input[type="text"], textarea {
+input[type="text"], textarea, button {
   border: none;
   outline: none;
 }
@@ -61,10 +61,11 @@ a, a:visited {
   color: initial;
 }
 
-/* line 37, ../sass/partials/_reset.scss */
-main {
-  max-width: 1200px;
-  margin: 0 auto;
+/* line 38, ../sass/partials/_reset.scss */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 /* line 10, ../sass/partials/_clearfix.scss */
@@ -79,20 +80,31 @@ main {
   clear: both;
 }
 
-/* HEADER */
-/* line 3, ../sass/partials/_header.scss */
+/* line 2, ../sass/partials/_header.scss */
 .public header {
   position: relative;
-  height: 60vh;
+  height: 55vh;
+}
+@media screen and (max-width: 1124px) {
+  /* line 2, ../sass/partials/_header.scss */
+  .public header {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 715px) {
+  /* line 2, ../sass/partials/_header.scss */
+  .public header {
+    height: 30vh;
+  }
 }
 
-/* line 9, ../sass/partials/_header.scss */
+/* line 15, ../sass/partials/_header.scss */
 .public header .logo {
   float: left;
   margin: 3.5% 0 0 8%;
 }
 
-/* line 14, ../sass/partials/_header.scss */
+/* line 20, ../sass/partials/_header.scss */
 .header-bg {
   position: absolute;
   top: 0;
@@ -100,14 +112,14 @@ main {
   width: 100%;
 }
 
-/* line 21, ../sass/partials/_header.scss */
+/* line 27, ../sass/partials/_header.scss */
 .public header nav {
   float: right;
   width: 50%;
   margin-top: 4.5%;
 }
 
-/* line 27, ../sass/partials/_header.scss */
+/* line 33, ../sass/partials/_header.scss */
 .public header nav a {
   display: inline-block;
   margin-right: 8.5%;
@@ -117,19 +129,19 @@ main {
   letter-spacing: 1px;
 }
 
-/* line 37, ../sass/partials/_header.scss */
+/* line 43, ../sass/partials/_header.scss */
 .public header nav a:nth-child(5) {
   margin-right: 4.5%;
 }
 
-/* line 42, ../sass/partials/_header.scss */
+/* line 48, ../sass/partials/_header.scss */
 .block_header {
   width: 100%;
   position: absolute;
   top: 15%;
 }
 
-/* line 48, ../sass/partials/_header.scss */
+/* line 54, ../sass/partials/_header.scss */
 .block_header div:nth-child(1) {
   width: 80%;
   font-size: 30px;
@@ -141,7 +153,7 @@ main {
   line-height: 6vh;
 }
 
-/* line 60, ../sass/partials/_header.scss */
+/* line 66, ../sass/partials/_header.scss */
 .block_header > button {
   padding: 13px 30px;
   text-transform: uppercase;
@@ -157,12 +169,12 @@ main {
   letter-spacing: 1px;
 }
 
-/* line 76, ../sass/partials/_header.scss */
+/* line 82, ../sass/partials/_header.scss */
 .block_header .btn_feuille > img {
   margin-left: 10px;
 }
 
-/* line 80, ../sass/partials/_header.scss */
+/* line 86, ../sass/partials/_header.scss */
 .block_header .btn_command {
   padding: 10px 30px 10px 50px;
   text-transform: uppercase;
@@ -177,7 +189,7 @@ main {
   cursor: pointer;
 }
 
-/* line 94, ../sass/partials/_header.scss */
+/* line 100, ../sass/partials/_header.scss */
 .block_header div.rectangle {
   position: absolute;
   width: 10.5%;
@@ -614,34 +626,47 @@ section.region {
   background: #F7F7F7;
   padding: 4em 0;
 }
-/* line 97, ../sass/_revues.scss */
+/* line 96, ../sass/_revues.scss */
 section.region .inner-region {
   box-sizing: border-box;
   width: 95%;
   margin: 0 auto;
 }
-/* line 102, ../sass/_revues.scss */
+/* line 101, ../sass/_revues.scss */
 section.region .inner-region .head-region {
   width: 85%;
   margin: 0 auto;
 }
+/* line 3, ../sass/partials/_clearfix.scss */
+section.region .inner-region .head-region:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 /* line 106, ../sass/_revues.scss */
 section.region .inner-region .head-region h2 {
+  float: left;
   font-size: 30px;
   font-family: "DIN Regular", sans-serif;
-  margin-bottom: 2em;
 }
-/* line 112, ../sass/_revues.scss */
+@media screen and (max-width: 780px) {
+  /* line 106, ../sass/_revues.scss */
+  section.region .inner-region .head-region h2 {
+    float: none;
+    width: 100%;
+  }
+}
+/* line 116, ../sass/_revues.scss */
 section.region .inner-region .head-region span {
   float: right;
   display: block;
   position: relative;
-  letter-spacing: 2px;
   font-size: 20px;
   font-family: "DIN Regular", sans-serif;
   cursor: pointer;
+  margin-bottom: 2em;
 }
-/* line 121, ../sass/_revues.scss */
+/* line 125, ../sass/_revues.scss */
 section.region .inner-region .head-region span::before {
   position: absolute;
   content: '';
@@ -651,8 +676,15 @@ section.region .inner-region .head-region span::before {
   background: #191919;
   top: 50%;
 }
+@media screen and (max-width: 780px) {
+  /* line 116, ../sass/_revues.scss */
+  section.region .inner-region .head-region span {
+    float: none;
+    width: 100%;
+  }
+}
 
-/* line 136, ../sass/_revues.scss */
+/* line 145, ../sass/_revues.scss */
 .all-regions {
   background: #fff;
   width: 85%;
@@ -666,7 +698,7 @@ section.region .inner-region .head-region span::before {
   display: table;
   clear: both;
 }
-/* line 144, ../sass/_revues.scss */
+/* line 153, ../sass/_revues.scss */
 .all-regions .metropole {
   display: block;
   margin-bottom: 8em;
@@ -678,54 +710,91 @@ section.region .inner-region .head-region span::before {
   display: table;
   clear: both;
 }
-/* line 150, ../sass/_revues.scss */
+/* line 159, ../sass/_revues.scss */
 .all-regions .metropole .liste {
   width: 30%;
   float: left;
 }
-/* line 156, ../sass/_revues.scss */
+@media screen and (max-width: 780px) {
+  /* line 159, ../sass/_revues.scss */
+  .all-regions .metropole .liste {
+    float: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 780px) {
+  /* line 153, ../sass/_revues.scss */
+  .all-regions .metropole {
+    margin-bottom: 3em;
+  }
+}
+/* line 173, ../sass/_revues.scss */
 .all-regions h3 {
   font-size: 26px;
 }
-/* line 160, ../sass/_revues.scss */
+/* line 177, ../sass/_revues.scss */
 .all-regions .outre-mer {
   float: left;
   width: 50%;
 }
-/* line 165, ../sass/_revues.scss */
+@media screen and (max-width: 780px) {
+  /* line 177, ../sass/_revues.scss */
+  .all-regions .outre-mer {
+    float: none;
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+/* line 187, ../sass/_revues.scss */
 .all-regions .etranger {
   float: left;
   width: 50%;
 }
+@media screen and (max-width: 780px) {
+  /* line 187, ../sass/_revues.scss */
+  .all-regions .etranger {
+    float: none;
+    width: 100%;
+  }
+}
 
 /* line 2, ../sass/_boutique.scss */
-body .fil_arianne a, span {
+#boutique main {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* line 7, ../sass/_boutique.scss */
+body .breadcrumb {
+  width: 100%;
+}
+/* line 10, ../sass/_boutique.scss */
+body .breadcrumb a {
   display: inline-block;
   color: #191919;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 1px;
+  padding-top: 5em;
 }
-
-/* line 11, ../sass/_boutique.scss */
-body .fil_arianne span {
+/* line 19, ../sass/_boutique.scss */
+body .breadcrumb a.active {
+  color: #3BC0D1;
+}
+/* line 24, ../sass/_boutique.scss */
+body .breadcrumb span {
   padding: 0 2%;
 }
 
-/* line 15, ../sass/_boutique.scss */
-body .fil_arianne a:nth-child(3) {
-  color: #3BC0D1;
-}
-
-/* line 19, ../sass/_boutique.scss */
+/* line 30, ../sass/_boutique.scss */
 .container_table div {
   margin-top: 8%;
 }
 
-/* line 23, ../sass/_boutique.scss */
+/* line 34, ../sass/_boutique.scss */
 .container_table div h1 {
-  color: black;
+  color: #191919;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 30px;
@@ -733,7 +802,7 @@ body .fil_arianne a:nth-child(3) {
   padding-bottom: 1%;
 }
 
-/* line 32, ../sass/_boutique.scss */
+/* line 43, ../sass/_boutique.scss */
 .container_table div p {
   color: #191919;
   font-family: "Roboto", sans-serif;
@@ -743,7 +812,7 @@ body .fil_arianne a:nth-child(3) {
   padding-bottom: 3%;
 }
 
-/* line 41, ../sass/_boutique.scss */
+/* line 52, ../sass/_boutique.scss */
 .container_table div:nth-child(1) p::after {
   content: " commande";
   color: #191919;
@@ -754,7 +823,7 @@ body .fil_arianne a:nth-child(3) {
   padding-bottom: 1%;
 }
 
-/* line 51, ../sass/_boutique.scss */
+/* line 62, ../sass/_boutique.scss */
 .container_table div:nth-child(2) p::after {
   content: " abonnement";
   color: #191919;
@@ -765,18 +834,18 @@ body .fil_arianne a:nth-child(3) {
   padding-bottom: 1%;
 }
 
-/* line 62, ../sass/_boutique.scss */
+/* line 73, ../sass/_boutique.scss */
 .container_table div img {
   width: 100%;
 }
 
-/* line 66, ../sass/_boutique.scss */
+/* line 77, ../sass/_boutique.scss */
 .container_button {
   width: 100%;
   margin-top: 13%;
 }
 
-/* line 71, ../sass/_boutique.scss */
+/* line 82, ../sass/_boutique.scss */
 .container_button button:nth-child(1) {
   float: left;
   padding: 5% 19.8%;
@@ -785,12 +854,9 @@ body .fil_arianne a:nth-child(3) {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  outline: none;
-  border: none;
-  cursor: pointer;
 }
 
-/* line 84, ../sass/_boutique.scss */
+/* line 92, ../sass/_boutique.scss */
 .container_button button:nth-child(2) {
   float: right;
   padding: 5% 20.5%;
@@ -804,14 +870,14 @@ body .fil_arianne a:nth-child(3) {
   cursor: pointer;
 }
 
-/* line 97, ../sass/_boutique.scss */
+/* line 105, ../sass/_boutique.scss */
 .container_signin {
   float: left;
   width: 100%;
-  background-color: #F7F7F7;
+  background: #F7F7F7;
 }
 
-/* line 103, ../sass/_boutique.scss */
+/* line 111, ../sass/_boutique.scss */
 .container_signin .container_steps {
   display: inline-block;
   float: left;
@@ -820,7 +886,7 @@ body .fil_arianne a:nth-child(3) {
   padding-bottom: 10%;
 }
 
-/* line 111, ../sass/_boutique.scss */
+/* line 119, ../sass/_boutique.scss */
 .container_signin .container_steps p {
   color: #fff;
   font-family: "Roboto", sans-serif;
@@ -829,25 +895,25 @@ body .fil_arianne a:nth-child(3) {
   text-align: center;
 }
 
-/* line 120, ../sass/_boutique.scss */
+/* line 128, ../sass/_boutique.scss */
 .container_signin .container_steps div {
   border-bottom: solid #fff 10px;
   margin-left: 35%;
   width: 30%;
 }
 
-/* line 126, ../sass/_boutique.scss */
+/* line 134, ../sass/_boutique.scss */
 .container_signin .container_steps p:nth-child(1) {
   padding-top: 22%;
 }
 
-/* line 131, ../sass/_boutique.scss */
+/* line 139, ../sass/_boutique.scss */
 .container_signin .container_fields {
   width: 60%;
   float: left;
 }
 
-/* line 137, ../sass/_boutique.scss */
+/* line 145, ../sass/_boutique.scss */
 .container_signin .container_fields p {
   color: #191919;
   font-family: "Roboto", sans-serif;
@@ -855,74 +921,68 @@ body .fil_arianne a:nth-child(3) {
   font-size: 16px;
 }
 
-/* line 145, ../sass/_boutique.scss */
+/* line 153, ../sass/_boutique.scss */
 .left_fields {
   float: left;
   margin: 16% 5% 0 22%;
 }
 
-/* line 150, ../sass/_boutique.scss */
+/* line 158, ../sass/_boutique.scss */
 .left_fields p {
   padding-top: 15%;
 }
 
-/* line 154, ../sass/_boutique.scss */
+/* line 162, ../sass/_boutique.scss */
 .right_fields {
   float: left;
   margin-top: 16%;
 }
 
-/* line 159, ../sass/_boutique.scss */
+/* line 167, ../sass/_boutique.scss */
 .right_fields p {
   padding-top: 15%;
 }
 
-/* line 163, ../sass/_boutique.scss */
+/* line 171, ../sass/_boutique.scss */
 .container_fields input[type="text"], input[type="tel"], input[type="mail"] {
-  background-color: #EEEEEE;
+  background-color: #EEE;
   padding: 10px 50px 10px 20px;
   border: none;
   outline: none;
   font-size: 15px;
 }
 
-/* line 171, ../sass/_boutique.scss */
+/* line 179, ../sass/_boutique.scss */
 .container_btn_fields {
   float: right;
 }
 
-/* line 175, ../sass/_boutique.scss */
+/* line 183, ../sass/_boutique.scss */
 .container_btn_fields button {
   float: right;
-  color: white;
+  color: #fff;
   background-color: #3BC0D1;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   padding: 3% 10%;
-  outline: none;
-  border: none;
-  cursor: pointer;
 }
 
-/* line 188, ../sass/_boutique.scss */
+/* line 193, ../sass/_boutique.scss */
 .container_btn_previous {
   float: left;
   margin-top: 10%;
 }
 
-/* line 193, ../sass/_boutique.scss */
+/* line 198, ../sass/_boutique.scss */
 .container_btn_previous button {
   float: left;
-  color: white;
+  color: #fff;
   background-color: #191919;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   padding: 3% 10%;
-  outline: none;
-  border: none;
-  cursor: pointer;
 }
 
 /* line 3, ../sass/_backoffice.scss */
@@ -1119,7 +1179,7 @@ footer {
 footer .inner-footer {
   width: 85%;
   margin: 0 auto;
-  padding: 4em 0;
+  padding: 2em 0;
 }
 /* line 3, ../sass/partials/_clearfix.scss */
 footer .inner-footer:after {
