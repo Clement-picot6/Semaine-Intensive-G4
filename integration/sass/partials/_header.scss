@@ -30,17 +30,19 @@
 	margin-top: 4.5%;
 }
 
-.public header nav a {
+.public header nav ul li {
 	display: inline-block;
 	margin-right: 8.5%;
 	font-size: 18px;
-	color: #fff;
 	font-family: $dinL;
 	letter-spacing: 1px;
 }
 
+.public header nav ul li a {
+	color: white;
+}
 
-.public header nav a:nth-child(5) {
+.public header nav li:nth-child(5) {
 	margin-right: 4.5%;
 }
 
@@ -51,14 +53,14 @@
 	top: 15%;
 }
 
-.block_header div:nth-child(1){
+.block_header div:nth-child(1) p{
 	width: 80%;
 	font-size: 30px;
 	color: white;
 	font-family: $dinR;
 	letter-spacing: 1px;
 	float: left;
-	margin: 15.5% 0 0 9%;
+	margin: 7.8% 0 0 9%;
 	line-height: 6vh;
 }
 
