@@ -1006,18 +1006,24 @@ main.ending .container_steps {
 main.ending .container_fields {
   width: 100%;
 }
-/* line 130, ../sass/_order.scss */
-main.ending h2.ending-msg {
+/* line 129, ../sass/_order.scss */
+main.ending .container_fields a {
+  display: block;
+  text-align: center;
+  padding-bottom: 3em;
+}
+/* line 135, ../sass/_order.scss */
+main.ending .container_fields h2.ending-msg {
   text-align: center;
   font-family: "DIN Medium", sans-serif;
   font-size: 3.4em;
-  padding: 3em 0;
-}
-/* line 136, ../sass/_order.scss */
-main.ending h2.ending-msg span {
-  font-family: "DIN Regular", sans-serif;
+  padding: 3em 0 2em 0;
 }
 /* line 141, ../sass/_order.scss */
+main.ending .container_fields h2.ending-msg span {
+  font-family: "DIN Regular", sans-serif;
+}
+/* line 147, ../sass/_order.scss */
 main.ending div[class*="form-step-1"],
 main.ending div[class*="form-step-2"],
 main.ending div[class*="form-step-3"],
@@ -1025,11 +1031,11 @@ main.ending div[class*="form-step-4"] {
   display: none;
 }
 
-/* line 152, ../sass/_order.scss */
+/* line 158, ../sass/_order.scss */
 .container_btn_fields.step-after {
   float: right;
 }
-/* line 155, ../sass/_order.scss */
+/* line 161, ../sass/_order.scss */
 .container_btn_fields.step-after button {
   float: right;
   background: #3BC0D1;
@@ -1040,11 +1046,11 @@ main.ending div[class*="form-step-4"] {
   color: #fff;
 }
 
-/* line 188, ../sass/_order.scss */
+/* line 194, ../sass/_order.scss */
 .container_btn_fields.step-before {
   float: left;
 }
-/* line 191, ../sass/_order.scss */
+/* line 197, ../sass/_order.scss */
 .container_btn_fields.step-before button {
   float: left;
   background: #191919;
