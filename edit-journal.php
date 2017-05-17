@@ -2,67 +2,34 @@
 /**
  * Created by PhpStorm.
  * User: jeremiebergel
- * Date: 16/05/2017
- * Time: 17:24
+ * Date: 17/05/2017
+ * Time: 17:23
  */
+include_once 'php/dbconfig.php';
 
-include_once 'dbconfig.php';
-if(isset($_POST['btn-update']))
-{
-    $id = $_GET['id'];
-    $number = $_POST['number'];
-    $date = $_POST['date'];
-    $img = $_POST['img'];
-    $region = $_POST['region'];
-
-    if($crud->update($id,$number,$date,$img,$region))
-    {
-        $msg = "<div class='alert alert-info'>
-    <strong>WOW!</strong> Record was updated successfully <a href='index.php'>HOME</a>!
-    </div>";
-    }
-    else
-    {
-        $msg = "<div class='alert alert-warning'>
-    <strong>SORRY!</strong> ERROR while updating record !
-    </div>";
-    }
-}
 
 if(isset($_GET['id']))
 {
-    $query = "SELECT * FROM journals WHERE id = :id";
+    $query = "SELECT `number`, `date`, `img`, `region`, `synopsis` FROM journals WHERE id = :id";
 
     $data = ['id' => $_GET['id']];
     $data = $crud->bind($query, $data);
     $data = $data->fetch(PDO::FETCH_ASSOC);
-    var_dump($data);
+    echo $data['number'];
 } else {
     die('TA MEEERRRREEE !!!!!!!!');
 }
-
 ?>
 
-
-
-    <div class="clearfix"></div>
-
-    <div class="container">
-        <?php
-        if(isset($msg))
-        {
-            echo $msg;
-        }
-        ?>
-    </div>
-
-    <div class="clearfix"></div><br/>
+<div class="clearfix"></div><br/>
 
     <div class="container">
 
-        <form method='post'>
+        <form action="php/edit-data.php" method='post'>
 
             <table class='table table-bordered'>
+
+                <input type="hidden" value="<?php echo $_GET['id']; ?>" name="id">
 
                 <tr>
                     <td>Number</td>
@@ -85,10 +52,15 @@ if(isset($_GET['id']))
                 </tr>
 
                 <tr>
+                    <td>Synopsis</td>
+                    <td><input type='text' name='synopsis' class='form-control' value="<?= $data['synopsis'] ?>" required></td>
+                </tr>
+
+                <tr>
                     <td colspan="2">
                         <button type="submit" class="btn btn-primary" name="btn-update">
                             <span class="glyphicon glyphicon-edit"></span>  Update this Record
-                        </button>
+</button>
                         <a href="index.php" class="btn btn-large btn-success"> &nbsp; CANCEL</a>
                     </td>
                 </tr>
@@ -98,4 +70,3 @@ if(isset($_GET['id']))
 
 
     </div>
-

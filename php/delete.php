@@ -58,7 +58,7 @@ if(isset($_POST['btn-del']))
                     <th>Region</th>
                 </tr>
                 <?php
-                $stmt = $bdd->prepare("SELECT * FROM journals WHERE id=:id");
+                $stmt = $bdd->prepare("SELECT `id`, `number`, `date`, `img`, `region`, `synopsis` FROM journals WHERE id=:id");
                 $stmt->execute(array(":id"=>$_GET['id']));
                 while($row=$stmt->fetch(PDO::FETCH_BOTH))
                 {
