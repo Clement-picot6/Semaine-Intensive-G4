@@ -180,12 +180,12 @@
 }
 
 
-header {
+#bo header {
   width:100%;
   padding:50px;
 
 }
-header .span{
+#bo header .span{
   margin-top:40px;
 }
 
@@ -199,7 +199,7 @@ float:left
 
 
 }
-form{
+#bo form{
   display:block;
 }
 
@@ -208,10 +208,10 @@ form{
   width:100%;
   padding:0;
 }
-h2::before{
+#bo h2::before{
   display:none;
 }
-h2{
+#bo h2{
   text-align:center;
 }
 #bo .add-journal form div.left-side,

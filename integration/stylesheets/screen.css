@@ -54,17 +54,17 @@ button {
 .clearfix:after {
   clear: both; }
 
-.public header {
+header {
   position: relative;
   height: 55vh; }
   @media screen and (max-width: 1124px) {
-    .public header {
+    header {
       height: 40vh; } }
   @media screen and (max-width: 715px) {
-    .public header {
+    header {
       height: 30vh; } }
 
-.public header .logo {
+header .logo {
   float: left;
   margin: 3.5% 0 0 8%; }
 
@@ -74,23 +74,24 @@ button {
   z-index: -1;
   width: 100%; }
 
-.public header nav {
+header nav {
   float: right;
-  width: 50%;
+  width: 47%;
   margin-top: 4.5%; }
 
-.public header nav ul li {
+header .nav_barre ul {
+  width: 100%;
+  margin-left: 15%; }
+
+header .nav_barre ul li {
   display: inline-block;
-  margin-right: 8.5%;
+  margin-right: 5.5%;
   font-size: 18px;
   font-family: "DIN Light", sans-serif;
   letter-spacing: 1px; }
 
-.public header nav ul li a {
+header .nav_barre ul li a {
   color: white; }
-
-.public header nav li:nth-child(5) {
-  margin-right: 4.5%; }
 
 .block_header {
   width: 100%;
@@ -145,6 +146,213 @@ button {
   bottom: -120px;
   right: 0; }
 
+.navPhone {
+  display: none;
+  position: absolute; }
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -50px;
+  top: 0; }
+
+.navPhone {
+  display: none;
+  position: fixed; }
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -50px;
+  top: 0; }
+
+@media only screen and (max-width: 1200px) {
+  header .nav_barre {
+    margin-right: 5%; } }
+@media only screen and (max-width: 1024px) {
+  header .nav_barre {
+    display: none; }
+
+  header h1.logo a img {
+    width: 40%; }
+
+  header h1.logo {
+    text-align: center;
+    width: 80%; }
+
+  .navPhone {
+    display: block;
+    position: fixed;
+    z-index: 2; }
+
+  .navPhone .mainNav .choice {
+    display: inline-block;
+    margin-top: 0px; }
+
+  .navPhone .mainNav .choice:nth-child(1) {
+    margin-left: 20px; }
+
+  .navPhone .mainNav .choice:nth-child(2) {
+    margin-left: 10px; }
+
+  .navPhone .mainNav .choice {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 40px;
+    padding: 4px; }
+
+  .navPhone .mainNav .choice span {
+    width: 80%;
+    background-color: black;
+    border-radius: 5px;
+    height: 4px;
+    position: absolute;
+    z-index: 99; }
+
+  .navPhone .mainNav:nth-child(1) .choice span:nth-child(2) {
+    top: 14px; }
+
+  .navPhone .mainNav .choice span:nth-child(3) {
+    top: 24px; }
+
+  .contentMenuPhone {
+    z-index: 98;
+    width: 400px;
+    background-color: white;
+    height: 120vh;
+    position: fixed;
+    top: -50px;
+    right: -400px;
+    transition: 1s; }
+
+  .navPhone ul {
+    list-style: none; }
+
+  .navPhone ul li a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none; }
+
+  .contentMenuPhone ul li a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; }
+
+  .contentMenuPhone ul li {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 7vh; }
+
+  .contentMenuPhone ul li:nth-child(1) {
+    margin-top: 20vh; }
+
+  .choice {
+    cursor: pointer;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100; }
+
+  input[type="checkbox"]:checked + .navPhone .contentMenuPhone {
+    position: fixed;
+    right: 0; } }
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  header .nav_barre {
+    display: none; }
+
+  header h1.logo a img {
+    width: 40%; }
+
+  header h1.logo {
+    text-align: center;
+    width: 80%; }
+
+  .navPhone {
+    display: block;
+    position: fixed;
+    z-index: 2; }
+
+  .navPhone .mainNav .choice {
+    display: inline-block;
+    margin-top: 0px; }
+
+  .navPhone .mainNav .choice:nth-child(1) {
+    margin-left: 20px; }
+
+  .navPhone .mainNav .choice:nth-child(2) {
+    margin-left: 10px; }
+
+  .navPhone .mainNav .choice {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 30px;
+    width: 40px;
+    padding: 4px; }
+
+  .navPhone .mainNav .choice span {
+    width: 80%;
+    background-color: black;
+    border-radius: 5px;
+    height: 4px;
+    position: absolute;
+    z-index: 99; }
+
+  .navPhone .mainNav:nth-child(1) .choice span:nth-child(2) {
+    top: 14px; }
+
+  .navPhone .mainNav .choice span:nth-child(3) {
+    top: 24px; }
+
+  .contentMenuPhone {
+    z-index: 98;
+    width: 400px;
+    background-color: white;
+    height: 120vh;
+    position: fixed;
+    top: -50px;
+    right: -400px;
+    transition: 1s; }
+
+  .navPhone ul {
+    list-style: none; }
+
+  .navPhone ul li a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none; }
+
+  .contentMenuPhone ul li a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; }
+
+  .contentMenuPhone ul li {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 7vh; }
+
+  .contentMenuPhone ul li:nth-child(1) {
+    margin-top: 20vh; }
+
+  .choice {
+    cursor: pointer;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100; }
+
+  input[type="checkbox"]:checked + .navPhone .contentMenuPhone {
+    position: fixed;
+    right: 0; } }
 #index main {
   max-width: 85%;
   margin: 0 auto; }
@@ -410,7 +618,7 @@ div.subscribe {
 
 section.last-journals {
   width: 85%;
-  margin: 3em auto 6em; }
+  margin: 10em auto 6em; }
   section.last-journals h2 {
     font-size: 25px;
     padding-left: 100px;
@@ -878,11 +1086,11 @@ body .breadcrumb {
   #bo {
     font-size: 20px; }
 
-  header {
+  #bo header {
     width: 100%;
     padding: 50px; }
 
-  header .span {
+  #bo header .span {
     margin-top: 40px; }
 
   .head-view-journals {
@@ -892,17 +1100,17 @@ body .breadcrumb {
     display: block;
     float: left; }
 
-  form {
+  #bo form {
     display: block; }
 
   #bo > main > section.add-journal > div > h2 {
     width: 100%;
     padding: 0; }
 
-  h2::before {
+  #bo h2::before {
     display: none; }
 
-  h2 {
+  #bo h2 {
     text-align: center; }
 
   #bo .add-journal form div.left-side,

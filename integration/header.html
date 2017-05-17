@@ -1,11 +1,20 @@
-<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+<!-- 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+		<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	</head>
+	<body class="public">
 	<header class="clearfix">
 		<img src="img-layout/header-revues.jpg" alt="" class="header-bg">
 		<h1 class="logo">
 			<a href="#">
 				<img src="img-layout/logo.png" alt="logo">
 			</a></h1>
-		<nav>
+		<nav class="nav_barre">
 			<ul>
 				<li><a href="#">revues</a></li>
 				<li><a href="#">boutique</a></li>
@@ -15,15 +24,26 @@
 				<li><a href="#"><img src="img-layout/search.svg" alt="search"></a></li>
 			</ul>
 		</nav>
+
+		<input type="checkbox" id="check1" name=""/>
+		<nav class="navPhone">
+			<div class="mainNav">
+				<label for="check1">
+					<div class="choice">
+					<span></span>
+					<span></span>
+					<span></span>
+					</div>
+				</label>
+			</div>
+			<div class="contentMenuPhone">
+			<ul>
+				<li><a href="">revues</a></li>
+				<li><a href="">boutique</a></li>
+				<li><a href="">contact</a></li>
+				<li><a href="">connexion</a></li>
+				<li><a href="">appel d'offre</a></li>
+			</ul>
+			</div>
+		</nav>
 	</header>
-
-	<div class="block_header">
-		<div>
-			<p>Toute l'actualité</p>
-			<p>de l'architecture de vos régions</p>
-		</div>
-
-		<button class="btn_feuille">feuilleter <img src="img-content/arrow.png" alt="fleche"></button>
-		<button class="btn_command">commander</button>
-		<div class="rectangle"></div>
-	</div>
