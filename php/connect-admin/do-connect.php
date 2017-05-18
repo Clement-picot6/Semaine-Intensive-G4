@@ -22,5 +22,5 @@ if ($_POST["password"] == $request["password"]) {
     $_SESSION['is_connected'] = true; // User is now connected
     header("Location: ../../backoffice.php");
 } else {
-    die("Mauvais mot de passe");
+    header("Location: ../../connect-admin.php?error");
 }
