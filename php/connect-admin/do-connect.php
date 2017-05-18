@@ -12,6 +12,7 @@ $request = $bdd->prepare("SELECT id, username, password FROM users WHERE usernam
 $request->execute(array(
     'username'=> $_POST["username"]
 ));
+
 $request = $request->fetch(PDO::FETCH_ASSOC);
 
 if ($_POST["password"] == $request["password"]) {

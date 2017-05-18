@@ -51,7 +51,6 @@ if(isset($_GET['id']))
 ?>
 
 
-
     <div class="clearfix"></div>
 
     <div class="container">
