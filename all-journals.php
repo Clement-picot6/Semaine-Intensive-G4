@@ -6,23 +6,14 @@
  * Time: 16:32
  */
 
-include 'header.php';
+include 'head.php';
 include_once 'php/dbconfig.php';
 
 ?>
 
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Revues</title>
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/screen.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
 <body class="public" id="revues">
+
+<?php include 'header.php'; ?>
 
 <section class="last-journals clearfix">
     <h2>Nos dernières parutions</h2>

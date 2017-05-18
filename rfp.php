@@ -1,16 +1,11 @@
 <?php
 
-include 'header.php';
+include 'head.php';
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>iFrame test</title>
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/screen.css">
-</head>
 <body class="public" id="rfp">
+
+  <?php include 'header.php'; ?>
 
 <div class="container">
     <iframe src="http://www.doubletrade.com" >

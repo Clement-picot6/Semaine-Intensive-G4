@@ -6,38 +6,13 @@
  * Time: 11:19
  */
 
+include 'head.php';
+
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title></title>
-
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/screen.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
-
 
 <body class="public" id="boutique">
 
-<header class="clearfix">
-    <img src="assets/img-content/header-boutique.jpg" alt="" class="header-bg">
-    <h1 class="logo">
-        <a href="#">
-            <img src="img-layout/logo.png" alt="logo">
-        </a></h1>
-    <nav>
-        <ul>
-            <a href="#"><li>revues</li></a>
-            <a href="#"><li>boutique</li></a>
-            <a href="#"><li>contact</li></a>
-            <a href="#"><li>connexion</li></a>
-            <a href="#"><li><img src="assets/img-layout/login.svg" alt="login"></li></a>
-            <a href="#"><li><img src="assets/img-layout/search.svg" alt="search"></li></a>
-        </ul>
-    </nav>
-</header>
+<?php include 'header.php'; ?>
 
 <main>
     <div class="breadcrumb">
@@ -51,18 +26,18 @@
     <div class="container_table clearfix">
         <div>
             <h2>Tarifs <span class="return">pour tout abonnement</span></h2>
-            <img src="img-content/tableau.svg" alt="tableau1">
+            <img src="assets/img-content/tableau.svg" alt="tableau1">
         </div>
 
         <div>
             <h2>Tarifs <span class="return">pour tout commande</span></h2>
-            <img src="img-content/tableau2.svg" alt="tableau2">
+            <img src="assets/img-content/tableau2.svg" alt="tableau2">
         </div>
     </div>
 
     <div class="container_button clearfix">
-        <a href="order.html">
-            <button>Commander <img src="img-content/arrow.png"></button>
+        <a href="order.php">
+            <button>Commander <img src="assets/img-content/arrow.png"></button>
         </a>
         <button>S'abonner</button>
     </div>

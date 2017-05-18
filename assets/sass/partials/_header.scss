@@ -12,15 +12,24 @@ header {
 	}
 }
 
+header.bo_header {
+	height: 35vh;
+}
+
 header .logo {
 	float: left;
-	margin: 3.5% 0 0 8%;
+	margin: 3% 0 0 8%;
+
+	a img {
+		width: 100%;
+	}
+
 }
 
 .header-bg {
 	position: absolute;
 	top: 0;
-	z-index: -1;
+	z-index: -555;
 	width: 100%;
 }
 
@@ -160,11 +169,11 @@ input[type="checkbox"]{
 
 @media only screen and (max-width : 1024px)  {
 
-// 
-// 
+//
+//
 // HEADER
-// 
-// 
+//
+//
 
 	header .nav_barre {
 		display: none;
@@ -185,13 +194,13 @@ input[type="checkbox"]{
 //
 // BURGER
 //
-// 
+//
 	.navPhone{
     	display: block;
     	position: fixed;
     	z-index: 2;
   	}
-  
+
   .navPhone .mainNav .choice{
     display: inline-block;
     margin: 2.5% 2% 0 0;
@@ -347,21 +356,10 @@ input[type="checkbox"]  + .navPhone .mainNav .choice span:nth-child(3) {
 }
 
 
-
-
-
- 
 // MOBILE
 
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
-
-
-// 
-// 
-// HEADER
-// 
-// 
 
 	header .nav_barre {
 		display: none;
@@ -382,14 +380,14 @@ input[type="checkbox"]  + .navPhone .mainNav .choice span:nth-child(3) {
 //
 // BURGER
 //
-// 
+//
 
 .navPhone{
     	display: block;
     	position: fixed;
     	z-index: 2;
   	}
-  
+
 .navPhone .mainNav .choice{
     display: inline-block;
     margin: 2% 2% 0 0;
@@ -539,6 +537,8 @@ input[type="checkbox"]  + .navPhone .mainNav .choice span:nth-child(3) {
 }
 
 }
+<<<<<<< HEAD
+=======
 
 
 // SEARCH BAR
@@ -620,3 +620,4 @@ input[type="checkbox"]  + .navPhone .mainNav .choice span:nth-child(3) {
 //.form-wrapper #submit::-moz-focus-inner {
 //  border: 0;
 //}
+>>>>>>> 08cc2f7da3ecd68490f77a39186a9a99bca15a33

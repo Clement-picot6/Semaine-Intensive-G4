@@ -12,7 +12,6 @@
     color: $blue;
     font-family: $dinM;
   }
-
 }
 
 .visible{
@@ -21,11 +20,10 @@
 .hidden{
   display:none !important;
 }
+
 section.last-journals{
 	width: $width;
 	margin: 3em auto 6em;
-  width: $width;
-  margin: 3em auto 6em;
 
   h2{
     font-size:25px;
@@ -49,6 +47,10 @@ section.last-journals{
       height: 3px;
       background: $black;
       top: 50%;
+
+      @media screen and (max-width: 780px) {
+        display: none;
+      }
     }
   }
 }
