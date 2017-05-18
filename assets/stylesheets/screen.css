@@ -153,18 +153,23 @@ header.bo_header {
   height: 25vh;
   border-bottom: 1px solid #191919;
 }
+/* line 19, ../sass/partials/_header.scss */
+header.bo_header .logo, header.bo_header .links {
+  display: inline-block;
+  vertical-align: middle;
+}
 
-/* line 20, ../sass/partials/_header.scss */
+/* line 25, ../sass/partials/_header.scss */
 header .logo {
   float: left;
   margin: 3% 0 0 8%;
 }
-/* line 24, ../sass/partials/_header.scss */
+/* line 29, ../sass/partials/_header.scss */
 header .logo a img {
   width: 100%;
 }
 
-/* line 30, ../sass/partials/_header.scss */
+/* line 35, ../sass/partials/_header.scss */
 .header-bg {
   position: absolute;
   top: 0;
@@ -172,20 +177,20 @@ header .logo a img {
   width: 100%;
 }
 
-/* line 37, ../sass/partials/_header.scss */
+/* line 42, ../sass/partials/_header.scss */
 header nav {
   float: right;
   width: 47%;
   margin-top: 4.5%;
 }
 
-/* line 43, ../sass/partials/_header.scss */
+/* line 48, ../sass/partials/_header.scss */
 header .nav_barre ul {
   width: 100%;
   margin-left: 15%;
 }
 
-/* line 48, ../sass/partials/_header.scss */
+/* line 53, ../sass/partials/_header.scss */
 header .nav_barre ul li {
   display: inline-block;
   margin-right: 5.5%;
@@ -194,7 +199,7 @@ header .nav_barre ul li {
   letter-spacing: 1px;
 }
 
-/* line 56, ../sass/partials/_header.scss */
+/* line 61, ../sass/partials/_header.scss */
 header .nav_barre ul li a {
   color: white;
 }
@@ -277,13 +282,13 @@ input[type="checkbox"] {
   top: 0;
 }
 
-/* line 145, ../sass/partials/_header.scss */
+/* line 139, ../sass/partials/_header.scss */
 .navPhone {
   display: none;
   position: fixed;
 }
 
-/* line 150, ../sass/partials/_header.scss */
+/* line 144, ../sass/partials/_header.scss */
 input[type="checkbox"] {
   position: absolute;
   left: -50px;
@@ -291,52 +296,52 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 1200px) {
-  /* line 164, ../sass/partials/_header.scss */
+  /* line 152, ../sass/partials/_header.scss */
   header .nav_barre {
     margin-right: 5%;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 179, ../sass/partials/_header.scss */
+  /* line 159, ../sass/partials/_header.scss */
   header .nav_barre {
     display: none;
   }
 
-  /* line 183, ../sass/partials/_header.scss */
+  /* line 163, ../sass/partials/_header.scss */
   header h1.logo a img {
     width: 40%;
   }
 
-  /* line 187, ../sass/partials/_header.scss */
+  /* line 167, ../sass/partials/_header.scss */
   header h1.logo {
     text-align: center;
     width: 80%;
   }
 
-  /* line 199, ../sass/partials/_header.scss */
+  /* line 173, ../sass/partials/_header.scss */
   .navPhone {
     display: block;
     position: fixed;
     z-index: 2;
   }
 
-  /* line 205, ../sass/partials/_header.scss */
+  /* line 179, ../sass/partials/_header.scss */
   .navPhone .mainNav .choice {
     display: inline-block;
     margin: 2.5% 2% 0 0;
   }
 
-  /* line 210, ../sass/partials/_header.scss */
+  /* line 184, ../sass/partials/_header.scss */
   .navPhone .mainNav .choice:nth-child(1) {
     margin-left: 20px;
   }
 
-  /* line 214, ../sass/partials/_header.scss */
+  /* line 188, ../sass/partials/_header.scss */
   .navPhone .mainNav .choice:nth-child(2) {
     margin-left: 10px;
   }
 
-  /* line 218, ../sass/partials/_header.scss */
+  /* line 192, ../sass/partials/_header.scss */
   .navPhone .mainNav .choice {
     position: fixed;
     top: 10px;
@@ -346,7 +351,7 @@ input[type="checkbox"] {
     padding: 4px;
   }
 
-  /* line 227, ../sass/partials/_header.scss */
+  /* line 201, ../sass/partials/_header.scss */
   .navPhone .mainNav .choice span {
     width: 80%;
     background-color: white;
@@ -355,17 +360,17 @@ input[type="checkbox"] {
     z-index: 99;
   }
 
-  /* line 235, ../sass/partials/_header.scss */
+  /* line 209, ../sass/partials/_header.scss */
   .navPhone .mainNav:nth-child(1) .choice span:nth-child(2) {
     top: 0px;
   }
 
-  /* line 238, ../sass/partials/_header.scss */
+  /* line 212, ../sass/partials/_header.scss */
   .navPhone .mainNav .choice span:nth-child(3) {
     top: 0 px;
   }
 
-  /* line 242, ../sass/partials/_header.scss */
+  /* line 216, ../sass/partials/_header.scss */
   .contentMenuPhone {
     z-index: 98;
     width: 400px;
@@ -377,19 +382,19 @@ input[type="checkbox"] {
     transition: 0.6s;
   }
 
-  /* line 253, ../sass/partials/_header.scss */
+  /* line 227, ../sass/partials/_header.scss */
   .navPhone ul {
     list-style: none;
   }
 
-  /* line 257, ../sass/partials/_header.scss */
+  /* line 231, ../sass/partials/_header.scss */
   .navPhone ul li a {
     color: black;
     cursor: pointer;
     text-decoration: none;
   }
 
-  /* line 263, ../sass/partials/_header.scss */
+  /* line 237, ../sass/partials/_header.scss */
   .contentMenuPhone ul li a {
     color: black;
     cursor: pointer;
@@ -398,7 +403,7 @@ input[type="checkbox"] {
     font-size: 20px;
   }
 
-  /* line 271, ../sass/partials/_header.scss */
+  /* line 245, ../sass/partials/_header.scss */
   .contentMenuPhone ul li {
     float: left;
     width: 100%;
@@ -406,12 +411,12 @@ input[type="checkbox"] {
     margin-top: 7vh;
   }
 
-  /* line 278, ../sass/partials/_header.scss */
+  /* line 252, ../sass/partials/_header.scss */
   .contentMenuPhone ul li:nth-child(1) {
     margin-top: 20vh;
   }
 
-  /* line 282, ../sass/partials/_header.scss */
+  /* line 256, ../sass/partials/_header.scss */
   .choice {
     cursor: pointer;
     overflow: hidden;
@@ -421,25 +426,25 @@ input[type="checkbox"] {
     z-index: 100;
   }
 
-  /* line 292, ../sass/partials/_header.scss */
+  /* line 266, ../sass/partials/_header.scss */
   input[type="checkbox"]:checked + .navPhone .contentMenuPhone {
     position: fixed;
     right: 0;
   }
 
-  /* line 297, ../sass/partials/_header.scss */
+  /* line 271, ../sass/partials/_header.scss */
   input[type="checkbox"]:checked + .navPhone .contentMenuPhone {
     position: fixed;
     right: 0;
   }
 
-  /* line 303, ../sass/partials/_header.scss */
+  /* line 277, ../sass/partials/_header.scss */
   input[type="checkbox"]:checked + .navPhone .mainNav .choice span:nth-child(2) {
     display: none;
     z-index: 3;
   }
 
-  /* line 308, ../sass/partials/_header.scss */
+  /* line 282, ../sass/partials/_header.scss */
   input[type="checkbox"]:checked + .navPhone .mainNav .choice span:nth-child(1) {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -451,7 +456,7 @@ input[type="checkbox"] {
     background-color: black;
   }
 
-  /* line 319, ../sass/partials/_header.scss */
+  /* line 293, ../sass/partials/_header.scss */
   input[type="checkbox"]:checked + .navPhone .mainNav .choice span:nth-child(3) {
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -463,13 +468,13 @@ input[type="checkbox"] {
     background-color: black;
   }
 
-  /* line 331, ../sass/partials/_header.scss */
+  /* line 305, ../sass/partials/_header.scss */
   input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(2) {
     z-index: 5;
     top: 20px;
   }
 
-  /* line 337, ../sass/partials/_header.scss */
+  /* line 311, ../sass/partials/_header.scss */
   input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(1) {
     background-color: white;
     transition: 0.6s;
@@ -481,7 +486,7 @@ input[type="checkbox"] {
     z-index: 20;
   }
 
-  /* line 347, ../sass/partials/_header.scss */
+  /* line 321, ../sass/partials/_header.scss */
   input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(3) {
     background-color: white;
     transition: 0.6s;
@@ -494,46 +499,46 @@ input[type="checkbox"] {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* line 365, ../sass/partials/_header.scss */
+  /* line 335, ../sass/partials/_header.scss */
   header .nav_barre {
     display: none;
   }
 
-  /* line 369, ../sass/partials/_header.scss */
+  /* line 339, ../sass/partials/_header.scss */
   header h1.logo a img {
     width: 40%;
   }
 
-  /* line 373, ../sass/partials/_header.scss */
+  /* line 343, ../sass/partials/_header.scss */
   header h1.logo {
     text-align: center;
     width: 80%;
   }
 
-  /* line 386, ../sass/partials/_header.scss */
+  /* line 349, ../sass/partials/_header.scss */
   .navPhone {
     display: block;
     position: fixed;
     z-index: 2;
   }
 
-  /* line 392, ../sass/partials/_header.scss */
+  /* line 355, ../sass/partials/_header.scss */
   .navPhone .mainNav .choice {
     display: inline-block;
     margin: 2% 2% 0 0;
   }
 
-  /* line 397, ../sass/partials/_header.scss */
+  /* line 360, ../sass/partials/_header.scss */
   .navPhone .mainNav .choice:nth-child(1) {
     margin-left: 20px;
   }
 
-  /* line 401, ../sass/partials/_header.scss */
+  /* line 364, ../sass/partials/_header.scss */
   .navPhone .mainNav .choice:nth-child(2) {
     margin-left: 10px;
   }
 
-  /* line 405, ../sass/partials/_header.scss */
+  /* line 368, ../sass/partials/_header.scss */
   .navPhone .mainNav .choice {
     position: fixed;
     top: 10px;
@@ -543,7 +548,7 @@ input[type="checkbox"] {
     padding: 4px;
   }
 
-  /* line 414, ../sass/partials/_header.scss */
+  /* line 377, ../sass/partials/_header.scss */
   .navPhone .mainNav .choice span {
     width: 50%;
     background-color: white;
@@ -553,17 +558,17 @@ input[type="checkbox"] {
     display: block;
   }
 
-  /* line 423, ../sass/partials/_header.scss */
+  /* line 386, ../sass/partials/_header.scss */
   .navPhone .mainNav:nth-child(1) .choice span:nth-child(2) {
     top: 10px;
   }
 
-  /* line 426, ../sass/partials/_header.scss */
+  /* line 389, ../sass/partials/_header.scss */
   .navPhone .mainNav .choice span:nth-child(3) {
     top: 16px;
   }
 
-  /* line 430, ../sass/partials/_header.scss */
+  /* line 393, ../sass/partials/_header.scss */
   .contentMenuPhone {
     z-index: 98;
     width: 400px;
@@ -575,19 +580,19 @@ input[type="checkbox"] {
     transition: 0.6s;
   }
 
-  /* line 441, ../sass/partials/_header.scss */
+  /* line 404, ../sass/partials/_header.scss */
   .navPhone ul {
     list-style: none;
   }
 
-  /* line 445, ../sass/partials/_header.scss */
+  /* line 408, ../sass/partials/_header.scss */
   .navPhone ul li a {
     color: black;
     cursor: pointer;
     text-decoration: none;
   }
 
-  /* line 451, ../sass/partials/_header.scss */
+  /* line 414, ../sass/partials/_header.scss */
   .contentMenuPhone ul li a {
     color: black;
     cursor: pointer;
@@ -596,7 +601,7 @@ input[type="checkbox"] {
     font-size: 16px;
   }
 
-  /* line 459, ../sass/partials/_header.scss */
+  /* line 422, ../sass/partials/_header.scss */
   .contentMenuPhone ul li {
     float: left;
     width: 100%;
@@ -604,12 +609,12 @@ input[type="checkbox"] {
     margin-top: 7vh;
   }
 
-  /* line 466, ../sass/partials/_header.scss */
+  /* line 429, ../sass/partials/_header.scss */
   .contentMenuPhone ul li:nth-child(1) {
     margin-top: 20vh;
   }
 
-  /* line 470, ../sass/partials/_header.scss */
+  /* line 433, ../sass/partials/_header.scss */
   .choice {
     cursor: pointer;
     overflow: hidden;
@@ -619,19 +624,19 @@ input[type="checkbox"] {
     z-index: 100;
   }
 
-  /* line 479, ../sass/partials/_header.scss */
+  /* line 442, ../sass/partials/_header.scss */
   input[type="checkbox"]:checked + .navPhone .contentMenuPhone {
     position: fixed;
     right: 0;
   }
 
-  /* line 485, ../sass/partials/_header.scss */
+  /* line 448, ../sass/partials/_header.scss */
   input[type="checkbox"]:checked + .navPhone .mainNav .choice span:nth-child(2) {
     display: none;
     z-index: 3;
   }
 
-  /* line 490, ../sass/partials/_header.scss */
+  /* line 453, ../sass/partials/_header.scss */
   input[type="checkbox"]:checked + .navPhone .mainNav .choice span:nth-child(1) {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -643,7 +648,7 @@ input[type="checkbox"] {
     background-color: black;
   }
 
-  /* line 501, ../sass/partials/_header.scss */
+  /* line 464, ../sass/partials/_header.scss */
   input[type="checkbox"]:checked + .navPhone .mainNav .choice span:nth-child(3) {
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -655,13 +660,13 @@ input[type="checkbox"] {
     background-color: black;
   }
 
-  /* line 513, ../sass/partials/_header.scss */
+  /* line 476, ../sass/partials/_header.scss */
   input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(2) {
     z-index: 5;
     top: 10px;
   }
 
-  /* line 519, ../sass/partials/_header.scss */
+  /* line 482, ../sass/partials/_header.scss */
   input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(1) {
     background-color: white;
     transition: 0.6s;
@@ -673,7 +678,7 @@ input[type="checkbox"] {
     z-index: 20;
   }
 
-  /* line 529, ../sass/partials/_header.scss */
+  /* line 492, ../sass/partials/_header.scss */
   input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(3) {
     background-color: white;
     transition: 0.6s;
@@ -685,7 +690,7 @@ input[type="checkbox"] {
     z-index: 20;
   }
 }
-/* line 545, ../sass/partials/_header.scss */
+/* line 506, ../sass/partials/_header.scss */
 .form-wrapper {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -696,7 +701,7 @@ input[type="checkbox"] {
   height: 22px;
 }
 
-/* line 555, ../sass/partials/_header.scss */
+/* line 516, ../sass/partials/_header.scss */
 .form-wrapper #search {
   border: 1px solid #CCC;
   -webkit-border-radius: 3px;
@@ -712,7 +717,7 @@ input[type="checkbox"] {
   width: 128px;
 }
 
-/* line 571, ../sass/partials/_header.scss */
+/* line 532, ../sass/partials/_header.scss */
 .form-wrapper #search:-moz-placeholder,
 .form-wrapper #search:-ms-input-placeholder,
 .form-wrapper #search::-webkit-input-placeholder {
