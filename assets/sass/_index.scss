@@ -141,6 +141,7 @@ body .old_articles article a {
 div.container_caption {
 	width: 100%;
 	height: 100vh;
+	@include clearfix;
 }
 
 
@@ -170,9 +171,11 @@ div.container_caption>div:first-child p {
 
 div.container_scrolling {
 	background-color: white;
+	@include clearfix;
 	width: 50%;
 	height: 60vh;
 	margin: 0 auto;
+	padding-bottom: 2%;
 	position: relative;
 	bottom: 15%;
 	-moz-box-shadow: 0px 0px 10px 1px #F7F7F7;
@@ -186,6 +189,7 @@ div.container_scrolling .content_scrolling_left{
 	float: left;
 	width: 49%;
 	margin-top: 5%;
+	@include clearfix;
 }
 
 div.container_scrolling .content_scrolling_left p{
@@ -196,12 +200,14 @@ div.container_scrolling .content_scrolling_left p{
 	letter-spacing: 1px;
 	line-height: 1.5;
 	margin: 8% 0 0 10%;
+	@include clearfix;
 }
 
 div.container_scrolling .content_scrolling_right {
 	float: right;
 	width: 48%;
 	margin-top: 10%;
+	@include clearfix;
 }
 
 div.container_scrolling .content_scrolling_right p{
@@ -213,6 +219,7 @@ div.container_scrolling .content_scrolling_right p{
 	letter-spacing: 1px;
 	line-height: 1.5;
 	margin: 20% 10% 0 0;
+	@include clearfix;
 }
 
 
@@ -272,10 +279,13 @@ div.container_scrolling .content_scrolling_right p{
 
 		.scrolling_bloc {
 			width: 100%;
+			@include clearfix;
 
 			.container_scrolling {
 				width: 80%;
-				height: 65vh;
+				height: 60vh;
+				@include clearfix;
+				padding-bottom: 2%;
 		}
 	}
 }
@@ -347,7 +357,7 @@ div.container_scrolling .content_scrolling_right p{
 
 			.container_scrolling {
 				width: 80%;
-				height: 100vh;
+				height: 110vh;
 
 				.content_scrolling_left {
 					width: 100%;
