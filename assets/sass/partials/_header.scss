@@ -1,5 +1,5 @@
 
-.public header {
+header {
 	position: relative;
 	height: 55vh;
 
@@ -12,7 +12,7 @@
 	}
 }
 
-.public header .logo {
+header .logo {
 	float: left;
 	margin: 3.5% 0 0 8%;
 }
@@ -24,25 +24,32 @@
 	width: 100%;
 }
 
-.public header nav {
+header nav {
 	float: right;
-	width: 50%;
+	width: 47%;
 	margin-top: 4.5%;
 }
 
-.public header nav a {
+header .nav_barre ul {
+	width: 100%;
+	margin-left: 15%;
+}
+
+header .nav_barre ul li{
 	display: inline-block;
-	margin-right: 8.5%;
+	margin-right: 5.5%;
 	font-size: 18px;
-	color: #fff;
 	font-family: $dinL;
 	letter-spacing: 1px;
 }
 
-
-.public header nav a:nth-child(5) {
-	margin-right: 4.5%;
+header .nav_barre ul li a {
+	color: white;
 }
+
+// header nav li:nth-child(5) {
+// 	margin-right: 4.5%;
+// }
 
 
 .block_header {
@@ -51,14 +58,14 @@
 	top: 15%;
 }
 
-.block_header div:nth-child(1){
+.block_header div:nth-child(1) p{
 	width: 80%;
 	font-size: 30px;
 	color: white;
 	font-family: $dinR;
 	letter-spacing: 1px;
 	float: left;
-	margin: 15.5% 0 0 9%;
+	margin: 7.8% 0 0 9%;
 	line-height: 6vh;
 }
 
@@ -105,3 +112,432 @@
 	bottom: -120px;
 	right: 0;
 }
+
+
+
+.navPhone{
+	display: none;
+	position: absolute;
+}
+
+input[type="checkbox"]{
+	position: absolute;
+	left: -50px;
+	top: 0;
+}
+
+
+
+
+// BURGER
+
+
+.navPhone{
+	display: none;
+	position: fixed;
+}
+
+input[type="checkbox"]{
+	position: absolute;
+	left: -50px;
+	top: 0;
+}
+
+
+
+
+
+
+// MEDIA QUERIES
+
+@media only screen and (max-width : 1200px) {
+	header .nav_barre {
+		margin-right: 5%;
+	}
+}
+
+
+
+@media only screen and (max-width : 1024px)  {
+
+// 
+// 
+// HEADER
+// 
+// 
+
+	header .nav_barre {
+		display: none;
+	}
+
+	header h1.logo a img {
+		width: 40%;
+	}
+
+	header h1.logo {
+		text-align: center;
+		width: 80%;
+	}
+
+
+
+//
+//
+// BURGER
+//
+// 
+	.navPhone{
+    	display: block;
+    	position: fixed;
+    	z-index: 2;
+  	}
+  
+  .navPhone .mainNav .choice{
+    display: inline-block;
+    margin: 2.5% 2% 0 0;
+  }
+
+ .navPhone .mainNav .choice:nth-child(1){
+  margin-left: 20px;
+}
+
+.navPhone .mainNav .choice:nth-child(2){
+  margin-left: 10px;
+}
+
+.navPhone .mainNav .choice{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 40px;
+  padding: 4px;
+}
+
+.navPhone .mainNav .choice span{
+  width: 80%;
+  background-color: white;
+  height: 3px;
+  position: absolute;
+  z-index: 99;
+}
+
+.navPhone .mainNav:nth-child(1)  .choice span:nth-child(2){
+  top:0px;
+}
+.navPhone .mainNav .choice span:nth-child(3){
+  top: 0 px;
+}
+
+.contentMenuPhone{
+  z-index: 98;
+  width: 400px;
+  background-color: white;
+  height: 120vh;
+  position: fixed;
+  top: -50px;
+  right: -400px;
+  transition: 0.6s;
+}
+
+.navPhone ul{
+	list-style: none;
+}
+
+.navPhone ul li a{
+   color: black;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.contentMenuPhone ul li a{
+   color: black;
+   cursor: pointer;
+   text-decoration: none;
+   font-family: 'Roboto', sans-serif;
+   font-size: 20px;
+}
+
+.contentMenuPhone ul li{
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 7vh;
+}
+
+.contentMenuPhone ul li:nth-child(1){
+  margin-top: 20vh;
+}
+
+.choice {
+  cursor: pointer;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+
+input[type="checkbox"]:checked + .navPhone .contentMenuPhone{
+    position: fixed;
+    right:0;
+}
+
+input[type="checkbox"]:checked + .navPhone .contentMenuPhone{
+    position: fixed;
+    right:0;
+
+}
+
+input[type="checkbox"]:checked  + .navPhone .mainNav .choice span:nth-child(2) {
+	display: none;
+	z-index: 3;
+}
+
+input[type="checkbox"]:checked  + .navPhone .mainNav .choice span:nth-child(1) {
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    transition: 0.6s;
+    z-index: 20;
+    background-color: black;
+}
+
+input[type="checkbox"]:checked  + .navPhone .mainNav .choice span:nth-child(3) {
+	-ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    z-index: 20;
+    transition: 0.6s;
+    background-color: black;
+}
+
+
+input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(2) {
+	z-index:5;
+	top: 20px;
+}
+
+
+input[type="checkbox"] + .navPhone .mainNav .choice span:nth-child(1) {
+	background-color: white;
+    transition: 0.6s;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: absolute;
+    top: 0px;
+    z-index: 20;
+}
+input[type="checkbox"]  + .navPhone .mainNav .choice span:nth-child(3) {
+	background-color: white;
+    transition: 0.6s;
+	top: 10px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: absolute;
+    z-index: 20;
+}
+}
+
+
+
+
+
+ 
+// MOBILE
+
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+
+// 
+// 
+// HEADER
+// 
+// 
+
+	header .nav_barre {
+		display: none;
+	}
+
+	header h1.logo a img {
+		width: 40%;
+	}
+
+	header h1.logo {
+		text-align: center;
+		width: 80%;
+	}
+
+
+
+//
+//
+// BURGER
+//
+// 
+
+.navPhone{
+    	display: block;
+    	position: fixed;
+    	z-index: 2;
+  	}
+  
+.navPhone .mainNav .choice{
+    display: inline-block;
+    margin: 2% 2% 0 0;
+  }
+
+.navPhone .mainNav .choice:nth-child(1){
+  margin-left: 20px;
+}
+
+.navPhone .mainNav .choice:nth-child(2){
+  margin-left: 10px;
+}
+
+.navPhone .mainNav .choice{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+  width: 40px;
+  padding: 4px;
+}
+
+.navPhone .mainNav .choice span{
+  width: 50%;
+  background-color: white;
+  height: 2px;
+  position: absolute;
+  z-index: 99;
+  display: block;
+}
+
+.navPhone .mainNav:nth-child(1)  .choice span:nth-child(2){
+  top: 10px;
+}
+.navPhone .mainNav .choice span:nth-child(3){
+  top: 16px;
+}
+
+.contentMenuPhone{
+  z-index: 98;
+  width: 400px;
+  background-color: white;
+  height: 120vh;
+  position: fixed;
+  top: -50px;
+  right: -400px;
+  transition: 0.6s;
+}
+
+.navPhone ul{
+	list-style: none;
+}
+
+.navPhone ul li a{
+   color: black;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.contentMenuPhone ul li a{
+   color: black;
+   cursor: pointer;
+   text-decoration: none;
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+}
+
+.contentMenuPhone ul li{
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 7vh;
+}
+
+.contentMenuPhone ul li:nth-child(1){
+  margin-top: 20vh;
+}
+
+.choice {
+  cursor: pointer;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+input[type="checkbox"]:checked + .navPhone .contentMenuPhone{
+    position: fixed;
+    right:0;
+
+}
+
+input[type="checkbox"]:checked  + .navPhone .mainNav .choice span:nth-child(2) {
+	display: none;
+	z-index: 3;
+}
+
+input[type="checkbox"]:checked  + .navPhone .mainNav .choice span:nth-child(1) {
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    transition: 0.6s;
+    z-index: 20;
+    background-color: black;
+}
+
+input[type="checkbox"]:checked  + .navPhone .mainNav .choice span:nth-child(3) {
+	-ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    z-index: 20;
+    transition: 0.6s;
+    background-color: black;
+}
+
+
+input[type="checkbox"]  + .navPhone .mainNav .choice span:nth-child(2) {
+	z-index:5;
+	top: 10px;
+}
+
+
+input[type="checkbox"]  + .navPhone .mainNav .choice span:nth-child(1) {
+	background-color: white;
+    transition: 0.6s;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: absolute;
+    top: 0px;
+    z-index: 20;
+}
+input[type="checkbox"]  + .navPhone .mainNav .choice span:nth-child(3) {
+	background-color: white;
+    transition: 0.6s;
+	top: 5px;
+	-ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    position: absolute;
+    z-index: 20;
+}
+
+}
+
+

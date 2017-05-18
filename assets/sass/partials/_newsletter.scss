@@ -24,7 +24,7 @@
 }
 
 .newsletter .slogan {
-	width: 39%;
+	width: 52%;
 	display: inline-block;
 	font-size: 1.4em;
 	color: #fff;
@@ -39,7 +39,7 @@
 }
 
 div.subscribe {
-	width: 60%;
+	width: 46%;
 	margin-top: .8em;
 	display: inline-block;
 
@@ -74,6 +74,26 @@ div.subscribe {
 		cursor: pointer;
 		background-color: $blue;
 		font-family: $roboto;
+	}
+
+}
+
+
+
+@media only screen and (max-width : 1024px)  {
+
+	div.newsletter {
+		padding: 2%;
+	}
+
+	div.inner-newsletter .slogan {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+	} 
+
+	div.subscribe {
+		margin: 0 auto;
 	}
 
 }
