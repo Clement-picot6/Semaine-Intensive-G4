@@ -50,6 +50,7 @@ include 'header-bo.php';
           <td><?=$row['number']?></td>
           <td><?=$row['region']?></td>
           <td>yes</td>
+
           <td><a href="modify.php?id=<?php echo $row["id"]?>" class="btn btn-large btn-info">Edit</a></td>
           <td>Delete</td>
         </tr>
@@ -100,7 +101,18 @@ include 'header-bo.php';
       </form>
   </div>
   </section>
+
 </main>
+
+
+
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+</script>
 
 </body>
 </html>
