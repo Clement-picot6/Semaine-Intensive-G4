@@ -690,12 +690,16 @@ body .breadcrumb span {
 }
 
 /* line 6, ../sass/_index.scss */
-body .actu_block {
+#index .actu_block {
   margin-top: 25%;
 }
+/* line 9, ../sass/_index.scss */
+#index .actu_block figure img {
+  width: 100%;
+}
 
-/* line 11, ../sass/_index.scss */
-body .actu_block div:nth-child(1) {
+/* line 15, ../sass/_index.scss */
+#index .actu_block div:nth-child(1) {
   border-bottom: solid black 5px;
   width: 5%;
   display: inline-block;
@@ -703,8 +707,8 @@ body .actu_block div:nth-child(1) {
   margin-right: 20px;
 }
 
-/* line 19, ../sass/_index.scss */
-body .actu_block > h1 {
+/* line 23, ../sass/_index.scss */
+#index .actu_block > h1 {
   display: inline-block;
   font-size: 30px;
   color: black;
@@ -712,35 +716,35 @@ body .actu_block > h1 {
   letter-spacing: 1px;
 }
 
-/* line 27, ../sass/_index.scss */
-body .actu_block .article_block {
+/* line 31, ../sass/_index.scss */
+#index .actu_block .article_block {
   margin-top: 4%;
 }
 
-/* line 31, ../sass/_index.scss */
-body .actu_block .article_block article {
+/* line 35, ../sass/_index.scss */
+#index .actu_block .article_block article {
   float: left;
   width: 39%;
 }
 
-/* line 36, ../sass/_index.scss */
-body .actu_block .article_block article:nth-child(2) {
+/* line 41, ../sass/_index.scss */
+#index .actu_block .article_block article:nth-child(2) {
   float: right;
   width: 57%;
 }
 
-/* line 41, ../sass/_index.scss */
-body .actu_block .article_block article:nth-child(1) figure figcaption {
+/* line 46, ../sass/_index.scss */
+#index .actu_block .article_block article:nth-child(1) figure figcaption {
   color: #3BC0D1;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   margin-top: 7%;
   letter-spacing: 1px;
 }
 
-/* line 50, ../sass/_index.scss */
-body .actu_block .article_block article:nth-child(2) figure figcaption {
+/* line 55, ../sass/_index.scss */
+#index .actu_block .article_block article:nth-child(2) figure figcaption {
   color: #3BC0D1;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -749,98 +753,104 @@ body .actu_block .article_block article:nth-child(2) figure figcaption {
   letter-spacing: 1px;
 }
 
-/* line 60, ../sass/_index.scss */
-body .actu_block .article_block article h2 {
+/* line 64, ../sass/_index.scss */
+#index .article_block:nth-child(2n+3) {
+  background: red;
+}
+
+/* line 70, ../sass/_index.scss */
+#index .actu_block .article_block article h2 {
   font-size: 25px;
-  font-family: 'din_regular', sans-serif;
+  font-family: "DIN Regular", sans-serif;
   color: #2D2D2D;
   letter-spacing: 1px;
   margin: 3% 0;
 }
-
-/* line 68, ../sass/_index.scss */
-body .actu_block .article_block article p {
+/* line 78, ../sass/_index.scss */
+#index .actu_block .article_block article p {
   width: 100%;
   color: #191919;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 3vh;
   letter-spacing: 1px;
 }
-
-/* line 78, ../sass/_index.scss */
-body .actu_block .article_block article a {
+/* line 88, ../sass/_index.scss */
+#index .actu_block .article_block article a {
   text-decoration: none;
   color: #3BC0D1;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 1px;
   padding-top: 2%;
 }
 
-/* line 88, ../sass/_index.scss */
+/* line 100, ../sass/_index.scss */
 body section.old_articles {
   width: 100%;
   margin-top: 10%;
 }
-
-/* line 93, ../sass/_index.scss */
+/* line 104, ../sass/_index.scss */
 body section.old_articles article {
   width: 33.1%;
   float: left;
 }
-
-/* line 98, ../sass/_index.scss */
-body .old_articles article figure figcaption {
+/* line 108, ../sass/_index.scss */
+body section.old_articles article h2 {
+  font-size: 20px;
+  font-family: "DIN Regular", sans-serif;
+  color: #2D2D2D;
+  letter-spacing: 1px;
+  margin: 3% 0;
+}
+/* line 116, ../sass/_index.scss */
+body section.old_articles article p {
+  width: 90%;
+  padding-top: 4%;
+  color: #191919;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 3vh;
+  letter-spacing: 1px;
+}
+/* line 127, ../sass/_index.scss */
+body section.old_articles article a {
+  text-decoration: none;
   color: #3BC0D1;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-top: 2%;
+}
+/* line 138, ../sass/_index.scss */
+body section.old_articles figure {
+  width: 90%;
+}
+/* line 140, ../sass/_index.scss */
+body section.old_articles figure img {
+  width: 100%;
+}
+/* line 143, ../sass/_index.scss */
+body section.old_articles figure figcaption {
+  color: #3BC0D1;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   margin-top: 12%;
   letter-spacing: 1px;
 }
 
-/* line 107, ../sass/_index.scss */
-body .old_articles article h2 {
-  font-size: 20px;
-  font-family: 'din_regular', sans-serif;
-  color: #2D2D2D;
-  letter-spacing: 1px;
-  margin: 3% 0;
-}
-
-/* line 115, ../sass/_index.scss */
-body .old_articles article p {
-  width: 90%;
-  padding-top: 4%;
-  color: #191919;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 3vh;
-  letter-spacing: 1px;
-}
-
-/* line 126, ../sass/_index.scss */
-body .old_articles article a {
-  text-decoration: none;
-  color: #3BC0D1;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: 1px;
-  padding-top: 2%;
-}
-
-/* line 136, ../sass/_index.scss */
+/* line 156, ../sass/_index.scss */
 .scrolling_bloc {
   width: 100%;
   margin-top: 10%;
 }
 
-/* line 141, ../sass/_index.scss */
+/* line 161, ../sass/_index.scss */
 div.container_caption {
   width: 100%;
   height: 100vh;
@@ -852,7 +862,7 @@ div.container_caption:after {
   clear: both;
 }
 
-/* line 148, ../sass/_index.scss */
+/* line 168, ../sass/_index.scss */
 div.container_caption > div:first-child {
   width: 100%;
   background-color: #F6F6F6;
@@ -860,7 +870,7 @@ div.container_caption > div:first-child {
   text-align: center;
 }
 
-/* line 155, ../sass/_index.scss */
+/* line 175, ../sass/_index.scss */
 div.container_caption > div:first-child h1 {
   color: #3BC0D1;
   font-size: 240px;
@@ -869,7 +879,7 @@ div.container_caption > div:first-child h1 {
   font-weight: 400;
 }
 
-/* line 163, ../sass/_index.scss */
+/* line 183, ../sass/_index.scss */
 div.container_caption > div:first-child p {
   color: #3BC0D1;
   font-size: 35px;
@@ -879,7 +889,7 @@ div.container_caption > div:first-child p {
   bottom: 35%;
 }
 
-/* line 172, ../sass/_index.scss */
+/* line 192, ../sass/_index.scss */
 div.container_scrolling {
   background-color: white;
   width: 50%;
@@ -901,7 +911,7 @@ div.container_scrolling:after {
   clear: both;
 }
 
-/* line 188, ../sass/_index.scss */
+/* line 208, ../sass/_index.scss */
 div.container_scrolling .content_scrolling_left {
   float: left;
   width: 49%;
@@ -914,7 +924,7 @@ div.container_scrolling .content_scrolling_left:after {
   clear: both;
 }
 
-/* line 195, ../sass/_index.scss */
+/* line 215, ../sass/_index.scss */
 div.container_scrolling .content_scrolling_left p {
   color: black;
   font-family: 'Roboto', sans-serif;
@@ -931,7 +941,7 @@ div.container_scrolling .content_scrolling_left p:after {
   clear: both;
 }
 
-/* line 206, ../sass/_index.scss */
+/* line 226, ../sass/_index.scss */
 div.container_scrolling .content_scrolling_right {
   float: right;
   width: 48%;
@@ -944,7 +954,7 @@ div.container_scrolling .content_scrolling_right:after {
   clear: both;
 }
 
-/* line 213, ../sass/_index.scss */
+/* line 233, ../sass/_index.scss */
 div.container_scrolling .content_scrolling_right p {
   text-align: right;
   color: black;
@@ -963,46 +973,46 @@ div.container_scrolling .content_scrolling_right p:after {
 }
 
 @media only screen and (max-width: 1300px) {
-  /* line 234, ../sass/_index.scss */
+  /* line 254, ../sass/_index.scss */
   .actu_block article:nth-child(1) figure img {
     width: 100%;
   }
 
-  /* line 238, ../sass/_index.scss */
+  /* line 258, ../sass/_index.scss */
   .actu_block article:nth-child(2) figure img {
     width: 100%;
   }
 
-  /* line 244, ../sass/_index.scss */
+  /* line 264, ../sass/_index.scss */
   .old_articles figure:nth-child(1) img {
     width: 95%;
   }
-  /* line 248, ../sass/_index.scss */
+  /* line 268, ../sass/_index.scss */
   .old_articles h2 {
     width: 95%;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 261, ../sass/_index.scss */
+  /* line 281, ../sass/_index.scss */
   .actu_block article:nth-child(1) figure img {
     width: 90%;
   }
 
-  /* line 265, ../sass/_index.scss */
+  /* line 285, ../sass/_index.scss */
   .actu_block article:nth-child(2) figure img {
     width: 90%;
   }
 
-  /* line 271, ../sass/_index.scss */
+  /* line 291, ../sass/_index.scss */
   .old_articles figure:nth-child(1) img {
     width: 95%;
   }
-  /* line 275, ../sass/_index.scss */
+  /* line 295, ../sass/_index.scss */
   .old_articles h2 {
     width: 95%;
   }
 
-  /* line 280, ../sass/_index.scss */
+  /* line 300, ../sass/_index.scss */
   .scrolling_bloc {
     width: 100%;
   }
@@ -1012,7 +1022,7 @@ div.container_scrolling .content_scrolling_right p:after {
     display: table;
     clear: both;
   }
-  /* line 284, ../sass/_index.scss */
+  /* line 304, ../sass/_index.scss */
   .scrolling_bloc .container_scrolling {
     width: 80%;
     height: 60vh;
@@ -1026,7 +1036,7 @@ div.container_scrolling .content_scrolling_right p:after {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* line 304, ../sass/_index.scss */
+  /* line 324, ../sass/_index.scss */
   body .actu_block div:nth-child(1) {
     border-bottom: solid black 3px;
     width: 5%;
@@ -1034,75 +1044,65 @@ div.container_scrolling .content_scrolling_right p:after {
     margin-bottom: 5px;
     margin-right: 20px;
   }
-  /* line 313, ../sass/_index.scss */
+  /* line 333, ../sass/_index.scss */
   body .actu_block h1 {
     font-size: 25px;
     margin-bottom: 5%;
   }
-  /* line 318, ../sass/_index.scss */
+  /* line 338, ../sass/_index.scss */
   body .actu_block .article_block article:nth-child(1) {
     width: 100%;
     float: left;
     margin-bottom: 20%;
   }
-  /* line 324, ../sass/_index.scss */
+  /* line 344, ../sass/_index.scss */
   body .actu_block .article_block article:nth-child(2) {
     width: 100%;
     float: left;
     margin-bottom: 15%;
   }
 
-  /* line 331, ../sass/_index.scss */
-  .actu_block article:nth-child(1) figure img {
-    width: 100%;
-  }
-
-  /* line 335, ../sass/_index.scss */
-  .actu_block article:nth-child(2) figure img {
-    width: 100%;
-  }
-
-  /* line 340, ../sass/_index.scss */
+  /* line 360, ../sass/_index.scss */
   div.clearfix .old_articles article {
     width: 100%;
     margin-bottom: 15%;
   }
-  /* line 345, ../sass/_index.scss */
+  /* line 365, ../sass/_index.scss */
   div.clearfix .old_articles figure:nth-child(1) img {
     width: 95%;
   }
-  /* line 349, ../sass/_index.scss */
+  /* line 369, ../sass/_index.scss */
   div.clearfix .old_articles h2 {
     width: 95%;
   }
 
-  /* line 355, ../sass/_index.scss */
+  /* line 375, ../sass/_index.scss */
   .scrolling_bloc {
     width: 100%;
   }
-  /* line 358, ../sass/_index.scss */
+  /* line 378, ../sass/_index.scss */
   .scrolling_bloc .container_scrolling {
     width: 80%;
     height: 110vh;
   }
-  /* line 362, ../sass/_index.scss */
+  /* line 382, ../sass/_index.scss */
   .scrolling_bloc .container_scrolling .content_scrolling_left {
     width: 100%;
     padding: 5%;
   }
-  /* line 366, ../sass/_index.scss */
+  /* line 386, ../sass/_index.scss */
   .scrolling_bloc .container_scrolling .content_scrolling_left p {
     margin: 0;
     font-size: 16px;
     text-align: center;
   }
-  /* line 373, ../sass/_index.scss */
+  /* line 393, ../sass/_index.scss */
   .scrolling_bloc .container_scrolling .content_scrolling_right {
     width: 100%;
     padding: 5%;
     float: left;
   }
-  /* line 378, ../sass/_index.scss */
+  /* line 398, ../sass/_index.scss */
   .scrolling_bloc .container_scrolling .content_scrolling_right p {
     margin: 0;
     font-size: 16px;
@@ -2215,15 +2215,15 @@ section.modify-form div.modify-fields .right-side {
   width: 40%;
   float: right;
 }
-/* line 33, ../sass/modify.scss */
+/* line 34, ../sass/modify.scss */
 section.modify-form div.modify-fields div[class*="-side"] > div {
   margin-bottom: 1em;
 }
-/* line 37, ../sass/modify.scss */
+/* line 38, ../sass/modify.scss */
 section.modify-form div.modify-fields div[class*="-side"] input[type="text"], section.modify-form div.modify-fields div[class*="-side"] textarea {
   width: 60%;
 }
-/* line 43, ../sass/modify.scss */
+/* line 44, ../sass/modify.scss */
 section.modify-form input[type="submit"] {
   text-transform: uppercase;
   color: #3BC0D1;
@@ -2231,7 +2231,7 @@ section.modify-form input[type="submit"] {
   border: 2px solid #3BC0D1;
   cursor: pointer;
   margin-right: 1.5em;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 /* line 2, ../sass/partials/_footer.scss */

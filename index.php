@@ -1,5 +1,6 @@
 <?php
 
+include_once('php/dbconfig.php');
 include 'header.php';
 ?>
 
@@ -17,87 +18,61 @@ include 'header.php';
         <div></div>
         <h1>Dernières actualités</h1>
         <section class="article_block">
+
+            <?php
+
+            $query = "SELECT `title`, `architect`, `main_img`, `resume`, `slug` FROM articles LIMIT 2";
+            $data = $crud->dataview($query);
+            while($row = $data->fetch(PDO::FETCH_ASSOC)):
+            ?>
+
             <article>
                 <figure>
-                    <img src="assets/img-content/photo_accueil_1.jpg" alt="photo1">
+                    <img src="<?=$row['main_img']; ?>" alt="photo1">
                     <figcaption>
-                        ARSENAULT Eric
+                        <?=$row['architect']; ?>
                     </figcaption>
                 </figure>
                 <h2>
-                    Internat du lycée agricole à Château Chinon (58)
+                    <?=$row['title']; ?>
                 </h2>
 
                 <p>
-                    Le bâtiment est régi par une courbe à double inflexion qui s’avance dans le paysage vers le Morvan avec une tisanerie suspendue dans le vide à son extrémité. Différentes loggias ponctuent le bâtiment et offrent depuis l’intérieur autant de vues sur Château Chinon et la campagne environnante.
+                   <?=$row['resume']; ?>
                 </p>
-                <a href="#">Lire la suite ></a>
+                <a href="journal.php?article=<?php echo $row['slug']; ?>">Lire la suite ></a>
             </article>
-            <article>
-                <figure>
-                    <img src="assets/img-content/photo_accueil_2.jpg" alt="photo2">
-                    <figcaption>
-                        DUCLOS Architectes Associés
-                    </figcaption>
-                </figure>
-                <h2>
-                    Construction de la délégation régionale du CNFPT à Poitiers (86)
-                </h2>
 
-                <p>
-                    Le bâtiment est régi par une courbe à double inflexion qui s’avance dans le paysage vers le Morvan avec une tisanerie suspendue dans le vide à son extrémité. Différentes loggias ponctuent le bâtiment et offrent depuis l’intérieur autant de vues sur Château Chinon et la campagne environnante. <a href="#">Lire la suite ></a>
-                </p>
-            </article>
+            <?php endwhile; ?>
         </section>
     </div>
-
+<!---->
     <div class="clearfix">
         <section class="old_articles">
+
+            <?php
+
+            $query = "SELECT `title`, `architect`, `main_img`, `resume`, `slug` FROM articles WHERE `id` >= 3 LIMIT 3";
+            $data = $crud->dataview($query);
+            while($row = $data->fetch(PDO::FETCH_ASSOC)):
+            ?>
+
             <article>
                 <figure>
-                    <img src="assets/img-content/photo_accueil_3.jpg" alt="photo3">
+                    <img src="<?=$row['main_img']; ?>" alt="photo3">
                     <figcaption>
-                        ARSENAULT Eric
+                        <?=$row['architect']; ?>
                     </figcaption>
                 </figure>
                 <h2>
-                    Internat du lycée agricole à Château Chinon (58)
+                    <?=$row['title']; ?>
                 </h2>
 
-                <p>
-                    Au Nord une faille entièrement vitrée accompagnée par un voile en béton blanc courbe offre une transparence entre l’avenue et le jardin intérieur. Au Sud, un totem vitré lumineux visible depuis l’A86 englobe les salles de réunion. <a href="#">Lire la suite ></a>
+                <p><?=$row['resume']; ?> <a href="journal.php?article=<?php echo $row['slug']; ?>">Lire la suite ></a>
                 </p>
             </article>
-            <article>
-                <figure>
-                    <img src="assets/img-content/photo_accueil_4.jpg" alt="photo4">
-                    <figcaption>
-                        ARSENAULT Eric
-                    </figcaption>
-                </figure>
-                <h2>
-                    Internat du lycée agricole à Château Chinon (58)
-                </h2>
 
-                <p>
-                    Au Nord une faille entièrement vitrée accompagnée par un voile en béton blanc courbe offre une transparence entre l’avenue et le jardin intérieur. <a href="#">Lire la suite ></a>
-                </p>
-            </article>
-            <article>
-                <figure>
-                    <img src="assets/img-content/photo_accueil_5.jpg" alt="photo5">
-                    <figcaption>
-                        ARSENAULT Eric
-                    </figcaption>
-                </figure>
-                <h2>
-                    Internat du lycée agricole à Château Chinon (58)
-                </h2>
-
-                <p>
-                    Au Nord une faille entièrement vitrée accompagnée par un voile en béton blanc courbe offre une transparence entre l’avenue et le jardin intérieur. <a href="#">Lire la suite ></a>
-                </p>
-            </article>
+            <?php endwhile; ?>
         </section>
     </div>
 </main>
