@@ -13,7 +13,8 @@ header {
 }
 
 header.bo_header {
-	height: 35vh;
+	height: 25vh;
+	border-bottom: 1px solid $black;
 }
 
 header .logo {
@@ -537,8 +538,6 @@ input[type="checkbox"]  + .navPhone .mainNav .choice span:nth-child(3) {
 }
 
 }
-<<<<<<< HEAD
-=======
 
 
 // SEARCH BAR
@@ -620,4 +619,3 @@ input[type="checkbox"]  + .navPhone .mainNav .choice span:nth-child(3) {
 //.form-wrapper #submit::-moz-focus-inner {
 //  border: 0;
 //}
->>>>>>> 08cc2f7da3ecd68490f77a39186a9a99bca15a33
