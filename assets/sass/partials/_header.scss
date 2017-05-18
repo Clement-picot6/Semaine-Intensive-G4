@@ -18,13 +18,18 @@ header.bo_header {
 
 header .logo {
 	float: left;
-	margin: 3.5% 0 0 8%;
+	margin: 3% 0 0 8%;
+
+	a img {
+		width: 100%;
+	}
+
 }
 
 .header-bg {
 	position: absolute;
 	top: 0;
-	z-index: -1;
+	z-index: -555;
 	width: 100%;
 }
 
@@ -351,21 +356,10 @@ input[type="checkbox"]  + .navPhone .mainNav .choice span:nth-child(3) {
 }
 
 
-
-
-
-
 // MOBILE
 
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
-
-
-//
-//
-// HEADER
-//
-//
 
 	header .nav_barre {
 		display: none;

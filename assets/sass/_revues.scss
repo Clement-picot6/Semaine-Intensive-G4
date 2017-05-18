@@ -20,6 +20,7 @@
 .hidden{
   display:none !important;
 }
+
 section.last-journals{
 	width: $width;
 	margin: 3em auto 6em;
@@ -46,6 +47,10 @@ section.last-journals{
       height: 3px;
       background: $black;
       top: 50%;
+
+      @media screen and (max-width: 780px) {
+        display: none;
+      }
     }
   }
 }

@@ -1,8 +1,9 @@
 	<header class="clearfix">
 		<img src="assets/img-layout/header.jpg" alt="" class="header-bg">
+
 		<h1 class="logo">
 			<a href="index.php">
-				<img src="assets/img-layout/logo.png" alt="logo">
+				<img src="assets/img-layout/logo.svg" alt="logo">
 			</a></h1>
 		<nav class="nav_barre">
 			<ul>
@@ -14,6 +15,7 @@
 				<li><a href="#"><img src="assets/img-layout/search.svg" alt="search"></a></li>
 			</ul>
 		</nav>
+
 
 		<input type="checkbox" id="check1" name=""/>
 		<nav class="navPhone">
@@ -36,9 +38,9 @@
 			</ul>
 			</div>
 
-      <form class="form-wrapper">
+      <!-- <form class="form-wrapper">
             <input type="text" id="search" placeholder="Search for..." required>
             <input type="submit" value="go" id="submit">
-        </form>
+        </form> -->
 		</nav>
 	</header>
