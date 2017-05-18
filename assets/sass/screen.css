@@ -90,10 +90,6 @@ header {
     header {
       height: 30vh; } }
 
-header.bo_header {
-  height: 25vh;
-  border-bottom: 1px solid #3C3C3C; }
-
 header .logo {
   float: left;
   margin: 3.5% 0 0 8%; }
@@ -1571,41 +1567,10 @@ section.modify-form input[type="submit"] {
   margin-right: 1.5em;
   margin-top: 2em; }
 
-main.delete {
-  text-align: center;
-  margin-top: 20px; }
-  main.delete div.request {
-    margin-top: 8%; }
-    main.delete div.request div.alert p {
-      font-family: Roboto, sans-serif;
-      font-size: 2em; }
-    main.delete div.request table {
-      margin: 5% 0 5% 32%;
-      text-transform: uppercase; }
-      main.delete div.request table tr th {
-        background-color: #3BC0D1;
-        color: #FFF;
-        width: 200px;
-        margin: 0;
-        padding: 0;
-        font-family: "DIN Regular", sans-serif;
-        height: 35px; }
-      main.delete div.request table tr td {
-        padding-top: 5%; }
-    main.delete div.request form button.btn-yes {
-      width: 80px;
-      height: 30px;
-      background-color: #3BC0D1;
-      border-radius: 2px;
-      color: #FFF;
-      margin-right: 3%; }
-    main.delete div.request form button.btn-no {
-      width: 80px;
-      height: 30px;
-      background-color: #757575;
-      border-radius: 2px; }
-      main.delete div.request form button.btn-no a {
-        color: #FFF; }
+body #delete div.alert .alert-danger p {
+  background-color: red;
+  width: 25%;
+  padding-left: 200px; }
 
 footer {
   padding: 4em 0; }

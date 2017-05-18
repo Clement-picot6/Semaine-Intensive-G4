@@ -51,8 +51,8 @@ include 'header-bo.php';
           <td><?=$row['region']?></td>
           <td>yes</td>
 
-          <td><a href="modify.php?id=<?php echo $row["id"]?>" class="btn btn-large btn-info">Edit</a></td>
-          <td>Delete</td>
+          <td><a href="modify.php?id=<?php echo $row["id"]?>">Edit</a></td>
+          <td><a href="delete.php?id=<?php echo $row["id"]?>">Delete</a></td>
         </tr>
       <?php endwhile;?>
       </tbody>
@@ -104,15 +104,6 @@ include 'header-bo.php';
 
 </main>
 
-
-
-<script>
-  // When the user clicks on div, open the popup
-  function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
-  }
-</script>
 
 </body>
 </html>

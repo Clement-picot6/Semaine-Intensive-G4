@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="assets/stylesheets/screen.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700" rel="stylesheet">
 </head>
-<body id="bo" class="modify">
+    <body id="bo" class="modify">
 
 <header class="bo_header">
     <div class="links">
-        <a href="#">< retour au site internet</a>
+        <img src="assets/img-layout/" alt="logo">
         <span>Espace administrateur</span>
     </div>
 </header>
+

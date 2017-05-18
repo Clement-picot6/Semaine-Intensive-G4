@@ -1,0 +1,53 @@
+main.delete {
+text-align: center;
+margin-top: 20px;
+  div.request {
+    margin-top: 8%;
+    div.alert p {
+      font-family: Roboto, sans-serif;
+      font-size: 2em;
+
+    }
+
+    table {
+      margin: 5% 0 5% 32%;
+      text-transform: uppercase;
+      tr {
+        th {
+          background-color: #3BC0D1;
+          color: #FFF;
+          width: 200px;
+          margin: 0;
+          padding: 0;
+          font-family: $dinR;
+          height: 35px;
+
+        }
+        td {
+          padding-top: 5%;
+        }
+      }
+    }
+
+    form {
+      button.btn-yes {
+        width: 80px;
+        height: 30px;
+        background-color: #3BC0D1;
+        border-radius: 2px;
+        color: #FFF;
+        margin-right: 3%;
+      }
+      button.btn-no {
+        width: 80px;
+        height: 30px;
+        background-color: #757575;
+        border-radius: 2px;
+
+        a {
+          color: #FFF;
+        }
+      }
+    }
+  }
+}

@@ -11,6 +11,10 @@ header {
 		height: 30vh;
 	}
 }
+header.bo_header {
+  height: 25vh;
+  border-bottom: 1px solid #3C3C3C;
+}
 
 header .logo {
 	float: left;
