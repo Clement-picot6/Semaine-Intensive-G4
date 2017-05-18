@@ -873,13 +873,13 @@ div.subscribe {
 
   div.subscribe {
     margin: 0 auto; } }
-.breadcrumb {
+breadcrumb {
   width: 85%;
   margin: 3em auto 0 auto;
   font-family: "DIN Regular", sans-serif; }
-  .breadcrumb .arrow {
+  breadcrumb .arrow {
     padding: 0 1em; }
-  .breadcrumb .active {
+  breadcrumb .active {
     color: #3BC0D1;
     font-family: "DIN Medium", sans-serif; }
 
@@ -891,8 +891,6 @@ div.subscribe {
 
 section.last-journals {
   width: 85%;
-  margin: 3em auto 6em;
-  width: 85%;
   margin: 3em auto 6em; }
   section.last-journals h2 {
     font-size: 25px;
@@ -901,12 +899,6 @@ section.last-journals {
     font-family: "DIN Regular", sans-serif;
     letter-spacing: 1px;
     margin-bottom: 2em; }
-    @media screen and (max-width: 780px) {
-      section.last-journals h2 {
-        padding: 0;
-        margin: 0 auto;
-        margin-bottom: 10%;
-        font-size: 30px; } }
     section.last-journals h2::before {
       position: absolute;
       content: "";
@@ -932,20 +924,12 @@ section.last-journals {
     width: 19%;
     float: left;
     margin-right: 4.33333%; }
-    @media screen and (max-width: 780px) {
-      .all-journals .revue {
-        width: 100%;
-        margin-bottom: 20%;
-        font-size: 30px; } }
     .all-journals .revue img {
       width: 100%; }
     .all-journals .revue span {
       padding: .5em 1.7em;
       background: #3BC0D1;
       color: #fff; }
-      @media screen and (max-width: 780px) {
-        .all-journals .revue span {
-          font-size: 30px; } }
     .all-journals .revue p {
       font-family: "DIN Medium", sans-serif;
       font-size: 1.2em;
@@ -953,9 +937,6 @@ section.last-journals {
   .all-journals .revue:first-child {
     width: 30%;
     float: left; }
-    @media screen and (max-width: 780px) {
-      .all-journals .revue:first-child {
-        width: 100%; } }
     .all-journals .revue:first-child img {
       width: 100%; }
   .all-journals .revue:last-child {
@@ -981,10 +962,6 @@ section.region {
         float: left;
         font-size: 30px;
         font-family: "DIN Regular", sans-serif; }
-        @media screen and (max-width: 780px) {
-          section.region .inner-region .head-region h2 {
-            text-align: center;
-            width: 100%; } }
       section.region .inner-region .head-region span {
         float: right;
         display: block;
@@ -1001,11 +978,6 @@ section.region {
           left: -40%;
           background: #191919;
           top: 50%; }
-        @media screen and (max-width: 780px) {
-          section.region .inner-region .head-region span {
-            float: none;
-            width: 100%;
-            margin-bottom: 10%; } }
 
 .all-regions {
   background: #fff;
@@ -1017,10 +989,6 @@ section.region {
     content: "";
     display: table;
     clear: both; }
-  @media screen and (max-width: 780px) {
-    .all-regions {
-      padding: 6em 0;
-      text-align: center; } }
   .all-regions .metropole {
     display: block;
     margin-bottom: 8em;
@@ -1032,30 +1000,14 @@ section.region {
     .all-regions .metropole .liste {
       width: 30%;
       float: left; }
-      @media screen and (max-width: 780px) {
-        .all-regions .metropole .liste {
-          float: none;
-          width: 100%; } }
-    @media screen and (max-width: 780px) {
-      .all-regions .metropole {
-        margin-bottom: 3em; } }
   .all-regions h3 {
     font-size: 26px; }
   .all-regions .outre-mer {
     float: left;
     width: 50%; }
-    @media screen and (max-width: 780px) {
-      .all-regions .outre-mer {
-        float: none;
-        width: 100%;
-        margin-bottom: 2em; } }
   .all-regions .etranger {
     float: left;
     width: 50%; }
-    @media screen and (max-width: 780px) {
-      .all-regions .etranger {
-        float: none;
-        width: 100%; } }
 
 .cartes {
   width: 85%;
@@ -1086,17 +1038,13 @@ section.region {
       width: 50%;
       float: left;
       text-align: center; }
-      @media screen and (max-width: 780px) {
-        .cartes .region-img .region-left {
-          width: 100%; } }
       .cartes .region-img .region-left img {
         width: 60%; }
     .cartes .region-img .region-right {
       width: 40%;
       float: right; }
-      @media screen and (max-width: 780px) {
-        .cartes .region-img .region-right {
-          width: 100%; } }
+      .cartes .region-img .region-right:hover {
+        image: url(../integration/img-content/france-hover.png); }
       .cartes .region-img .region-right figure {
         width: 100%;
         margin-top: 12%; }
@@ -1104,6 +1052,94 @@ section.region {
           width: 14%;
           margin-left: 12%; }
 
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .all-journals .revue:first-child, .all-journals .revue {
+    width: 40%;
+    margin: 0 5%; }
+    .all-journals .revue:first-child span, .all-journals .revue span {
+      font-size: 20px; }
+    .all-journals .revue:first-child p, .all-journals .revue p {
+      font-size: 30px;
+      margin-bottom: 20%; }
+
+  section.last-journals h2 {
+    padding-left: 0;
+    font-size: 16px; }
+
+  h3 {
+    font-size: 28px; }
+
+  .all-regions .metropole .liste {
+    width: 50%;
+    margin: 20% 0;
+    font-size: 20px;
+    float: left; }
+
+  .outre-mer li, .etranger li {
+    font-size: 24px;
+    padding: 5%; }
+
+  .liste, .outre-mer {
+    width: 45%; }
+    .liste li, .outre-mer li {
+      font-size: 24px; } }
+@media only screen and (max-width: 600px) {
+  section.last-journals h2 {
+    padding-left: 10%;
+    font-size: 22px; }
+    section.last-journals h2::before {
+      content: "";
+      width: 24px;
+      left: 0;
+      height: 3px;
+      background: #191919;
+      top: 50%; }
+
+  .all-journals .revue:first-child, .all-journals .revue {
+    width: 80%;
+    margin: 0 10% 30% 10%; }
+
+  .all-regions .metropole .liste {
+    width: 100%;
+    margin: 20% 0;
+    float: left; }
+
+  .all-regions .metropole, .outre-mer, .etranger, .liste ul li {
+    font-size: 16px;
+    text-align: center; }
+
+  .all-regions .outre-mer {
+    width: 100%; }
+
+  .cartes.active > div.region-img > div.region-left {
+    padding-top: 20%;
+    width: 100%; }
+
+  .cartes.active > div.region-img > div.region-right {
+    margin: 20% 0;
+    width: 100%; }
+    .cartes.active > div.region-img > div.region-right figure img {
+      margin-left: 15%; }
+
+  #cartes, #regions {
+    float: left;
+    margin-left: 14%; }
+
+  .cartes .container_h3 {
+    display: none; }
+
+  .outre-mer li, .etranger li {
+    font-size: 24px;
+    padding: 5%; }
+
+  .liste, .outre-mer {
+    width: 100%; }
+    .liste li, .outre-mer li {
+      font-size: 24px; }
+
+  .etranger {
+    width: 100%;
+    margin: 10% 0 0 23%; } }
 #boutique main {
   width: 85%;
   margin: 0 auto; }

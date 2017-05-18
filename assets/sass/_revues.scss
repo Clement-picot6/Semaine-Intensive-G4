@@ -1,5 +1,4 @@
-
-.breadcrumb {
+breadcrumb {
   width: $width;
   margin: 3em auto 0 auto;
   font-family: $dinR;
@@ -22,8 +21,6 @@
   display:none !important;
 }
 section.last-journals{
-	width: $width;
-	margin: 3em auto 6em;
   width: $width;
   margin: 3em auto 6em;
 
@@ -34,12 +31,7 @@ section.last-journals{
     font-family: $dinR;
     letter-spacing: 1px;
     margin-bottom: 2em;
-    @media screen and (max-width: 780px) {
-      padding:0;
-      margin:0 auto;
-      margin-bottom:10%;
-      font-size:30px;
-    }
+    
 
     &::before {
       position: absolute;
@@ -54,26 +46,22 @@ section.last-journals{
 }
 
 .blue{
-	color: $blue;
+  color: $blue;
 }
 
 
 .all-journals {
-	float:left;
-	padding-top:2%;
-	font-family: $dinR;
-	font-size:16px;
+  float:left;
+  padding-top:2%;
+  font-family: $dinR;
+  font-size:16px;
   @include clearfix;
 
   .revue {
     width:19%;
     float:left;
     margin-right: 4.33333%;
-      @media screen and (max-width: 780px) {
-        width: 100%;
-        margin-bottom:20%;
-        font-size:30px;
-        }
+
 
 
     img {
@@ -84,9 +72,6 @@ section.last-journals{
       padding: .5em 1.7em;
       background: $blue;
       color: #fff;
-        @media screen and (max-width: 780px) {
-        font-size:30px;
-        }
     }
     p {
       font-family: $dinM;
@@ -98,9 +83,6 @@ section.last-journals{
   .revue:first-child {
     width:30%;
     float:left;
-      @media screen and (max-width: 780px) {
-        width: 100%;
-        }
 
 
     img {
@@ -134,10 +116,6 @@ section.region{
         float: left;
         font-size: 30px;
         font-family: $dinR;
-        @media screen and (max-width: 780px) {
-          text-align:center;
-          width: 100%;
-        }
       }
 
       span {
@@ -158,12 +136,6 @@ section.region{
           background: $black;
           top: 50%;
         }
-
-        @media screen and (max-width: 780px) {
-          float: none;
-          width: 100%;
-          margin-bottom:10%;
-        }
       }
 
     } // END OF HEAD REGION
@@ -178,10 +150,7 @@ section.region{
   @include clearfix;
   line-height: 1.8;
 
-  @media screen and (max-width: 780px) {
-    padding:6em 0;
-    text-align:center;
-  }
+
 
   .metropole{
     display: block;
@@ -192,14 +161,6 @@ section.region{
     .liste{
       width:30%;
       float:left;
-
-      @media screen and (max-width: 780px) {
-        float: none;
-        width: 100%;
-      }
-    }
-    @media screen and (max-width: 780px) {
-      margin-bottom: 3em;
     }
   }
 
@@ -210,20 +171,11 @@ section.region{
   .outre-mer{
     float:left;
     width:50%;
-    @media screen and (max-width: 780px) {
-      float: none;
-      width: 100%;
-      margin-bottom: 2em;
-    }
   }
 
   .etranger{
     float: left;
     width: 50%;
-    @media screen and (max-width: 780px) {
-      float: none;
-      width: 100%;
-    }
   }
 
 } // END OF ALL REGIONS
@@ -262,9 +214,7 @@ section.region{
       width:50%;
       float:left;
       text-align:center;
-      @media screen and (max-width: 780px) {
-          width: 100%;
-        }
+
 
       img{
         width:60%;
@@ -274,15 +224,17 @@ section.region{
     .region-right{
       width:40%;
       float:right;
-      @media screen and (max-width: 780px) {
-          width: 100%;
-        }
+
+    &:hover{
+      image:url(../integration/img-content/france-hover.png);
+    }
+
 
 
       figure{
         width:100%;
         margin-top:12%;
-
+   
 
 
         img{
@@ -294,3 +246,130 @@ section.region{
     }
   }
 }
+// MEDIA QUERIES
+
+@media only screen and (min-width : 600px) and (max-width : 1024px)  {
+
+.all-journals .revue:first-child, .all-journals .revue{
+  width:40%;
+  margin:0 5%;
+
+    span{
+      font-size:20px;
+    }
+    p{
+      font-size:30px;
+      margin-bottom:20%;
+    }
+  }
+  section.last-journals h2{
+    padding-left:0;
+    font-size: 16px;
+  }
+
+  h3{
+    font-size:28px;
+  }
+   .all-regions .metropole .liste{
+    width:50%;
+    margin: 20% 0;
+    font-size:20px;
+    float:left;
+   }
+  .outre-mer, .etranger{
+
+    li{
+      font-size:24px;
+      padding:5%;
+    }
+  }
+  .liste, .outre-mer{
+    width:45%;
+    
+  li{
+    font-size:24px;
+    }
+  }
+
+
+}
+
+
+@media only screen and (max-width : 600px) {
+  section.last-journals h2{
+    padding-left: 10%;
+    font-size: 22px;
+
+    &::before {
+      content: "";
+      width: 24px;
+      left:0;
+      height: 3px;
+      background: $black;
+      top: 50%;
+    }
+  }
+  .all-journals .revue:first-child, .all-journals .revue{
+  width:80%;
+  margin:0 10% 30% 10%;
+
+   }
+
+
+   .all-regions .metropole .liste{
+    width:100%;
+    margin: 20% 0;
+    float:left;
+   }
+
+  .all-regions .metropole, .outre-mer, .etranger, .liste ul li {
+    font-size: 16px;
+    text-align: center;
+}
+
+   .all-regions .outre-mer{
+    width:100%;
+    }
+  
+  .cartes.active > div.region-img > div.region-left{
+    padding-top:20%;
+    width:100%;
+  }
+  .cartes.active > div.region-img > div.region-right{
+    margin:20% 0;
+    width:100%;
+
+    figure img{
+      margin-left:15%;
+    }
+  }
+
+  #cartes, #regions{
+    float:left;
+    margin-left:14%;
+  }
+
+
+  
+  .cartes .container_h3{
+    display:none;
+  }
+  .outre-mer, .etranger{
+
+    li{
+      font-size:24px;
+      padding:5%;
+    }
+  }
+  .liste, .outre-mer{
+    width:100%;
+    
+  li{
+    font-size:24px;
+    }
+}
+  .etranger {
+    width: 100%;
+    margin: 10% 0 0 23%;
+  }
+  }
