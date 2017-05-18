@@ -77,17 +77,25 @@ input, textarea, button {
 }
 
 /* line 29, ../sass/partials/_reset.scss */
-input[type="submit"] {
-  border: none;
+input[type="text"], input[type="password"], textarea {
+  background: rgba(216, 216, 216, 0.4);
+  padding: .5em 1em;
+  margin-top: .5em;
 }
 
-/* line 33, ../sass/partials/_reset.scss */
+/* line 35, ../sass/partials/_reset.scss */
+input[type="submit"] {
+  border: none;
+  background: none;
+}
+
+/* line 40, ../sass/partials/_reset.scss */
 a, a:visited {
   text-decoration: none;
   color: initial;
 }
 
-/* line 38, ../sass/partials/_reset.scss */
+/* line 45, ../sass/partials/_reset.scss */
 button {
   border: none;
   outline: none;
@@ -1075,6 +1083,74 @@ main.ending div[class*="form-step-4"] {
   color: #fff;
 }
 
+/* line 3, ../sass/_connectadmin.scss */
+#connect-admin .breadcrumb {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 4em;
+}
+
+/* line 10, ../sass/_connectadmin.scss */
+section.connect {
+  margin-top: 4em;
+  font-size: 0;
+}
+/* line 3, ../sass/partials/_clearfix.scss */
+section.connect:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 15, ../sass/_connectadmin.scss */
+section.connect div.img {
+  display: inline-block;
+  width: 40%;
+  font-size: initial;
+  vertical-align: middle;
+}
+/* line 20, ../sass/_connectadmin.scss */
+section.connect div.img img {
+  max-width: 100%;
+  opacity: .6;
+}
+/* line 26, ../sass/_connectadmin.scss */
+section.connect .connect-form {
+  width: 60%;
+  display: inline-block;
+  font-size: initial;
+  vertical-align: middle;
+  padding-left: 10%;
+}
+/* line 32, ../sass/_connectadmin.scss */
+section.connect .connect-form h2 {
+  font-family: "DIN Regular", sans-serif;
+  font-size: 1.8em;
+  padding-bottom: 1.3em;
+}
+/* line 36, ../sass/_connectadmin.scss */
+section.connect .connect-form h2 span {
+  font-family: "DIN Regular", sans-serif;
+  font-size: 1em;
+}
+/* line 43, ../sass/_connectadmin.scss */
+section.connect .connect-form div.password {
+  margin-top: 1.8em;
+}
+/* line 47, ../sass/_connectadmin.scss */
+section.connect .connect-form div input {
+  width: 60%;
+}
+/* line 52, ../sass/_connectadmin.scss */
+section.connect .connect-form input[type="submit"] {
+  margin-top: 3em;
+  text-transform: uppercase;
+  color: #3BC0D1;
+  padding: .5em 1.8em;
+  border: 2px solid #3BC0D1;
+  cursor: pointer;
+  margin-right: 1.5em;
+}
+
 /* line 3, ../sass/_backoffice.scss */
 #bo header {
   width: 85%;
@@ -1259,6 +1335,57 @@ main.ending div[class*="form-step-4"] {
   padding: .5em 1.8em;
   border: 2px solid #3BC0D1;
   cursor: pointer;
+}
+
+/* line 2, ../sass/modify.scss */
+body.modify main {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+/* line 8, ../sass/modify.scss */
+body.modify .head-modify-form {
+  margin-bottom: 4em;
+}
+
+/* line 14, ../sass/modify.scss */
+section.modify-form span.revue-number {
+  font-size: 5em;
+  font-weight: bolder;
+}
+/* line 3, ../sass/partials/_clearfix.scss */
+section.modify-form div.modify-fields:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 22, ../sass/modify.scss */
+section.modify-form div.modify-fields .left-side {
+  float: left;
+  width: 60%;
+}
+/* line 27, ../sass/modify.scss */
+section.modify-form div.modify-fields .right-side {
+  width: 40%;
+  float: right;
+}
+/* line 33, ../sass/modify.scss */
+section.modify-form div.modify-fields div[class*="-side"] > div {
+  margin-bottom: 1em;
+}
+/* line 37, ../sass/modify.scss */
+section.modify-form div.modify-fields div[class*="-side"] input[type="text"], section.modify-form div.modify-fields div[class*="-side"] textarea {
+  width: 60%;
+}
+/* line 43, ../sass/modify.scss */
+section.modify-form input[type="submit"] {
+  text-transform: uppercase;
+  color: #3BC0D1;
+  padding: .5em 1.8em;
+  border: 2px solid #3BC0D1;
+  cursor: pointer;
+  margin-right: 1.5em;
+  margin-top: 3em;
 }
 
 /* line 2, ../sass/partials/_footer.scss */

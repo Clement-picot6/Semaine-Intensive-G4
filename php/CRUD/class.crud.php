@@ -6,11 +6,12 @@
  * Time: 13:34
  */
 
+
 class crud
 {
     private $db;
 
-    function __construct(\PDO $db_con)
+    public function __construct(\PDO $db_con)
     {
         $this->db = $db_con;
     }
@@ -26,7 +27,6 @@ class crud
          $stmt ->bindvalue(":region", $region);
          $stmt ->bindvalue(":synopsis", $synopsis);
          $stmt ->execute();
-
          return true;
         }
 
@@ -35,7 +35,6 @@ class crud
             echo $e->getMessage();
             return false;
         }
-
     }
 
     public function getID($id)
@@ -58,11 +57,9 @@ class crud
                     'img' => $img,
                     'region' => $region,
                     'synopsis' => $synopsis];
-
             if ($this->bind($query, $data)->rowCount()) {
                 return true;
             }
-
             die('GROS BATAAAARD');
 
         }
@@ -72,7 +69,6 @@ class crud
             return false;
         }
     }
-
 
     public function delete($id)
     {
@@ -86,9 +82,7 @@ class crud
     {
         $stmt = $this->db->prepare($query);
         $stmt->execute();
-
         return $stmt;
-
     }
 
     public function bind($query, $data)
@@ -98,8 +92,7 @@ class crud
             $stmt->bindValue(':'.$key, $value);
         }
         $stmt->execute();
-
         return $stmt;
     }
-
 }
+

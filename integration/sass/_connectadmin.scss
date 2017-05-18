@@ -1,0 +1,59 @@
+#connect-admin {
+
+  .breadcrumb {
+    width: $width;
+    margin: 0 auto;
+    padding-bottom: 4em;
+  }
+}
+
+section.connect {
+  @include clearfix;
+  margin-top: 4em;
+  font-size: 0;
+
+  div.img {
+    display: inline-block;
+    width: 40%;
+    font-size: initial;
+    vertical-align: middle;
+    img {
+      max-width: 100%;
+      opacity: .6;
+    }
+  }
+
+  .connect-form {
+    width: 60%;
+    display: inline-block;
+    font-size: initial;
+    vertical-align: middle;
+    padding-left: 10%;
+    h2 {
+      font-family: $dinR;
+      font-size: 1.8em;
+      padding-bottom: 1.3em;
+      span {
+        font-family: $dinR;
+        font-size: 1em;
+      }
+    }
+
+    div {
+      &.password {
+        margin-top: 1.8em;
+      }
+
+      input {
+        width: 60%;
+      }
+    }
+
+    input[type="submit"] {
+      margin-top: 3em;
+      @include blue-bordered-cta;
+    }
+  }
+
+
+}
