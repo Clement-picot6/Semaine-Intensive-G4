@@ -27,6 +27,7 @@ section.modify-form {
     .right-side {
       width: 40%;
       float: right;
+
     }
 
     div[class*="-side"] {
@@ -42,6 +43,6 @@ section.modify-form {
 
   input[type="submit"] {
     @include blue-bordered-cta;
-    margin-top: 3em;
+    margin-top: 2em;
   }
 }

@@ -1,34 +1,30 @@
 <?php
 
+include_once 'php/dbconfig.php';
+include 'header-bo.php';
+
+if(isset($_GET['id'])) {
+    $query = "SELECT `number`,`date`,`img`, `region`, `synopsis` FROM journals WHERE id = :id";
+
+    $data = ['id' => $_GET['id']];
+    $data = $crud->bind($query, $data);
+    $data = $data->fetch(PDO::FETCH_ASSOC);
+
+} else {
+    header('Location: ../../backoffice.php');
+}
+
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Espace administrateur</title>
-    <link rel="stylesheet" href="assets/stylesheets/screen.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700" rel="stylesheet">
-</head>
-<body id="bo" class="modify">
-
-<header class="bo_header">
-    <div class="links">
-        <a href="#">< retour au site internet</a>
-        <span>Espace administrateur</span>
-    </div>
-</header>
 <main>
     <div class="breadcrumb">
-        <a href="#">Accueil</a> <span>></span> <a href="#" class="active">Boutique</a>
+        <a href="#">Retour au backoffice</a> <span>></span> <a href="#" class="active"><?php echo $data['number'] . ' - ' . $data['region'];?></a>
     </div>
 
     <section class="modify-form">
         <div class="head-modify-form">
-            <span class="revue-number">N°285</span>
-            <h2>Bretagne-Normandie</h2>
+            <span class="revue-number">N°<?php echo $data['number']; ?></span>
+            <h2><?php echo $data['region']; ?></h2>
         </div>
 
         <div class="modify-fields">
@@ -37,23 +33,23 @@
                 <div class="left-side">
                     <div class="number">
                         <label for="number">Numéro de la revue</label>
-                        <input type="text" name="number" value="">
+                        <input type="text" name="number" value="<?php echo $data['number']; ?>">
                     </div>
 
                     <div class="title">
-                        <label for="title">Titre de la revue</label>
-                        <input type="text" name="title" value="">
+                        <label for="title">Region de la revue</label>
+                        <input type="text" name="region" value="<?php echo $data['region']; ?>">
                     </div>
 
                     <div class="synopsis">
                         <label for="synopsis">Synopsis de la revue</label>
-                        <textarea name="synopsis" id="" cols="33" rows="10"></textarea>
+                        <textarea name="synopsis" id="" cols="33" rows="10"><?php echo $data['synopsis']; ?></textarea>
                     </div>
                 </div>
                 <div class="right-side">
-                    <img src="" alt="">
+                    <img src="<?php echo $data['img']; ?>" alt="">
                     <label for="">Couverture de la revue</label>
-                    <input type="text" name="img" value="" rows="8">
+                    <input type="text" name="img" value="<?php echo $data['img']; ?>" rows="8">
                 </div>
 
                 <input type="submit" value="Modifier">
