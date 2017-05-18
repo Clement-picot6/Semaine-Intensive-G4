@@ -11,11 +11,6 @@
 <body id="bo" class="modify">
 
 <header class="bo_header">
-  <div class="logo">
-    <a href="index.php">
-      <img src="assets/img-layout/logo.svg" alt="Logo de Architecture des Régions">
-    </a>
-  </div>
     <div class="links">
         <span>Espace administrateur</span>
     </div>
