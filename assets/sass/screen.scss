@@ -40,6 +40,11 @@ h2.page-title{
   font-weight: bolder;
 }
 
+span.revue-number {
+  font-size: 5em;
+  font-weight: bolder;
+}
+
 @import "partials/fonts";
 @import "partials/reset";
 @import "partials/clearfix";
@@ -49,8 +54,10 @@ h2.page-title{
 @import "index";
 @import "partials/newsletter";
 @import "revues";
+@import "journal";
 @import "boutique";
 @import "order";
+@import "rfp";
 
 @import "connectadmin";
 

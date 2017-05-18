@@ -80,7 +80,7 @@ section.last-journals{
       width: 100%;
     }
 
-    span {
+    span:not(.return) {
       padding: .5em 1.7em;
       background: $blue;
       color: #fff;

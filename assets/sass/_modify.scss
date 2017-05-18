@@ -11,10 +11,6 @@ body.modify {
 }
 
 section.modify-form {
-  span.revue-number {
-    font-size: 5em;
-    font-weight: bolder;
-  }
 
   div.modify-fields {
     @include clearfix;

@@ -1,0 +1,43 @@
+#journal {
+  main {
+    width: $width;
+    margin: 0 auto;
+    font-size: 0;
+  }
+  padding-bottom: 4em;
+
+  div.visual, div.caption {
+    font-size: initial;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  div.visual {
+    width: 30%;
+    img {
+      width: 70%;
+    }
+  }
+
+  div.caption {
+    width: 60%;
+  }
+
+  span.revue-number {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    font-family: $dinM;
+    margin-bottom: 1.8em;
+  }
+
+  p {
+    line-height: 2;
+  }
+
+  div.partners {
+    margin-top: 3em;
+  }
+}
