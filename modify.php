@@ -18,7 +18,7 @@ if(isset($_GET['id'])) {
 
 <main>
     <div class="breadcrumb">
-        <a href="#">Retour au backoffice</a> <span>></span> <a href="#" class="active"><?php echo $data['number'] . ' - ' . $data['region'];?></a>
+        <a href="backoffice.php">Retour au backoffice</a> <span>></span> <a href="#" class="active"><?php echo $data['number'] . ' - ' . $data['region'];?></a>
     </div>
 
     <section class="modify-form">
@@ -61,4 +61,3 @@ if(isset($_GET['id'])) {
 
 </body>
 </html>
-

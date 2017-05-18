@@ -254,6 +254,10 @@ div.container_scrolling .content_scrolling_right p{
 		width: 100%;
 	}
 
+	.public .block_header {
+		display: none;
+	}
+
 	.actu_block article:nth-child(2) figure img {
 		width: 100%;
 	}

@@ -7,6 +7,15 @@ include 'head.php';
 <body class="public" id="index">
 
 <?php include 'header.php'; ?>
+<div class="block_header">
+			<div>
+				<p>Toute l'actualité</p>
+				<p>de l'architecture de vos régions</p>
+			</div>
+
+			<button class="btn_feuille">feuilleter <img src="assets/img-content/arrow.png" alt="fleche"></button>
+			<button class="btn_command">commander</button>
+		</div>
 
 <main>
     <div class="actu_block clearfix">
@@ -76,7 +85,7 @@ include 'head.php';
 <div class="scrolling_bloc">
     <div class="container_caption">
         <div>
-            <h1>?</h1>
+            <h1>02</h1>
             <p>qui sommes-nous ?</p>
         </div>
 
