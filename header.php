@@ -45,5 +45,9 @@
 				<li><a href="">appel d'offre</a></li>
 			</ul>
 			</div>
+      <form class="form-wrapper">
+            <input type="text" id="search" placeholder="Search for..." required>
+            <input type="submit" value="go" id="submit">
+        </form>
 		</nav>
 	</header>
