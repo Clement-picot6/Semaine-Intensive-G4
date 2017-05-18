@@ -6,10 +6,10 @@ Error: Undefined variable: "$width".
 2:   main {
 3:     width: $width;
 4:     margin: 0 auto;
-5:   }
-6: 
+5:     padding-bottom: 3em;
+6:   }
 7: 
-8: 
+8:   .head-modify-form {
 
 Backtrace:
 /Users/alisonsayarath/si6/integration/sass/modify.scss:3
@@ -78,4 +78,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$width\".\A         on line 3 of /Users/alisonsayarath/si6/integration/sass/modify.scss\A \A 1: body.modify {\A 2:   main {\A 3:     width: $width;\A 4:     margin: 0 auto;\A 5:   }\A 6: \A 7: \A 8: "; }
+  content: "Error: Undefined variable: \"$width\".\A         on line 3 of /Users/alisonsayarath/si6/integration/sass/modify.scss\A \A 1: body.modify {\A 2:   main {\A 3:     width: $width;\A 4:     margin: 0 auto;\A 5:     padding-bottom: 3em;\A 6:   }\A 7: \A 8:   .head-modify-form {"; }
