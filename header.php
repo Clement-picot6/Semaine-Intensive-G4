@@ -23,6 +23,11 @@
             <a href="#"><li>connexion</li></a>
             <a href="#"><li><img src="assets/img-layout/login.svg" alt="login"></li></a>
             <a href="#"><li><img src="assets/img-layout/search.svg" alt="search"></li></a>
+
         </ul>
+        <form class="form-wrapper">
+            <input type="text" id="search" placeholder="Search for..." required>
+            <input type="submit" value="go" id="submit">
+        </form>
     </nav>
 </header>
