@@ -22,5 +22,5 @@ if($myOrder->create($firstname,$lastname,$address,$city,$country,$mail))
 }
 else
 {
-    header('Location: ../../order.php?successed=0');
+    header('Location: ../../order.php?successed=1');
 }

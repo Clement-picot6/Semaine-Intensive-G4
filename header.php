@@ -1,5 +1,5 @@
 	<header class="clearfix">
-		<img src="assets/img-layout/header.jpg" alt="" class="header-bg">
+	<img src="assets/img-layout/header-index1.jpg" alt="" class="header-bg">
 
 		<h1 class="logo">
 			<a href="index.php">
@@ -36,9 +36,5 @@
 			</ul>
 			</div>
 
-      <!-- <form class="form-wrapper">
-            <input type="text" id="search" placeholder="Search for..." required>
-            <input type="submit" value="go" id="submit">
-        </form> -->
 		</nav>
 	</header>

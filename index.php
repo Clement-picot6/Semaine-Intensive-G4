@@ -76,7 +76,7 @@ include 'head.php';
 <div class="scrolling_bloc">
     <div class="container_caption">
         <div>
-            <h1>02</h1>
+            <h1>?</h1>
             <p>qui sommes-nous ?</p>
         </div>
 

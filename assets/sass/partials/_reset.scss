@@ -73,6 +73,13 @@ button {
 	border: 2px solid $blue;
 	cursor: pointer;
 	margin-right: 1.5em;
+	transition: .2s ease-out;
+
+	&:hover {
+		background: $blue;
+		color: #fff;
+		transition: .3s ease-out;
+	}
 }
 
 body {

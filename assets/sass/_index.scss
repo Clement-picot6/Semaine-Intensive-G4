@@ -319,7 +319,7 @@ div.container_scrolling .content_scrolling_right p{
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 
-	body .actu_block {
+	#index .actu_block {
 		div:nth-child(1) {
 			border-bottom: solid black 3px;
 			width: 5%;
@@ -333,19 +333,23 @@ div.container_scrolling .content_scrolling_right p{
 			font-size: 25px;
 			margin-bottom: 5%;
 		}
-		.article_block {
-			article:nth-child(1) {
-				width: 100%;
-				float: left;
-				margin-bottom: 20%;
-			}
-
-			article:nth-child(2) {
-				width: 100%;
-				float: left;
-				margin-bottom: 15%;
-			}
-	}
+		#index .actu_block .article_block article {
+			width: 100%;
+			float: left;
+		}
+	// 	.article_block {
+	// 		article:nth-child(1) {
+	// 			width: 100%;
+	// 			float: left;
+	// 			margin-bottom: 20%;
+	// 		}
+	//
+	// 		article:nth-child(2) {
+	// 			width: 100%;
+	// 			float: left;
+	// 			margin-bottom: 15%;
+	// 		}
+	// }
 }
 	// .actu_block article:nth-child(1) figure img {
 		// width: 100%;
@@ -376,7 +380,7 @@ div.container_scrolling .content_scrolling_right p{
 
 			.container_scrolling {
 				width: 80%;
-				height: 110vh;
+				height: 100vh;
 
 				.content_scrolling_left {
 					width: 100%;
