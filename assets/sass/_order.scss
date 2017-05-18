@@ -1,9 +1,11 @@
-#order {
-  main {
+main {
     width: $width;
     margin: 0 auto;
     padding-bottom: 4em;
   }
+
+#order {
+
   padding-bottom: 5em;
 }
 
@@ -11,18 +13,21 @@
   clear: both;
 	background: $lightgrey;
 
-  .container_steps {
+  .container_steps{
   	float: left;
   	width: 30%;
   	background: $blue;
   	padding-bottom: 10%;
-
-    p {
+    p{
     	color: #fff;
     	font-family: $roboto;
     	font-weight: 400;
     	font-size: 150px;
     	text-align: center;
+
+    }
+    span{
+      display:none;
     }
   }
 
@@ -80,6 +85,7 @@ main:not(.ending) .container_fields {
       text-transform: uppercase;
       border: 2px solid $blue;
       padding: .4em 1.8em;
+      margin-left: 4em;
     }
 
   }
@@ -111,7 +117,8 @@ main:not(.ending) .container_fields {
   }
 
   .list-final {
-    margin-top: 3em;
+    margin: 3em;
+    padding-bottom: 5%;
   }
 
   .head-final {
@@ -173,32 +180,10 @@ main.ending {
     font-family: $roboto;
   	font-weight: 400;
   	font-size: 16px;
-  	padding: 3% 10%;
+  	padding: 3% 12%;
     color: #fff;
   }
 }
-
-// button[class*="step-"] {
-//   display: inline-block;
-//   font-family: $roboto;
-//   font-weight: 400;
-//   font-size: 16px;
-//   padding: 4% 16%;
-//
-//   &.step-before {
-//     background: $black;
-//     float: left;
-//   }
-//
-//   &.step-after {
-//     background: $blue;
-//     float: right;
-//   }
-//
-//   a {
-//     color: #fff;
-//   }
-// }
 
 .container_btn_fields.step-before{
 	float: left;
@@ -209,8 +194,58 @@ main.ending {
   	font-family: $roboto;
   	font-weight: 400;
   	font-size: 16px;
-  	padding: 3% 10%;
+  	padding: 3% 15%;
     color: #fff;
 
   }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  body > main > div.container_signin.clearfix > div{
+    width:100%;
+
+  }
+
+  .container_steps{
+    display:inline-block;
+    width:45%;
+
+  }
+  body > main > div.container_signin.clearfix > section > form{
+    margin:0;
+    width:100%
+  }
+  .form-step-1.active > div.left_fields{
+    width:100%;
+    margin-left:10%;
+  }
+
+  .form-step-1.active > div.right_fields{
+      width:100%;
+      margin-left:10%;
+
+  }
+  main:not(.ending) .container_fields .right_fields{
+  display:block;
+  }
+
+
+
+  .container_signin section {
+
+    width:100%;
+  }
+
+  .container_btn_fields.step-after{
+
+    button {
+      font-size: 16px;
+      padding: 5% 16%;
+      margin-top:20%;
+    }
+  }
+
 }

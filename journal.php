@@ -31,6 +31,8 @@ if(isset($_GET['revue'])) {
             <h2><?=$data['region']; ?></h2>
 
             <p><?=$data['synopsis']; ?></p>
+
+            <a href="web/viewer.html?file=rhones-alpes.pdf">voir</a>
         </div>
         </div>
 
@@ -41,4 +43,3 @@ if(isset($_GET['revue'])) {
 </main>
 
 <?php include 'footer.php'; ?>
-

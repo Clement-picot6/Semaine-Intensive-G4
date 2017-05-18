@@ -1,4 +1,7 @@
-<?php include 'header.php'; ?>
+<?php include 'head.php'; ?>
+<body class="public" id="order">
+  <?php include 'header.php'; ?>
+
 
 <main class="clearfix <?php if (isset($_GET['successed'])) {
         if ($_GET['successed'] == 1) {
@@ -84,9 +87,10 @@
                         <div class="list-final">
                             Pas de revues encore sélectionnées !
                         </div>
+                        <input type="submit" value="valider" class="submit">
                     </div>
 
-                    <input type="submit" value="valider" class="submit">
+
             </form>
     </div>
     <!-- end of step 4 -->

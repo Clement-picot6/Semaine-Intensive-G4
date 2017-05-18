@@ -118,30 +118,55 @@ include_once 'php/dbconfig.php';
 
             <div class="region-img">
                 <div class="region-left">
-                    <img src="../img-content/france.png">
+                    <img src="assets/img-content/france.png">
                 </div>
 
                 <div class="region-right">
                     <figure>
-                        <img id="martinique" src="../img-content/martinique.png">
-                        <img id="guyane" src="../img-content/guyane.png">
-                        <img id="stpierremiquelon" src="../img-content/stpierremiquelon.png">
+                        <img id="martinique" src="assets/img-content/martinique.png">
+                        <img id="guyane" src="assets/img-content/guyane.png">
+                        <img id="stpierremiquelon" src="assets/img-content/stpierremiquelon.png">
                     </figure>
                     <figure>
-                        <img id="mayotte" src="../img-content/mayotte.png">
-                        <img id="guadeloupe" src="../img-content/guadeloupe.png">
-                        <img id="reunion" src="../img-content/reunion.png">
+                        <img id="mayotte" src="assets/img-content/mayotte.png">
+                        <img id="guadeloupe" src="assets/img-content/guadeloupe.png">
+                        <img id="reunion" src="assets/img-content/reunion.png">
                     </figure>
                     <figure>
-                        <img id="belgique" src="../img-content/belgique.png">
-                        <img id="suisse" src="../img-content/suisse.png">
+                        <img id="belgique" src="assets/img-content/belgique.png">
+                        <img id="suisse" src="assets/img-content/suisse.png">
                     </figure>
                 </div>
 
             </div>
+            <!-- end of region img -->
         </div>
+        <!-- end of cartes -->
     </div>
+
+    <div class="results">
+      <h2>Bretagne-Normandie <span class="return">Résultats correspondant</span></h2>
+
+      <div class="one-result">
+          <span class="revue-number">N°245</span>
+          <div class="caption">
+          <p>Bretagne-Normandie</p>
+          <a href="#">> Découvrir la revue</a>
+          </div>
+      </div>
+
+      <div class="one-result">
+          <span class="revue-number">N°245</span>
+          <div class="caption">
+          <p>Bretagne-Normandie</p>
+          <a href="#">> Découvrir la revue</a>
+          </div>
+      </div>
+  </div>
 </section>
+
+
+</main>
 
 <script type="text/javascript">
     // JS CHANGER DIV
@@ -164,7 +189,6 @@ include_once 'php/dbconfig.php';
 
         cartes.classList.add('active');
         cartes.classList.remove('hidden');
-        console.log('yiyiiyyi');
     });
 
     afficherCacherRegions.addEventListener('click', function(){
@@ -181,11 +205,7 @@ include_once 'php/dbconfig.php';
         regions.classList.add('active');
         regions.classList.remove('hidden');
 
-        console.log('yiyiiyyi');
-
     });
-
-
 
 
     // JS HOVER
@@ -259,16 +279,6 @@ include_once 'php/dbconfig.php';
 
     }
 
-
-
-
-
-
-
-
-
-
 </script>
-</body>
-</html>
 
+<!-- <?php include 'footer.php'; ?> -->
