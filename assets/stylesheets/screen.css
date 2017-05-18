@@ -113,6 +113,11 @@ button {
   cursor: pointer;
 }
 
+/* line 78, ../sass/partials/_reset.scss */
+body {
+  overflow-x: hidden;
+}
+
 /* line 10, ../sass/partials/_clearfix.scss */
 .clearfix:before,
 .clearfix:after {
