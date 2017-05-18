@@ -10,7 +10,7 @@ session_start();
 
 
 require_once "../dbconfig.php";
-require_once "../CRUD/class.crud.php";
+require_once "../crud/class.crud.php";
 if(!isset($_SESSION['username']))
 {
     header("Location: Connexion.php");
