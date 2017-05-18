@@ -1,0 +1,23 @@
+body .breadcrumb {
+	width: 100%;
+	margin-bottom: 3em;
+
+	a {
+	display: inline-block;
+	color: $black;
+	font-family: $roboto;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 1px;
+	padding-top: 5em;
+
+	&.active {
+		color: $blue;
+	}
+	}
+
+	span {
+		padding: 0 2%;
+	}
+
+}

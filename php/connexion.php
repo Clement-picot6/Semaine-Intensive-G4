@@ -7,7 +7,7 @@
  */
 
 session_start();
-require_once "connect_admin/Connexion.class.php";
+require_once "connect-admin/Connexion.class.php";
 
 if(isset($_POST) && count($_POST) > 0)
 {
@@ -43,7 +43,7 @@ if(isset($_POST) && count($_POST) > 0)
 </header>
 <main>
 
-    <form action="connect_admin/connectadmin.php" method="post">
+    <form action="connect-admin/do-connect.php" method="post">
         <table>
             <tr>
                 <td>Pseudo</td>
