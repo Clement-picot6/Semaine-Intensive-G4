@@ -85,7 +85,7 @@ include 'header.php';
             </article>
             <article>
                 <figure>
-                    <img src="img-content/photo_accueil_5.jpg" alt="photo5">
+                    <img src="assets/img-content/photo_accueil_5.jpg" alt="photo5">
                     <figcaption>
                         ARSENAULT Eric
                     </figcaption>
