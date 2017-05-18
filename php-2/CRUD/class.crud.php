@@ -1,36 +1,32 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: jeremiebergel
  * Date: 16/05/2017
  * Time: 13:34
  */
-
 class crud
 {
     private $db;
 
-    function __construct($db_con)
+    public function __construct(\PDO $db_con)
     {
         $this->db = $db_con;
     }
 
-    public function create ($number, $date, $img, $region)
+    public function create($number, $date, $img, $region)
     {
-        try
-        {
-         $stmt = $this->db->prepare("INSERT INTO journals(`number`, `date`, `img`, `region`) VALUES (:number, :date, :img, :region)");
-         $stmt ->bindparam(":number", $number);
-         $stmt ->bindparam(":date", $date);
-         $stmt ->bindparam(":img", $img);
-         $stmt ->bindparam(":region", $region);
-         $stmt ->execute();
+        try {
+            $stmt = $this->db->prepare("INSERT INTO journals(`number`, `date`, `img`, `region`) VALUES (:number, :date, :img, :region)");
+            $stmt->bindparam(":number", $number);
+            $stmt->bindparam(":date", $date);
+            $stmt->bindparam(":img", $img);
+            $stmt->bindparam(":region", $region);
+            $stmt->execute();
 
-         return true;
-        }
-
-        catch(PDOException $e)
-        {
+            return true;
+        } catch (PDOException $e) {
             echo $e->getMessage();
             return false;
         }
@@ -40,22 +36,21 @@ class crud
     public function getID($id)
     {
         $stmt = $this->db->prepare("SELECT * FROM journals WHERE id=:id");
-        $stmt->execute(array(":id"=>$id));
-        $editRow=$stmt->fetch(PDO::FETCH_ASSOC);
+        $stmt->execute(array(":id" => $id));
+        $editRow = $stmt->fetch(PDO::FETCH_ASSOC);
         return $editRow;
     }
 
-    public function update ($id, $number, $date, $img, $region)
+    public function update($id, $number, $date, $img, $region)
     {
-        try
-        {
-            $query= "UPDATE journals SET `number`=:number, `date`=:date, img=:img, region=:region WHERE id=:id";
+        try {
+            $query = "UPDATE journals SET `number`=:number, `date`=:date, img=:img, region=:region WHERE id=:id";
 
             $data = ['id' => $id,
-                    'number' => $number,
-                    'date' => $date,
-                    'img' => $img,
-                    'region' => $region];
+                'number' => $number,
+                'date' => $date,
+                'img' => $img,
+                'region' => $region];
 
             if ($this->bind($query, $data)->rowCount()) {
                 var_dump('youhoooouuu');
@@ -73,9 +68,7 @@ class crud
 //            $stmt->execute();
 
 
-        }
-        catch(PDOException $e)
-        {
+        } catch (PDOException $e) {
             echo $e->getMessage();
             return false;
         }
@@ -85,9 +78,9 @@ class crud
     public function delete($id)
     {
         $stmt = $this->db->prepare("DELETE FROM journals WHERE id=:id");
-        $stmt->bindvalue(":id",$id);
+        $stmt->bindvalue(":id", $id);
         $stmt->execute();
-        return true;
+//        return true;
     }
 
     public function dataview($query)
@@ -103,7 +96,7 @@ class crud
     {
         $stmt = $this->db->prepare($query);
         foreach ($data as $key => $value) {
-            $stmt->bindValue(':'.$key, $value);
+            $stmt->bindValue(':' . $key, $value);
         }
         $stmt->execute();
 

@@ -26,8 +26,15 @@ input, textarea, button {
 	outline: none;
 }
 
+input[type="text"], input[type="password"] {
+	background: rgba(216,216,216,0.4);
+	padding: .5em 1em;
+	margin-top: .5em;
+}
+
 input[type="submit"] {
 	border: none;
+	background: none;
 }
 
 a, a:visited {
@@ -45,3 +52,21 @@ button {
 // 	max-width: 1200px;
 // 	margin: 0 auto;
 // }
+
+@mixin blue-cta {
+	background: $blue;
+	color: #fff;
+	text-transform: uppercase;
+	padding: .5em 1.8em;
+	border: 2px solid $blue;
+	cursor: pointer;
+}
+
+@mixin blue-bordered-cta {
+	text-transform: uppercase;
+	color: $blue;
+	padding: .5em 1.8em;
+	border: 2px solid $blue;
+	cursor: pointer;
+	margin-right: 1.5em;
+}

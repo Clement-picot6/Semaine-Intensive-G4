@@ -1,0 +1,49 @@
+#connect-admin {
+
+  .breadcrumb {
+    width: $width;
+    margin: 0 auto;
+  }
+}
+
+section.connect {
+  @include clearfix;
+  margin-top: 4.5em;
+
+  div.img {
+    float: left;
+    background: $lightgrey;
+    width: 40%;
+  }
+
+  .connect-form {
+    width: 60%;
+    float: right;
+    h2 {
+      font-family: $dinR;
+      font-size: 1.8em;
+      padding-bottom: 1.3em;
+      span {
+        font-family: $dinR;
+        font-size: 1em;
+      }
+    }
+
+    div {
+      &.password {
+        margin-top: 1.8em;
+      }
+
+      input {
+        width: 60%;
+      }
+    }
+
+    input[type="submit"] {
+      margin-top: 2em;
+      @include blue-bordered-cta;
+    }
+  }
+
+
+}
