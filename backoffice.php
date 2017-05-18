@@ -66,7 +66,7 @@ include_once('php/dbconfig.php');
           <td><?=$row['region']?></td>
           <td>yes</td>
           <td><a href="edit-journal.php?id=<?php echo $row["id"]?>" class="btn btn-large btn-info">Edit</a></td>
-          <td>Delete</td>
+          <td><a href="php/delete.php?id=<?= $row['id']?>" onclick="myFunction()">Delete</a></td>
         </tr>
       <?php endwhile;?>
       </tbody>
@@ -115,7 +115,18 @@ include_once('php/dbconfig.php');
       </form>
   </div>
   </section>
+
 </main>
+
+
+
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+</script>
 
 </body>
 </html>

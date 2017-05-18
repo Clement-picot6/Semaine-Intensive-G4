@@ -7,8 +7,8 @@
  */
 
 
-include_once 'dbconfig.php';
-
+include_once 'php/dbconfig.php';
+include_once '../header-bo.php';
 if(isset($_POST['btn-del']))
 {
     $id = $_GET['id'];
@@ -82,22 +82,18 @@ if(isset($_POST['btn-del']))
     <div class="container">
         <p>
             <?php
-            if(isset($_GET['id']))
-            {
-            ?>
-        <form method="post">
-            <input type="hidden" name="id" value="<?php echo $row['id']; ?>" />
-            <button class="btn btn-large btn-primary" type="submit" name="btn-del">YES</button>
-            <a href="index.php" class="btn btn-large btn-success">NO</a>
-        </form>
-        <?php
-        }
-        else
+        if(isset($_GET['id']))
         {
             ?>
-            <a href="index.php" class="btn btn-large btn-success"> &nbsp; Back to index</a>
+            <form method="post">
+                <input type="hidden" name="id" value="<?php echo $row['id']; ?>" />
+                <button class="btn btn-large btn-primary" type="submit" name="btn-del">YES</button>
+                <button><a href="backoffice.php" class="btn btn-large btn-success">NO</a></button>
+            </form>
             <?php
         }
         ?>
         </p>
     </div>
+
+<?php include_once 'footer.php';
