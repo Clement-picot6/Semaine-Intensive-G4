@@ -29,6 +29,12 @@ h2.page-title::before {
   font-weight: bolder;
 }
 
+/* line 43, ../sass/screen.scss */
+span.revue-number {
+  font-size: 5em;
+  font-weight: bolder;
+}
+
 @font-face {
   font-family: 'DIN Light';
   src: url(../fonts/Din/din_light.ttf);
@@ -96,6 +102,11 @@ a, a:visited {
 }
 
 /* line 45, ../sass/partials/_reset.scss */
+main {
+  overflow-x: hidden;
+}
+
+/* line 49, ../sass/partials/_reset.scss */
 button {
   border: none;
   outline: none;
@@ -1315,14 +1326,14 @@ section.last-journals h2::before {
   width: 100%;
 }
 /* line 83, ../sass/_revues.scss */
-.all-journals .revue span {
+.all-journals .revue span:not(.return) {
   padding: .5em 1.7em;
   background: #3BC0D1;
   color: #fff;
 }
 @media screen and (max-width: 780px) {
   /* line 83, ../sass/_revues.scss */
-  .all-journals .revue span {
+  .all-journals .revue span:not(.return) {
     font-size: 30px;
   }
 }
@@ -1572,6 +1583,53 @@ section.region .inner-region .head-region span::before {
 .cartes .region-img .region-right figure img {
   width: 14%;
   margin-left: 12%;
+}
+
+/* line 1, ../sass/_journal.scss */
+#journal {
+  padding-bottom: 4em;
+}
+/* line 2, ../sass/_journal.scss */
+#journal main {
+  width: 85%;
+  margin: 0 auto;
+  font-size: 0;
+}
+/* line 9, ../sass/_journal.scss */
+#journal div.visual, #journal div.caption {
+  font-size: initial;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 15, ../sass/_journal.scss */
+#journal div.visual {
+  width: 30%;
+}
+/* line 17, ../sass/_journal.scss */
+#journal div.visual img {
+  width: 70%;
+}
+/* line 22, ../sass/_journal.scss */
+#journal div.caption {
+  width: 60%;
+}
+/* line 26, ../sass/_journal.scss */
+#journal span.revue-number {
+  font-size: 4em;
+}
+/* line 30, ../sass/_journal.scss */
+#journal h2 {
+  font-size: 1.3em;
+  font-family: "DIN Medium", sans-serif;
+  margin-bottom: 1.8em;
+}
+/* line 36, ../sass/_journal.scss */
+#journal p {
+  line-height: 2;
+}
+/* line 40, ../sass/_journal.scss */
+#journal div.partners {
+  margin-top: 3em;
 }
 
 /* line 2, ../sass/_boutique.scss */
@@ -2207,36 +2265,31 @@ body.modify .head-modify-form {
   margin-bottom: 4em;
 }
 
-/* line 14, ../sass/_modify.scss */
-section.modify-form span.revue-number {
-  font-size: 5em;
-  font-weight: bolder;
-}
 /* line 3, ../sass/partials/_clearfix.scss */
 section.modify-form div.modify-fields:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 22, ../sass/_modify.scss */
+/* line 18, ../sass/_modify.scss */
 section.modify-form div.modify-fields .left-side {
   float: left;
   width: 60%;
 }
-/* line 27, ../sass/_modify.scss */
+/* line 23, ../sass/_modify.scss */
 section.modify-form div.modify-fields .right-side {
   width: 40%;
   float: right;
 }
-/* line 34, ../sass/_modify.scss */
+/* line 30, ../sass/_modify.scss */
 section.modify-form div.modify-fields div[class*="-side"] > div {
   margin-bottom: 1em;
 }
-/* line 38, ../sass/_modify.scss */
+/* line 34, ../sass/_modify.scss */
 section.modify-form div.modify-fields div[class*="-side"] input[type="text"], section.modify-form div.modify-fields div[class*="-side"] textarea {
   width: 60%;
 }
-/* line 44, ../sass/_modify.scss */
+/* line 40, ../sass/_modify.scss */
 section.modify-form input[type="submit"] {
   text-transform: uppercase;
   color: #3BC0D1;
