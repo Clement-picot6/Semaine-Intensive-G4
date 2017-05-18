@@ -33,7 +33,7 @@
 
         <div class="modify-fields">
 
-            <form action="">
+            <form action="php/crud/edit-data.php">
                 <div class="left-side">
                     <div class="number">
                         <label for="number">Numéro de la revue</label>

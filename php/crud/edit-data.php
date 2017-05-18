@@ -6,7 +6,14 @@
  * Time: 17:24
  */
 
-include_once 'dbconfig.php';
+include_once '../dbconfig.php';
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+} else {
+    header('Location: ../../backoffice.php');
+}
+
 if(isset($_POST['btn-update']))
 {
     $id = $_GET['id'];
