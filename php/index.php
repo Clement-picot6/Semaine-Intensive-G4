@@ -69,4 +69,5 @@ if (!isset($_SESSION['is_connected']) or $_SESSION['is_connected'] == false){
         </table>
 
     </div>
-<div><a href="connexion.php">Deconnexion</a></div>
+
+<div><a href="deconnexion.php">Deconnexion</a></div>

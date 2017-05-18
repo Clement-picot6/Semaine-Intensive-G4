@@ -17,7 +17,8 @@ if(isset($_POST) && count($_POST) > 0)
 
         if($connexion->session())
         {
-            header("Location: ../index.php");
+
+            header("Location: index.php");
             exit();
         }
     }
@@ -41,7 +42,8 @@ if(isset($_POST) && count($_POST) > 0)
     <h1>Connexion</h1>
 </header>
 <main>
-    <form action="connectadmin.php" method="post">
+
+    <form action="connect_admin/connectadmin.php" method="post">
         <table>
             <tr>
                 <td>Pseudo</td>
