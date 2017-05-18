@@ -1087,11 +1087,13 @@ main.ending div[class*="form-step-4"] {
 #connect-admin .breadcrumb {
   width: 85%;
   margin: 0 auto;
+  padding-bottom: 4em;
 }
 
-/* line 9, ../sass/_connectadmin.scss */
+/* line 10, ../sass/_connectadmin.scss */
 section.connect {
-  margin-top: 4.5em;
+  margin-top: 4em;
+  font-size: 0;
 }
 /* line 3, ../sass/partials/_clearfix.scss */
 section.connect:after {
@@ -1099,39 +1101,48 @@ section.connect:after {
   display: table;
   clear: both;
 }
-/* line 13, ../sass/_connectadmin.scss */
+/* line 15, ../sass/_connectadmin.scss */
 section.connect div.img {
-  float: left;
-  background: #F7F7F7;
+  display: inline-block;
   width: 40%;
+  font-size: initial;
+  vertical-align: middle;
 }
-/* line 19, ../sass/_connectadmin.scss */
+/* line 20, ../sass/_connectadmin.scss */
+section.connect div.img img {
+  max-width: 100%;
+  opacity: .6;
+}
+/* line 26, ../sass/_connectadmin.scss */
 section.connect .connect-form {
   width: 60%;
-  float: right;
+  display: inline-block;
+  font-size: initial;
+  vertical-align: middle;
+  padding-left: 10%;
 }
-/* line 22, ../sass/_connectadmin.scss */
+/* line 32, ../sass/_connectadmin.scss */
 section.connect .connect-form h2 {
   font-family: "DIN Regular", sans-serif;
   font-size: 1.8em;
   padding-bottom: 1.3em;
 }
-/* line 26, ../sass/_connectadmin.scss */
+/* line 36, ../sass/_connectadmin.scss */
 section.connect .connect-form h2 span {
   font-family: "DIN Regular", sans-serif;
   font-size: 1em;
 }
-/* line 33, ../sass/_connectadmin.scss */
+/* line 43, ../sass/_connectadmin.scss */
 section.connect .connect-form div.password {
   margin-top: 1.8em;
 }
-/* line 37, ../sass/_connectadmin.scss */
+/* line 47, ../sass/_connectadmin.scss */
 section.connect .connect-form div input {
   width: 60%;
 }
-/* line 42, ../sass/_connectadmin.scss */
+/* line 52, ../sass/_connectadmin.scss */
 section.connect .connect-form input[type="submit"] {
-  margin-top: 2em;
+  margin-top: 3em;
   text-transform: uppercase;
   color: #3BC0D1;
   padding: .5em 1.8em;
