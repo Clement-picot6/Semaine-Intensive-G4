@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$width".
-        on line 3 of /Users/alisonsayarath/si6/integration/sass/modify.scss
+        on line 3 of /Users/alisonsayarath/si6/assets/sass/modify.scss
 
 1: body.modify {
 2:   main {
@@ -12,7 +12,7 @@ Error: Undefined variable: "$width".
 8:   .head-modify-form {
 
 Backtrace:
-/Users/alisonsayarath/si6/integration/sass/modify.scss:3
+/Users/alisonsayarath/si6/assets/sass/modify.scss:3
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -78,4 +78,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$width\".\A         on line 3 of /Users/alisonsayarath/si6/integration/sass/modify.scss\A \A 1: body.modify {\A 2:   main {\A 3:     width: $width;\A 4:     margin: 0 auto;\A 5:     padding-bottom: 3em;\A 6:   }\A 7: \A 8:   .head-modify-form {"; }
+  content: "Error: Undefined variable: \"$width\".\A         on line 3 of /Users/alisonsayarath/si6/assets/sass/modify.scss\A \A 1: body.modify {\A 2:   main {\A 3:     width: $width;\A 4:     margin: 0 auto;\A 5:     padding-bottom: 3em;\A 6:   }\A 7: \A 8:   .head-modify-form {"; }

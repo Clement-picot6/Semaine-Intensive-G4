@@ -6,26 +6,10 @@
  * Time: 16:48
  */
 include_once('php/dbconfig.php');
+include 'header-bo.php';
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Espace administrateur</title>
-  <link rel="stylesheet" href="assets/stylesheets/screen.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700" rel="stylesheet">
-</head>
-<body id="bo">
 
-<header class="bo_header">
-  <div class="links">
-    <a href="#">< retour au site internet</a>
-    <span>Espace administrateur</span>
-  </div>
-</header>
 
 <main>
   <section class="view-journals">
@@ -48,6 +32,7 @@ include_once('php/dbconfig.php');
         </tr>
       </thead>
       <tbody>
+
       <?php
 
       if (isset($_GET['order'])) {
@@ -65,7 +50,7 @@ include_once('php/dbconfig.php');
           <td><?=$row['number']?></td>
           <td><?=$row['region']?></td>
           <td>yes</td>
-          <td><a href="edit-journal.php?id=<?php echo $row["id"]?>" class="btn btn-large btn-info">Edit</a></td>
+          <td><a href="modify.php?id=<?php echo $row["id"]?>" class="btn btn-large btn-info">Edit</a></td>
           <td>Delete</td>
         </tr>
       <?php endwhile;?>
