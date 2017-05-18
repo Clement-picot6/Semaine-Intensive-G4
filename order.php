@@ -14,7 +14,7 @@ include 'header.php';
     </div>
 
     <div class="container_btn_fields step-before" style="display: none;">
-        <button class="step-before"><img src="integration/img-content/arrow_right.png" alt="fleche"> étape précédente</button>
+        <button class="step-before"><img src="assets/img-content/arrow_right.png" alt="fleche"> étape précédente</button>
     </div>
 
     <div class="container_signin clearfix">
@@ -26,7 +26,7 @@ include 'header.php';
         <!-- end of container steps -->
 
         <section class="container_fields clearfix">
-            <form action="php-2/order/do-order.php" method="post">
+            <form action="php/order/do-order.php" method="post">
                 <div class="form-step-1 active">
                     <div class="left_fields">
                         <label>Nom <span class="req-field">*</span></label>
@@ -99,7 +99,7 @@ include 'header.php';
         <div class="inner-container">
             <h2 class="ending-msg">Merci ! <span class="return">Votre demande a bien été envoyée</span></h2>
 
-            <a href="integration/accueil.html">< retour sur la page d'accueil</a>
+            <a href="assets/accueil.html">< retour sur la page d'accueil</a>
         </div>
     </div>
     <!-- end of step 5 -->
@@ -108,7 +108,7 @@ include 'header.php';
 
     </div>
     <div class="container_btn_fields step-after">
-        <button>étape suivante <img src="integration/img-content/arrow.png" alt="fleche"></button>
+        <button>étape suivante <img src="assets/img-content/arrow.png" alt="fleche"></button>
     </div>
 </main>
 
@@ -143,5 +143,5 @@ include 'header.php';
 </footer>
 </body>
 
-<script src="../js/main.js"></script>
+<script src="js/main.js"></script>
 </html>

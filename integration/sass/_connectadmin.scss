@@ -23,6 +23,11 @@ section.connect {
     }
   }
 
+  p.error-msg {
+    color: red;
+    font-weight: bolder;
+  }
+
   .connect-form {
     width: 60%;
     display: inline-block;
